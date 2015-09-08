@@ -21,7 +21,7 @@
 </head>
 <body>
 <aside id="sidebar" class="sidebar">
-	<h3 class="sidebar-title"><a href="../index.html">Turret</a><code>v3.0.0</code></h3>
+	<h3 class="sidebar-title"><a href="../index.html">Turret</a><code>v3.1.0</code></h3>
 	<nav class="navigation">
 	<ul>
 		<li>
@@ -112,14 +112,18 @@
 			<a href="index.html#utilities">Utilities</a>
 			<ul>
 				<li><a href="index.html#utility-classes">Utility Classes</a></li>
-				<li><a href="index.html#font-size">Font Size</a></li>
-				<li><a href="index.html#font-family">Font Family</a></li>
-				<li><a href="index.html#text">Text</a></li>
-				<li><a href="index.html#text-color">Text Color</a></li>
+				<li><a href="index.html#visiblity">Visiblity</a></li>
 				<li><a href="index.html#display">Display</a></li>
 				<li><a href="index.html#positioning">Positioning</a></li>
 				<li><a href="index.html#float">Float</a></li>
-				<li><a href="index.html#visiblity">Visiblity</a></li>
+				<li><a href="index.html#max-width">Max Width</a></li>
+				<li><a href="index.html#margin">Margin</a></li>
+				<li><a href="index.html#padding">Padding</a></li>
+				<li><a href="index.html#font-family">Font Family</a></li>
+				<li><a href="index.html#font-size">Font Size</a></li>
+				<li><a href="index.html#text">Text</a></li>
+				<li><a href="index.html#text-color">Text Color</a></li>
+				<li><a href="index.html#background">Background</a></li>
 			</ul>
 		</li>
 		<li>
@@ -358,14 +362,18 @@
 						<li>utilities/
 							<ul>
 								<li><code>utility-classes.less</code></li>
-								<li><code>font-size.less</code></li>
-								<li><code>font-family.less</code></li>
-								<li><code>text.less</code></li>
-								<li><code>text-color.less</code></li>
+								<li><code>visiblity.less</code></li>
 								<li><code>display.less</code></li>
 								<li><code>positioning.less</code></li>
 								<li><code>float.less</code></li>
-								<li><code>visiblity.less</code></li>
+								<li><code>max-width.less</code></li>
+								<li><code>margin.less</code></li>
+								<li><code>padding.less</code></li>
+								<li><code>font-family.less</code></li>
+								<li><code>font-size.less</code></li>
+								<li><code>text.less</code></li>
+								<li><code>text-color.less</code></li>
+								<li><code>background.less</code></li>
 							</ul>
 						</li>
 						<li>mixins/
@@ -481,21 +489,28 @@
 @height-large: 50px;
 @height-medium: 40px;
 @height-small: 30px;
-@height-xsmall: 20px;</code></pre>			<h3 class="section-block-title">Padding</h3>
-			<p>Padding sizes, both vertical and horizontal for buttons, inputs, input-groups, selects etc.</p>
-			<pre class="language-less"><code class="language-less">// Padding Vertical
-@padding-vertical-xlarge: 20px;
-@padding-vertical-large: 15px;
-@padding-vertical-medium: 12px;
-@padding-vertical-small: 8px;
-@padding-vertical-xsmall: 4px;
-
-// Padding Horizontal
-@padding-horizontal-xlarge: 30px;
-@padding-horizontal-large: 25px;
-@padding-horizontal-medium: 16px;
-@padding-horizontal-small: 12px;
-@padding-horizontal-xsmall: 8px;</code></pre>		</div>
+@height-xsmall: 20px;</code></pre>			<h3 class="section-block-title">Margin</h3>
+			<p>Margin sizes (xlarge, large, medium, small, xsmall) for use globally, including utility classes.</p>
+			<pre class="language-less"><code class="language-less">// Margin
+@margin-xlarge: 100px;
+@margin-large: 65px;
+@margin-medium: 50px;
+@margin-small: 35px;
+@margin-xsmall: 20px;</code></pre>			<h3 class="section-block-title">Padding</h3>
+			<p>Padding sizes (xlarge, large, medium, small, xsmall) for use globally, including utility classes.</p>
+			<pre class="language-less"><code class="language-less">// Padding
+@padding-xlarge: 100px;
+@padding-large: 65px;
+@padding-medium: 50px;
+@padding-small: 35px;
+@padding-xsmall: 20px;</code></pre>			<h3 class="section-block-title">Max Width</h3>
+			<p>Max Width sizes (xlarge, large, medium, small, xsmall) for use globally, including utility classes.</p>
+			<pre class="language-less"><code class="language-less">// Max Width
+@max-width-xsmall: 450px;
+@max-width-small: 600px;
+@max-width-medium: 800px;
+@max-width-large: 1024px;
+@max-width-xlarge: 1280px;</code></pre>		</div>
 	</section>
 
 	<!-- Body -->
@@ -1771,7 +1786,7 @@
 <label for="input-radio">Radio Input</label>			<pre class="language-less"><code class="language-less">// Input
 @input-height: @height-medium;
 @input-margin: @label-margin;
-@input-padding: 0 @padding-horizontal-medium;
+@input-padding: 0 16px;
 @input-color: @body-color;
 @input-font-family: @regular-font-family;
 @input-font-weight: @regular-font-weight;
@@ -1811,7 +1826,7 @@
 @input-search-border-radius: 20px;
 
 // Textarea
-@textarea-padding: @padding-vertical-medium @padding-horizontal-medium;
+@textarea-padding: 12px 16px;
 @textarea-line-height: @line-height-medium;</code></pre>			<pre class="language-markup"><code class="language-markup">&lt;label for=&quot;input-text&quot;&gt;Text Input&lt;/label&gt;
 &lt;input type=&quot;text&quot; id=&quot;input-text&quot; placeholder=&quot;Text&quot;&gt;
 
@@ -1907,27 +1922,27 @@
 <input class="input-medium" type="text" placeholder="Input Medium">
 <input class="input-small" type="text" placeholder="Input Small">
 <input class="input-xsmall" type="text" placeholder="Input Extra Small">			<pre class="language-less"><code class="language-less">// Input Extra Large
-@input-xlarge-padding: 0 @padding-horizontal-xlarge;
+@input-xlarge-padding: 0 30px;
 @input-xlarge-height: @height-xlarge;
 @input-xlarge-font-size: @font-size-xlarge;
 
 // Input Large
-@input-large-padding: 0 @padding-horizontal-large;
+@input-large-padding: 0 25px;
 @input-large-height: @height-large;
 @input-large-font-size: @font-size-large;
 
 // Input Medium
-@input-medium-padding: 0 @padding-horizontal-medium;
+@input-medium-padding: 0 16px;
 @input-medium-height: @input-height;
 @input-medium-font-size: @input-font-size;
 
 // Input Small
-@input-small-padding: 0 @padding-horizontal-small;
+@input-small-padding: 0 12px;
 @input-small-height: @height-small;
 @input-small-font-size: @font-size-small;
 
 // Input Extra Small
-@input-xsmall-padding: 0 @padding-horizontal-xsmall;
+@input-xsmall-padding: 0 8px;
 @input-xsmall-height: @height-xsmall;
 @input-xsmall-font-size: @font-size-xsmall;</code></pre>			<pre class="language-markup"><code class="language-markup">&lt;input class=&quot;input-xlarge&quot; type=&quot;text&quot; placeholder=&quot;Input Extra Large&quot;&gt;
 &lt;input class=&quot;input-large&quot; type=&quot;text&quot; placeholder=&quot;Input Large&quot;&gt;
@@ -2154,7 +2169,7 @@
 			<h2 class="section-title">Select<code>forms/select.less</code></h2>
 			<pre class="language-less"><code class="language-less">// Select
 @select-margin: @input-margin;
-@select-padding: 0 @padding-horizontal-medium;
+@select-padding: @input-padding;
 @select-height: @input-height;
 @select-font-family: @input-font-family;
 @select-font-weight: @input-font-weight;
@@ -2240,12 +2255,12 @@
 		<option value="2">Option 02</option>
 	</select>
 </label>			<pre class="language-less"><code class="language-less">// Select Extra Large
-@select-xlarge-padding: 0 @padding-horizontal-xlarge;
+@select-xlarge-padding: @input-xlarge-padding;
 @select-xlarge-height: @input-xlarge-height;
 @select-xlarge-font-size: @input-xlarge-font-size;
 
 // Select Large
-@select-large-padding: 0 @padding-horizontal-large;
+@select-large-padding: @input-large-padding;
 @select-large-height: @input-large-height;
 @select-large-font-size: @input-large-font-size;
 
@@ -2255,12 +2270,12 @@
 @select-medium-font-size: @select-font-size;
 
 // Select Small
-@select-small-padding: 0 @padding-horizontal-small;
+@select-small-padding: @input-small-padding;
 @select-small-height: @input-small-height;
 @select-small-font-size: @input-small-font-size;
 
 // Select Extra Small
-@select-xsmall-padding: 0 @padding-horizontal-xsmall;
+@select-xsmall-padding: @input-xsmall-padding;
 @select-xsmall-height: @input-xsmall-height;
 @select-xsmall-font-size: @input-xsmall-font-size;</code></pre>			<pre class="language-markup"><code class="language-markup">&lt;label class=&quot;select select-xlarge&quot; for=&quot;select-xlarge&quot;&gt;
 	&lt;select id=&quot;select-xlarge&quot;&gt;
@@ -2313,7 +2328,7 @@
 			<h2 class="section-title">Button<code>elements/button.less</code></h2>
 			<p>Button styles are applied directly to the <code>&lt;button&gt;</code> element, button style and size modifiers do not require the <code>button</code> class added to the button element. Button styles can be set on an achor tag by using the <code>.button</code> class.</p>
 			<button>Button</button>			<pre class="language-less"><code class="language-less">// Button
-@button-padding: @padding-vertical-medium @padding-horizontal-medium;
+@button-padding: 12px 16px;
 @button-height: @height-medium;
 @button-font-family: @bold-font-family;
 @button-font-weight: @bold-font-weight;
@@ -2464,12 +2479,12 @@
 <button class="button button-medium">Medium</button>
 <button class="button button-small">Small</button>
 <button class="button button-xsmall">Extra Small</button>			<pre class="language-less"><code class="language-less">// Button Extra Large
-@button-xlarge-padding: @padding-vertical-xlarge @padding-horizontal-xlarge;
+@button-xlarge-padding: 20px 30px;
 @button-xlarge-height: @height-xlarge;
 @button-xlarge-font-size: @font-size-xlarge;
 
 // Button Large
-@button-large-padding: @padding-vertical-large @padding-horizontal-large;
+@button-large-padding: 15px 25px;
 @button-large-height: @height-large;
 @button-large-font-size: @font-size-large;
 
@@ -2479,12 +2494,12 @@
 @button-medium-font-size: @button-font-size;
 
 // Button Small
-@button-small-padding: @padding-vertical-small @padding-horizontal-small;
+@button-small-padding: 8px 12px;
 @button-small-height: @height-small;
 @button-small-font-size: @font-size-small;
 
 // Button Extra Small
-@button-xsmall-padding: @padding-vertical-xsmall @padding-horizontal-xsmall;
+@button-xsmall-padding: 4px 8px;
 @button-xsmall-height: @height-xsmall;
 @button-xsmall-font-size: @font-size-xsmall;</code></pre>			<pre class="language-markup"><code class="language-markup">&lt;button class=&quot;button button-xlarge&quot;&gt;Extra Large&lt;/button&gt;
 &lt;button class=&quot;button button-large&quot;&gt;Large&lt;/button&gt;
@@ -2537,8 +2552,9 @@
 	<img src="img/photo.svg" class="responsive">
 	<figcaption>Figure Caption</figcaption>
 </figure>			<pre class="language-less"><code class="language-less">// Figure
+@figure-display: block;
 @figure-margin: 0;
-@figure-padding: @gutter;
+@figure-padding: 10px;
 @figure-border: 1px solid @light-grey;
 
 // Figure Caption
@@ -2935,22 +2951,810 @@
 			</table>
 		</div>
 	</section>
-
-	<!-- Font Size -->
-	<section id="font-size" class="section">
+	
+	<!-- Visiblity -->
+	<section id="visiblity" class="section">
 		<div class="container">
-			<h2 class="section-title">Font Size<code>utilities/font-size.less</code></h2>
-			<p class="font-size-xlarge">Font Size Extra Large</p>
-<p class="font-size-large">Font Size Large</p>
-<p class="font-size-medium">Font Size Medium</p>
-<p class="font-size-small">Font Size Small</p>
-<p class="font-size-xsmall">Font Size Extra Small</p>			<pre class="language-markup"><code class="language-markup">&lt;p class=&quot;font-size-xlarge&quot;&gt;Font Size Extra Large&lt;/p&gt;
-&lt;p class=&quot;font-size-large&quot;&gt;Font Size Large&lt;/p&gt;
-&lt;p class=&quot;font-size-medium&quot;&gt;Font Size Medium&lt;/p&gt;
-&lt;p class=&quot;font-size-small&quot;&gt;Font Size Small&lt;/p&gt;
-&lt;p class=&quot;font-size-xsmall&quot;&gt;Font Size Extra Small&lt;/p&gt;</code></pre>		</div>
+			<h2 class="section-title">Visiblity<code>utilities/visiblity.less</code></h2>
+			<p>Define content to be <code>visible</code> or <code>hidden</code>.</p>
+			<table class="table table-bordered table-block table-responsive">
+	<thead>
+		<tr>
+			<th>Class</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>	
+			<td><code>hide</code></td>
+			<td>Hides element <code>.hide();</code> mixin</td>
+		</tr>
+		<tr>	
+			<td><code>show</code></td>
+			<td>Shows element <code>.show();</code> mixin</td>
+		</tr>
+		<tr>	
+			<td><code>hide-text</code></td>
+			<td>Hides text <code>.hide-text();</code> mixin</td>
+		</tr>
+		<tr>	
+			<td><code>hide-visually</code></td>
+			<td>Hide element but keep in DOM for Screen Readers <code>.hide-visually();</code> mixin</td>
+		</tr>
+		<tr>	
+			<td><code>visible</code></td>
+			<td>Sets <code>visibility: visible;</code></td>
+		</tr>
+		<tr>	
+			<td><code>invisible</code></td>
+			<td>Sets <code>visibility: hidden;</code></td>
+		</tr>
+		<tr>	
+			<td><code>hidden-print</code></td>
+			<td>Hides element for when <code>@media print</code></td>
+		</tr>
+		<tr>	
+			<td><code>visible-print</code></td>
+			<td>Shows element for when <code>@media print</code></td>
+		</tr>
+		<tr>	
+			<td><code>hidden-screen</code></td>
+			<td>Hides element for when <code>@media screen</code></td>
+		</tr>
+		<tr>	
+			<td><code>visible-screen</code></td>
+			<td>Shows element for when <code>@media screen</code></td>
+		</tr>
+	</tbody>
+</table>			<h3 class="section-block-title">Visibile Breakpoint Classes</h3>
+			<p>Define content to be <code>visible</code> at different breakpoints.<br><small>Note: <code>!important</code> is used to override specificity issues.</small></p>
+			<table class="table table-bordered table-block table-responsive">
+	<thead>
+		<tr>
+			<th width="25%"></th>
+			<th width="15%">Extra Small Devices<br><small>Phones (<767px)</small></th>
+			<th width="15%">Small Devices<br><small>Tablets (768px - 1023px)</small></th>
+			<th width="15%">Medium devices<br><small>Laptops (1024px - 1279px)</small></th>
+			<th width="15%">Large devices<br><small>Desktops (1280px - 1679px)</small></th>
+			<th width="15%">Extra Large devices<br><small>Large Desktops (≥1680px)</small></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>.visible-xsmall</code></td>
+			<td class="is-visible">Visible</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-hidden">Hidden</td>
+		</tr>
+		<tr>
+			<td><code>.visible-small</code></td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-hidden">Hidden</td>
+		</tr>
+		<tr>
+			<td><code>.visible-small-up</code></td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-visible">Visible</td>
+		</tr>
+		<tr>
+			<td><code>.visible-small-down</code></td>
+			<td class="is-visible">Visible</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-hidden">Hidden</td>
+		</tr>
+		<tr>
+			<td><code>.visible-medium</code></td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-hidden">Hidden</td>
+		</tr>
+		<tr>
+			<td><code>.visible-medium-up</code></td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-visible">Visible</td>
+		</tr>
+		<tr>
+			<td><code>.visible-medium-down</code></td>
+			<td class="is-visible">Visible</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-hidden">Hidden</td>
+		</tr>
+		<tr>
+			<td><code>.visible-large</code></td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-hidden">Hidden</td>
+		</tr>
+		<tr>
+			<td><code>.visible-large-up</code></td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-visible">Visible</td>
+		</tr>
+		<tr>
+			<td><code>.visible-large-down</code></td>
+			<td class="is-visible">Visible</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-hidden">Hidden</td>
+		</tr>
+		<tr>
+			<td><code>.visible-xlarge</code></td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-visible">Visible</td>
+		</tr>
+	</tbody>
+</table>			<h3 class="section-block-title">Hidden Breakpoint Classes</h3>
+			<p>Define content to be <code>hidden</code> at different breakpoints.<br><small>Note: <code>!important</code> is used to override specificity issues.</small></p>
+			<table class="table table-bordered table-block table-responsive">
+	<thead>
+		<tr>
+			<th width="25%"></th>
+			<th width="15%">Extra Small Devices<br><small>Phones (<767px)</small></th>
+			<th width="15%">Small Devices<br><small>Tablets (768px - 1023px)</small></th>
+			<th width="15%">Medium devices<br><small>Laptops (1024px - 1279px)</small></th>
+			<th width="15%">Large devices<br><small>Desktops (1280px - 1679px)</small></th>
+			<th width="15%">Extra Large devices<br><small>Large Desktops (≥1680px)</small></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>.hidden-xsmall</code></td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-visible">Visible</td>
+		</tr>
+		<tr>
+			<td><code>.hidden-small</code></td>
+			<td class="is-visible">Visible</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-visible">Visible</td>
+		</tr>
+		<tr>
+			<td><code>.hidden-small-up</code></td>
+			<td class="is-visible">Visible</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-hidden">Hidden</td>
+		</tr>
+		<tr>
+			<td><code>.hidden-small-down</code></td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-visible">Visible</td>
+		</tr>
+		<tr>
+			<td><code>.hidden-medium</code></td>
+			<td class="is-visible">Visible</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-visible">Visible</td>
+		</tr>
+		<tr>
+			<td><code>.hidden-medium-up</code></td>
+			<td class="is-visible">Visible</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-hidden">Hidden</td>
+		</tr>
+		<tr>
+			<td><code>.hidden-medium-down</code></td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-visible">Visible</td>
+		</tr>
+		<tr>
+			<td><code>.hidden-large</code></td>
+			<td class="is-visible">Visible</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-visible">Visible</td>
+		</tr>
+		<tr>
+			<td><code>.hidden-large-up</code></td>
+			<td class="is-visible">Visible</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-hidden">Hidden</td>
+		</tr>
+		<tr>
+			<td><code>.hidden-large-down</code></td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-hidden">Hidden</td>
+			<td class="is-visible">Visible</td>
+		</tr>
+		<tr>
+			<td><code>.hidden-xlarge</code></td>
+			<td class="is-visible">Visible</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-visible">Visible</td>
+			<td class="is-hidden">Hidden</td>
+		</tr>
+	</tbody>
+</table>		</div>
 	</section>
 
+	<!-- Display -->
+	<section id="display" class="section">
+		<div class="container">
+			<h2 class="section-title">Display<code>utilities/display.less</code></h2>
+			<table class="table table-bordered table-block table-responsive">
+	<thead>
+		<tr>
+			<th>Class</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>	
+			<td><code>display-block</code></td>
+			<td>Sets <code>display: block;</code> on element</td>
+		</tr>
+		<tr>	
+			<td><code>display-inline-block</code></td>
+			<td>Sets <code>display: inline-block;</code> on element</td>
+		</tr>
+		<tr>	
+			<td><code>display-table</code></td>
+			<td>Sets <code>display: table;</code> on element</td>
+		</tr>
+		<tr>	
+			<td><code>display-table-cell</code></td>
+			<td>Sets <code>display: table-cell;</code> on element</td>
+		</tr>
+	</tbody>
+</table>		</div>
+	</section>
+
+	<!-- Positioning -->
+	<section id="positioning" class="section">
+		<div class="container">
+			<h2 class="section-title">Positioning<code>utilities/positioning.less</code></h2>
+			<p>Utility classes can be used to position elements easily, each position utility class is <code>position: absolute;</code> and allows for either absolute positioning or using <code>@gutter</code> spacing by adding the <code>gutter</code> class to any position class</p>
+			<table class="table table-bordered table-block table-responsive">
+	<thead>
+		<tr>
+			<th>Class</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>position-top-left</code></td>
+			<td>Positions element to the top left of it's container</td>
+		</tr>
+		<tr>
+			<td><code>position-top-right</code></td>
+			<td>Positions element to the top right of it's container</td>
+		</tr>
+		<tr>
+			<td><code>position-bottom-left</code></td>
+			<td>Positions element to the bottom left of it's container</td>
+		</tr>
+		<tr>
+			<td><code>position-bottom-right</code></td>
+			<td>Positions element to the bottom right of it's container</td>
+		</tr>
+		<tr>
+			<td><code>position-left-center</code></td>
+			<td>Positions element left and centered vertically of it's container</td>
+		</tr>
+		<tr>
+			<td><code>position-right-center</code></td>
+			<td>Positions element right and centered vertically of it's container</td>
+		</tr>
+		<tr>
+			<td><code>position-center</code></td>
+			<td>Positions element centered vertically and horizontally of it's container</td>
+		</tr>
+	</tbody>
+</table>		</div>
+	</section>
+
+	<!-- Float -->
+	<section id="float" class="section">
+		<div class="container">
+			<h2 class="section-title">Float<code>utilities/float.less</code></h2>
+			<table class="table table-bordered table-block table-responsive">
+	<thead>
+		<tr>
+			<th>Class</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>	
+			<td><code>left</code></td>
+			<td>Floats element left</td>
+		</tr>
+		<tr>	
+			<td><code>right</code></td>
+			<td>Floats element right</td>
+		</tr>
+	</tbody>
+</table>			<h3 class="section-block-title">Responsive Clear Floats</h3>
+			<table class="table table-bordered table-block table-responsive">
+	<thead>
+		<tr>
+			<th width="25%"></th>
+			<th width="15%">Extra Small Devices<br><small>Phones (<767px)</small></th>
+			<th width="15%">Small Devices<br><small>Tablets (768px - 1023px)</small></th>
+			<th width="15%">Medium devices<br><small>Laptops (1024px - 1279px)</small></th>
+			<th width="15%">Large devices<br><small>Desktops (1280px - 1679px)</small></th>
+			<th width="15%">Extra Large devices<br><small>Large Desktops (≥1680px)</small></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>.clear-right-xsmall</code></td>
+			<td class="is-clear">clear</td>
+			<td class="is-float">right</td>
+			<td class="is-float">right</td>
+			<td class="is-float">right</td>
+			<td class="is-float">right</td>
+		</tr>
+		<tr>
+			<td><code>.clear-right-small</code></td>
+			<td class="is-float">right</td>
+			<td class="is-clear">clear</td>
+			<td class="is-float">right</td>
+			<td class="is-float">right</td>
+			<td class="is-float">right</td>
+		</tr>
+		<tr>
+			<td><code>.clear-right-medium</code></td>
+			<td class="is-float">right</td>
+			<td class="is-float">right</td>
+			<td class="is-clear">clear</td>
+			<td class="is-float">right</td>
+			<td class="is-float">right</td>
+		</tr>
+		<tr>
+			<td><code>.clear-right-large</code></td>
+			<td class="is-float">right</td>
+			<td class="is-float">right</td>
+			<td class="is-float">right</td>
+			<td class="is-clear">clear</td>
+			<td class="is-float">right</td>
+		</tr>
+		<tr>
+			<td><code>.clear-right-xlarge</code></td>
+			<td class="is-float">right</td>
+			<td class="is-float">right</td>
+			<td class="is-float">right</td>
+			<td class="is-float">right</td>
+			<td class="is-clear">clear</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<td><code>.clear-left-xsmall</code></td>
+			<td class="is-clear">clear</td>
+			<td class="is-float">left</td>
+			<td class="is-float">left</td>
+			<td class="is-float">left</td>
+			<td class="is-float">left</td>
+		</tr>
+		<tr>
+			<td><code>.clear-left-small</code></td>
+			<td class="is-float">left</td>
+			<td class="is-clear">clear</td>
+			<td class="is-float">left</td>
+			<td class="is-float">left</td>
+			<td class="is-float">left</td>
+		</tr>
+		<tr>
+			<td><code>.clear-left-medium</code></td>
+			<td class="is-float">left</td>
+			<td class="is-float">left</td>
+			<td class="is-clear">clear</td>
+			<td class="is-float">left</td>
+			<td class="is-float">left</td>
+		</tr>
+		<tr>
+			<td><code>.clear-left-large</code></td>
+			<td class="is-float">left</td>
+			<td class="is-float">left</td>
+			<td class="is-float">left</td>
+			<td class="is-clear">clear</td>
+			<td class="is-float">left</td>
+		</tr>
+		<tr>
+			<td><code>.clear-left-xlarge</code></td>
+			<td class="is-float">left</td>
+			<td class="is-float">left</td>
+			<td class="is-float">left</td>
+			<td class="is-float">left</td>
+			<td class="is-clear">clear</td>
+		</tr>
+	</tbody>
+</table>		</div>
+	</section>
+
+	<!-- Max Width -->
+	<section id="max-width" class="section">
+		<div class="container">
+			<h2 class="section-title">Max Width<code>utilities/max-width.less</code></h2>
+			<p class="max-width-xlarge">Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper.</p>
+			<p class="max-width-large">Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper.</p>
+			<p class="max-width-medium">Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper.</p>
+			<p class="max-width-small">Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper.</p>
+			<p class="max-width-xsmall">Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper.</p>
+			<pre class="language-markup"><code class="language-markup">&lt;p class=&quot;max-width-xlarge&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;max-width-large&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;max-width-medium&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;max-width-small&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;max-width-xsmall&quot;&gt;...&lt;/p&gt;</code></pre>		</div>
+	</section>
+
+	<!-- Margin -->
+	<section id="margin" class="section">
+		<div class="container">
+			<h2 class="section-title">Margin<code>utilities/margin.less</code></h2>
+			<table class="table table-bordered table-block table-responsive">
+	<thead>
+		<tr>
+			<th>Class</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>margin-xlarge</code></td>
+			<td>Applies <code>@margin-xlarge</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>margin-large</code></td>
+			<td>Applies <code>@margin-large</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>margin-medium</code></td>
+			<td>Applies <code>@margin-medium</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>margin-small</code></td>
+			<td>Applies <code>@margin-small</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>margin-xsmall</code></td>
+			<td>Applies <code>@margin-xsmall</code> to element</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3 class="section-block-title">Margin Top</h3>
+<table class="table table-bordered table-block table-responsive">
+	<thead>
+		<tr>
+			<th>Class</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>margin-top-xlarge</code></td>
+			<td>Applies <code>@margin-top-xlarge</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>margin-top-large</code></td>
+			<td>Applies <code>@margin-top-large</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>margin-top-medium</code></td>
+			<td>Applies <code>@margin-top-medium</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>margin-top-small</code></td>
+			<td>Applies <code>@margin-top-small</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>margin-top-xsmall</code></td>
+			<td>Applies <code>@margin-top-xsmall</code> to element</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3 class="section-block-title">Margin Bottom</h3>
+<table class="table table-bordered table-block table-responsive">
+	<thead>
+		<tr>
+			<th>Class</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>margin-bottom-xlarge</code></td>
+			<td>Applies <code>@margin-bottom-xlarge</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>margin-bottom-large</code></td>
+			<td>Applies <code>@margin-bottom-large</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>margin-bottom-medium</code></td>
+			<td>Applies <code>@margin-bottom-medium</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>margin-bottom-small</code></td>
+			<td>Applies <code>@margin-bottom-small</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>margin-bottom-xsmall</code></td>
+			<td>Applies <code>@margin-bottom-xsmall</code> to element</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3 class="section-block-title">Margin Left</h3>
+<table class="table table-bordered table-block table-responsive">
+	<thead>
+		<tr>
+			<th>Class</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>margin-left-xlarge</code></td>
+			<td>Applies <code>@margin-left-xlarge</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>margin-left-large</code></td>
+			<td>Applies <code>@margin-left-large</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>margin-left-medium</code></td>
+			<td>Applies <code>@margin-left-medium</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>margin-left-small</code></td>
+			<td>Applies <code>@margin-left-small</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>margin-left-xsmall</code></td>
+			<td>Applies <code>@margin-left-xsmall</code> to element</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3 class="section-block-title">Margin Right</h3>
+<table class="table table-bordered table-block table-responsive">
+	<thead>
+		<tr>
+			<th>Class</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>margin-right-xlarge</code></td>
+			<td>Applies <code>@margin-right-xlarge</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>margin-right-large</code></td>
+			<td>Applies <code>@margin-right-large</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>margin-right-medium</code></td>
+			<td>Applies <code>@margin-right-medium</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>margin-right-small</code></td>
+			<td>Applies <code>@margin-right-small</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>margin-right-xsmall</code></td>
+			<td>Applies <code>@margin-right-xsmall</code> to element</td>
+		</tr>
+	</tbody>
+</table>		</div>
+	</section>
+
+	<!-- Padding -->
+	<section id="padding" class="section">
+		<div class="container">
+			<h2 class="section-title">Padding<code>utilities/padding.less</code></h2>
+			<table class="table table-bordered table-block table-responsive">
+	<thead>
+		<tr>
+			<th>Class</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>padding-xlarge</code></td>
+			<td>Applies <code>@padding-xlarge</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>padding-large</code></td>
+			<td>Applies <code>@padding-large</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>padding-medium</code></td>
+			<td>Applies <code>@padding-medium</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>padding-small</code></td>
+			<td>Applies <code>@padding-small</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>padding-xsmall</code></td>
+			<td>Applies <code>@padding-xsmall</code> to element</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3 class="section-block-title">Padding Top</h3>
+<table class="table table-bordered table-block table-responsive">
+	<thead>
+		<tr>
+			<th>Class</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>padding-top-xlarge</code></td>
+			<td>Applies <code>@padding-top-xlarge</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>padding-top-large</code></td>
+			<td>Applies <code>@padding-top-large</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>padding-top-medium</code></td>
+			<td>Applies <code>@padding-top-medium</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>padding-top-small</code></td>
+			<td>Applies <code>@padding-top-small</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>padding-top-xsmall</code></td>
+			<td>Applies <code>@padding-top-xsmall</code> to element</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3 class="section-block-title">Padding Bottom</h3>
+<table class="table table-bordered table-block table-responsive">
+	<thead>
+		<tr>
+			<th>Class</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>padding-bottom-xlarge</code></td>
+			<td>Applies <code>@padding-bottom-xlarge</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>padding-bottom-large</code></td>
+			<td>Applies <code>@padding-bottom-large</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>padding-bottom-medium</code></td>
+			<td>Applies <code>@padding-bottom-medium</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>padding-bottom-small</code></td>
+			<td>Applies <code>@padding-bottom-small</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>padding-bottom-xsmall</code></td>
+			<td>Applies <code>@padding-bottom-xsmall</code> to element</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3 class="section-block-title">Padding Left</h3>
+<table class="table table-bordered table-block table-responsive">
+	<thead>
+		<tr>
+			<th>Class</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>padding-left-xlarge</code></td>
+			<td>Applies <code>@padding-left-xlarge</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>padding-left-large</code></td>
+			<td>Applies <code>@padding-left-large</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>padding-left-medium</code></td>
+			<td>Applies <code>@padding-left-medium</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>padding-left-small</code></td>
+			<td>Applies <code>@padding-left-small</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>padding-left-xsmall</code></td>
+			<td>Applies <code>@padding-left-xsmall</code> to element</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3 class="section-block-title">Padding Right</h3>
+<table class="table table-bordered table-block table-responsive">
+	<thead>
+		<tr>
+			<th>Class</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>padding-right-xlarge</code></td>
+			<td>Applies <code>@padding-right-xlarge</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>padding-right-large</code></td>
+			<td>Applies <code>@padding-right-large</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>padding-right-medium</code></td>
+			<td>Applies <code>@padding-right-medium</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>padding-right-small</code></td>
+			<td>Applies <code>@padding-right-small</code> to element</td>
+		</tr>
+		<tr>
+			<td><code>padding-right-xsmall</code></td>
+			<td>Applies <code>@padding-right-xsmall</code> to element</td>
+		</tr>
+	</tbody>
+</table>		</div>
+	</section>
 
 	<!-- Font Family -->
 	<section id="font-family" class="section">
@@ -2973,6 +3777,20 @@
 &lt;p class=&quot;bold-font&quot;&gt;Bold Font&lt;/p&gt;</code></pre>		</div>
 	</section>
 
+	<!-- Font Size -->
+	<section id="font-size" class="section">
+		<div class="container">
+			<h2 class="section-title">Font Size<code>utilities/font-size.less</code></h2>
+			<p class="font-size-xlarge">Font Size Extra Large</p>
+<p class="font-size-large">Font Size Large</p>
+<p class="font-size-medium">Font Size Medium</p>
+<p class="font-size-small">Font Size Small</p>
+<p class="font-size-xsmall">Font Size Extra Small</p>			<pre class="language-markup"><code class="language-markup">&lt;p class=&quot;font-size-xlarge&quot;&gt;Font Size Extra Large&lt;/p&gt;
+&lt;p class=&quot;font-size-large&quot;&gt;Font Size Large&lt;/p&gt;
+&lt;p class=&quot;font-size-medium&quot;&gt;Font Size Medium&lt;/p&gt;
+&lt;p class=&quot;font-size-small&quot;&gt;Font Size Small&lt;/p&gt;
+&lt;p class=&quot;font-size-xsmall&quot;&gt;Font Size Extra Small&lt;/p&gt;</code></pre>		</div>
+	</section>
 		
 	<!-- Text -->
 	<section id="text" class="section">
@@ -2995,7 +3813,6 @@
 &lt;p class=&quot;lowercase&quot;&gt;Lowercase&lt;/p&gt;
 &lt;p class=&quot;capitalize&quot;&gt;capitalize&lt;/p&gt;</code></pre>		</div>
 	</section>
-
 
 	<!-- Text Color -->
 	<section id="text-color" class="section">
@@ -3031,451 +3848,38 @@
 &lt;p class=&quot;text-dark&quot;&gt;...&lt;/p&gt;	</code></pre>		</div>
 	</section>
 
-	<!-- Display -->
-	<section id="display" class="section">
+	<!-- Text Color -->
+	<section id="background" class="section">
 		<div class="container">
-			<h2 class="section-title">Display<code>utilities/display.less</code></h2>
-			<table class="table table-bordered table-block table-responsive">
-				<thead>
-					<tr>
-						<th>Class</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>	
-						<td><code>display-block</code></td>
-						<td>Sets <code>display: block;</code> on element</td>
-					</tr>
-					<tr>	
-						<td><code>display-inline-block</code></td>
-						<td>Sets <code>display: inline-block;</code> on element</td>
-					</tr>
-					<tr>	
-						<td><code>display-table</code></td>
-						<td>Sets <code>display: table;</code> on element</td>
-					</tr>
-					<tr>	
-						<td><code>display-table-cell</code></td>
-						<td>Sets <code>display: table-cell;</code> on element</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	</section>
-
-	<!-- Positioning -->
-	<section id="positioning" class="section">
-		<div class="container">
-			<h2 class="section-title">Positioning<code>utilities/positioning.less</code></h2>
-			<p>Utility classes can be used to position elements easily, each position utility class is <code>position: absolute;</code> and allows for either absolute positioning or using <code>@gutter</code> spacing by adding the <code>gutter</code> class to any position class</p>
-			<table class="table table-bordered table-block table-responsive">
-				<thead>
-					<tr>
-						<th>Class</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>	
-						<td><code>top-left</code></td>
-						<td>Positions element to the top left of it's container</td>
-					</tr>
-					<tr>	
-						<td><code>top-right</code></td>
-						<td>Positions element to the top right of it's container</td>
-					</tr>
-					<tr>	
-						<td><code>bottom-left</code></td>
-						<td>Positions element to the bottom left of it's container</td>
-					</tr>
-					<tr>	
-						<td><code>bottom-right</code></td>
-						<td>Positions element to the bottom right of it's container</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	</section>
-
-	<!-- Float -->
-	<section id="float" class="section">
-		<div class="container">
-			<h2 class="section-title">Float<code>utilities/float.less</code></h2>
-			<table class="table table-bordered table-block table-responsive">
-				<thead>
-					<tr>
-						<th>Class</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>	
-						<td><code>left</code></td>
-						<td>Floats element left</td>
-					</tr>
-					<tr>	
-						<td><code>right</code></td>
-						<td>Floats element right</td>
-					</tr>
-				</tbody>
-			</table>
-			<h3 class="section-block-title">Responsive Clear Floats</h3>
-			<table class="table table-bordered table-block table-responsive">
-				<thead>
-					<tr>
-						<th width="25%"></th>
-						<th width="15%">Extra Small Devices<br><small>Phones (<767px)</small></th>
-						<th width="15%">Small Devices<br><small>Tablets (768px - 1023px)</small></th>
-						<th width="15%">Medium devices<br><small>Laptops (1024px - 1279px)</small></th>
-						<th width="15%">Large devices<br><small>Desktops (1280px - 1679px)</small></th>
-						<th width="15%">Extra Large devices<br><small>Large Desktops (≥1680px)</small></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td><code>.clear-right-xsmall</code></td>
-						<td class="is-clear">clear</td>
-						<td class="is-float">right</td>
-						<td class="is-float">right</td>
-						<td class="is-float">right</td>
-						<td class="is-float">right</td>
-					</tr>
-					<tr>
-						<td><code>.clear-right-small</code></td>
-						<td class="is-float">right</td>
-						<td class="is-clear">clear</td>
-						<td class="is-float">right</td>
-						<td class="is-float">right</td>
-						<td class="is-float">right</td>
-					</tr>
-					<tr>
-						<td><code>.clear-right-medium</code></td>
-						<td class="is-float">right</td>
-						<td class="is-float">right</td>
-						<td class="is-clear">clear</td>
-						<td class="is-float">right</td>
-						<td class="is-float">right</td>
-					</tr>
-					<tr>
-						<td><code>.clear-right-large</code></td>
-						<td class="is-float">right</td>
-						<td class="is-float">right</td>
-						<td class="is-float">right</td>
-						<td class="is-clear">clear</td>
-						<td class="is-float">right</td>
-					</tr>
-					<tr>
-						<td><code>.clear-right-xlarge</code></td>
-						<td class="is-float">right</td>
-						<td class="is-float">right</td>
-						<td class="is-float">right</td>
-						<td class="is-float">right</td>
-						<td class="is-clear">clear</td>
-					</tr>
-				</tbody>
-				<tbody>
-					<tr>
-						<td><code>.clear-left-xsmall</code></td>
-						<td class="is-clear">clear</td>
-						<td class="is-float">left</td>
-						<td class="is-float">left</td>
-						<td class="is-float">left</td>
-						<td class="is-float">left</td>
-					</tr>
-					<tr>
-						<td><code>.clear-left-small</code></td>
-						<td class="is-float">left</td>
-						<td class="is-clear">clear</td>
-						<td class="is-float">left</td>
-						<td class="is-float">left</td>
-						<td class="is-float">left</td>
-					</tr>
-					<tr>
-						<td><code>.clear-left-medium</code></td>
-						<td class="is-float">left</td>
-						<td class="is-float">left</td>
-						<td class="is-clear">clear</td>
-						<td class="is-float">left</td>
-						<td class="is-float">left</td>
-					</tr>
-					<tr>
-						<td><code>.clear-left-large</code></td>
-						<td class="is-float">left</td>
-						<td class="is-float">left</td>
-						<td class="is-float">left</td>
-						<td class="is-clear">clear</td>
-						<td class="is-float">left</td>
-					</tr>
-					<tr>
-						<td><code>.clear-left-xlarge</code></td>
-						<td class="is-float">left</td>
-						<td class="is-float">left</td>
-						<td class="is-float">left</td>
-						<td class="is-float">left</td>
-						<td class="is-clear">clear</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	</section>
-
-	<!-- Visiblity -->
-	<section id="visiblity" class="section">
-		<div class="container">
-			<h2 class="section-title">Visiblity<code>utilities/visiblity.less</code></h2>
-			<p>Define content to be <code>visible</code> or <code>hidden</code>.</p>
-			<table class="table table-bordered table-block table-responsive">
-				<thead>
-					<tr>
-						<th>Class</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>	
-						<td><code>hide</code></td>
-						<td>Hides element <code>.hide();</code> mixin</td>
-					</tr>
-					<tr>	
-						<td><code>show</code></td>
-						<td>Shows element <code>.show();</code> mixin</td>
-					</tr>
-					<tr>	
-						<td><code>visible</code></td>
-						<td>Sets <code>visibility: visible;</code></td>
-					</tr>
-					<tr>	
-						<td><code>invisible</code></td>
-						<td>Sets <code>visibility: hidden;</code></td>
-					</tr>
-					<tr>	
-						<td><code>hidden-print</code></td>
-						<td>Hides element for when <code>@media print</code></td>
-					</tr>
-					<tr>	
-						<td><code>visible-print</code></td>
-						<td>Shows element for when <code>@media print</code></td>
-					</tr>
-					<tr>	
-						<td><code>hidden-screen</code></td>
-						<td>Hides element for when <code>@media screen</code></td>
-					</tr>
-					<tr>	
-						<td><code>visible-screen</code></td>
-						<td>Shows element for when <code>@media screen</code></td>
-					</tr>
-				</tbody>
-			</table>
-			<h3 class="section-block-title">Visibile Breakpoint Classes</h3>
-			<p>Define content to be <code>visible</code> at different breakpoints.<br><small>Note: <code>!important</code> is used to override specificity issues.</small></p>
-			<table class="table table-bordered table-block table-responsive">
-				<thead>
-					<tr>
-						<th width="25%"></th>
-						<th width="15%">Extra Small Devices<br><small>Phones (<767px)</small></th>
-						<th width="15%">Small Devices<br><small>Tablets (768px - 1023px)</small></th>
-						<th width="15%">Medium devices<br><small>Laptops (1024px - 1279px)</small></th>
-						<th width="15%">Large devices<br><small>Desktops (1280px - 1679px)</small></th>
-						<th width="15%">Extra Large devices<br><small>Large Desktops (≥1680px)</small></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td><code>.visible-xsmall</code></td>
-						<td class="is-visible">Visible</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-hidden">Hidden</td>
-					</tr>
-					<tr>
-						<td><code>.visible-small</code></td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-hidden">Hidden</td>
-					</tr>
-					<tr>
-						<td><code>.visible-small-up</code></td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-visible">Visible</td>
-					</tr>
-					<tr>
-						<td><code>.visible-small-down</code></td>
-						<td class="is-visible">Visible</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-hidden">Hidden</td>
-					</tr>
-					<tr>
-						<td><code>.visible-medium</code></td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-hidden">Hidden</td>
-					</tr>
-					<tr>
-						<td><code>.visible-medium-up</code></td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-visible">Visible</td>
-					</tr>
-					<tr>
-						<td><code>.visible-medium-down</code></td>
-						<td class="is-visible">Visible</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-hidden">Hidden</td>
-					</tr>
-					<tr>
-						<td><code>.visible-large</code></td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-hidden">Hidden</td>
-					</tr>
-					<tr>
-						<td><code>.visible-large-up</code></td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-visible">Visible</td>
-					</tr>
-					<tr>
-						<td><code>.visible-large-down</code></td>
-						<td class="is-visible">Visible</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-hidden">Hidden</td>
-					</tr>
-					<tr>
-						<td><code>.visible-xlarge</code></td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-visible">Visible</td>
-					</tr>
-				</tbody>
-			</table>
-			<h3 class="section-block-title">Hidden Breakpoint Classes</h3>
-			<p>Define content to be <code>hidden</code> at different breakpoints.<br><small>Note: <code>!important</code> is used to override specificity issues.</small></p>
-			<table class="table table-bordered table-block table-responsive">
-				<thead>
-					<tr>
-						<th width="25%"></th>
-						<th width="15%">Extra Small Devices<br><small>Phones (<767px)</small></th>
-						<th width="15%">Small Devices<br><small>Tablets (768px - 1023px)</small></th>
-						<th width="15%">Medium devices<br><small>Laptops (1024px - 1279px)</small></th>
-						<th width="15%">Large devices<br><small>Desktops (1280px - 1679px)</small></th>
-						<th width="15%">Extra Large devices<br><small>Large Desktops (≥1680px)</small></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td><code>.hidden-xsmall</code></td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-visible">Visible</td>
-					</tr>
-					<tr>
-						<td><code>.hidden-small</code></td>
-						<td class="is-visible">Visible</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-visible">Visible</td>
-					</tr>
-					<tr>
-						<td><code>.hidden-small-up</code></td>
-						<td class="is-visible">Visible</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-hidden">Hidden</td>
-					</tr>
-					<tr>
-						<td><code>.hidden-small-down</code></td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-visible">Visible</td>
-					</tr>
-					<tr>
-						<td><code>.hidden-medium</code></td>
-						<td class="is-visible">Visible</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-visible">Visible</td>
-					</tr>
-					<tr>
-						<td><code>.hidden-medium-up</code></td>
-						<td class="is-visible">Visible</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-hidden">Hidden</td>
-					</tr>
-					<tr>
-						<td><code>.hidden-medium-down</code></td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-visible">Visible</td>
-					</tr>
-					<tr>
-						<td><code>.hidden-large</code></td>
-						<td class="is-visible">Visible</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-visible">Visible</td>
-					</tr>
-					<tr>
-						<td><code>.hidden-large-up</code></td>
-						<td class="is-visible">Visible</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-hidden">Hidden</td>
-					</tr>
-					<tr>
-						<td><code>.hidden-large-down</code></td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-hidden">Hidden</td>
-						<td class="is-visible">Visible</td>
-					</tr>
-					<tr>
-						<td><code>.hidden-xlarge</code></td>
-						<td class="is-visible">Visible</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-visible">Visible</td>
-						<td class="is-hidden">Hidden</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
+			<h2 class="section-title">Background<code>utilities/background.less</code></h2>
+			<p class="background-white padding-xsmall">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			<p class="background-light-grey padding-xsmall">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			<p class="background-grey padding-xsmall text-white">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			<p class="background-dark-grey padding-xsmall text-white">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			<p class="background-black padding-xsmall text-white">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			<p class="background-error padding-xsmall">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			<p class="background-warning padding-xsmall">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			<p class="background-success padding-xsmall">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			<p class="background-info padding-xsmall">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			<p class="background-light padding-xsmall">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			<p class="background-primary padding-xsmall text-white">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			<p class="background-secondary padding-xsmall text-white">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			<p class="background-tertiary padding-xsmall text-white">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			<p class="background-dark padding-xsmall text-white">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			<pre class="language-markup"><code class="language-markup">&lt;p class=&quot;background-white&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;background-light-grey&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;background-grey&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;background-dark-grey&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;background-black&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;background-error&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;background-warning&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;background-success&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;background-info&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;background-light&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;background-primary&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;background-secondary&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;background-tertiary&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;background-dark&quot;&gt;...&lt;/p&gt;	</code></pre>		</div>
 	</section>
 
 	<!-- Mixins -->
@@ -3691,6 +4095,26 @@
 	</thead>
 	<tbody>
 		<tr>	
+			<td><code>.font(@family, @weight, @size);</code></td>
+			<td>Quick utility to set <code>font-family</code>, <code>font-weight</code> and <code>font-size</code> values</td>
+		</tr>
+		<tr>	
+			<td><code>.font-family(@family, @weight);</code></td>
+			<td>Quick utility to set <code>font-family</code> and <code>font-weight</code> values</td>
+		</tr>
+		<tr>	
+			<td><code>.font-face(@family, @weight: normal, @style: normal);</code></td>
+			<td>Import font using <code>@font-face</code></td>
+		</tr>
+		<tr>	
+			<td><code>.font-size(@rem);</code></td>
+			<td>Appends <code>font-size</code> value with <code>rem</code></td>
+		</tr>
+		<tr>	
+			<td><code>.font-size-pixel(@rem);</code></td>
+			<td>Sets <code>font-size</code> using <code>rem</code> with <code>px</code> fallback</td>
+		</tr>
+		<tr>	
 			<td><code>.thin-font();</code></td>
 			<td>Sets <code>font-family</code> and <code>font-weight</code> from values in <code>base/font.less</code></td>
 		</tr>
@@ -3709,22 +4133,6 @@
 		<tr>	
 			<td><code>.bold-font();</code></td>
 			<td>Sets <code>font-family</code> and <code>font-weight</code> from values in <code>base/font.less</code></td>
-		</tr>
-		<tr>	
-			<td><code>.font-family(@font-family, @font-weight);</code></td>
-			<td>Quick utility to set <code>font-family</code> and <code>font-weight</code> values</td>
-		</tr>
-		<tr>	
-			<td><code>.font-face(@family, @weight: normal, @style: normal);</code></td>
-			<td>Import font using <code>@font-face</code></td>
-		</tr>
-		<tr>	
-			<td><code>.font-size(@rem);</code></td>
-			<td>Appends <code>font-size</code> value with <code>rem</code></td>
-		</tr>
-		<tr>	
-			<td><code>.font-size-pixel(@rem);</code></td>
-			<td>Sets <code>font-size</code> using <code>rem</code> with <code>px</code> fallback</td>
 		</tr>
 	</tbody>
 </table>		</div>
@@ -4295,7 +4703,7 @@
 		<tr>
 			<td><code>transform</code></td>
 			<td class="is-unsupported">Not supported</td>
-			<td class="is-supported">Supported, with <code>-ms</code> prefix</td>
+			<td class="is-supported">2D transforms supported, with <code>-ms</code> prefix</td>
 		</tr>
 		<tr>
 			<td><code>transition</code></td>
@@ -4496,7 +4904,7 @@
 	</p>
 	<nav class="nav nav-inline">
 		<ul>
-			<li>v3.0.0</li>
+			<li>v3.1.0</li>
 			<li><a href="https://twitter.com/bigfishtvturret">Twitter</a></li>
 			<li><a href="https://github.com/bigfishtv/turret">GitHub</a></li>
 			<li><a href="index.html#examples">Examples</a></li>

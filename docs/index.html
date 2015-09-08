@@ -21,7 +21,7 @@
 </head>
 <body>
 <aside id="sidebar" class="sidebar">
-	<h3 class="sidebar-title"><a href="../index.html">Turret</a><code>v3.1.0</code></h3>
+	<h3 class="sidebar-title"><a href="../index.html">Turret</a><code>v3.1.1</code></h3>
 	<nav class="navigation">
 	<ul>
 		<li>
@@ -1091,15 +1091,7 @@
 @container-small: 100%;
 @container-medium: 1024px;
 @container-large: 1280px;
-@container-xlarge: 1680px;
-
-// Container Gutter
-@container-gutter: (@gutter / 2);
-@container-gutter-xlarge: @container-gutter;
-@container-gutter-large: @container-gutter;
-@container-gutter-medium: @container-gutter;
-@container-gutter-small: @container-gutter;
-@container-gutter-xsmall: @container-gutter;</code></pre>			<pre class="language-markup"><code class="language-markup">&lt;div class=&quot;container&quot;&gt;
+@container-xlarge: 1680px;</code></pre>			<pre class="language-markup"><code class="language-markup">&lt;div class=&quot;container&quot;&gt;
 	&lt;div class=&quot;row&quot;&gt;
 		&lt;div class=&quot;column-1-2&quot;&gt;...&lt;/div&gt;
 		&lt;div class=&quot;column-1-2&quot;&gt;...&lt;/div&gt;
@@ -1120,16 +1112,25 @@
 		<div class="container">
 			<h2 class="section-title">Gutter<code>grid/gutter.less</code></h2>
 			<h3 class="section-block-title">Gutters Classes</h3>
-			<div class="grid-item gutter-bottom">Gutter Bottom</div>
-			<div class="grid-item gutter-left">Gutter Left</div>
-			<div class="grid-item gutter-right">Gutter Right</div>
-			<div class="grid-item gutter-top">Gutter Top</div>
+			<div class="gutter-bottom">
+				<div class="grid-item">Gutter Bottom</div>
+			</div>
+			<div class="gutter-left">
+				<div class="grid-item">Gutter Left</div>
+			</div>
+			<div class="gutter-right">
+				<div class="grid-item">Gutter Right</div>
+			</div>
+			<div class="gutter-top">
+				<div class="grid-item">Gutter Top</div>
+			</div>
 			<pre class="language-less"><code class="language-less">// Gutter
-@gutter: 30px;
-@gutter-top: @gutter;
-@gutter-bottom: @gutter;
-@gutter-left: @gutter;
-@gutter-right: @gutter;</code></pre>			<pre class="language-markup"><code class="language-markup">&lt;div class=&quot;gutter-bottom&quot;&gt;...&lt;/div&gt;
+@gutter: 15px;
+@gutter-xlarge: @gutter;
+@gutter-large: @gutter;
+@gutter-medium: @gutter;
+@gutter-small: @gutter;
+@gutter-xsmall: @gutter;</code></pre>			<pre class="language-markup"><code class="language-markup">&lt;div class=&quot;gutter-bottom&quot;&gt;...&lt;/div&gt;
 &lt;div class=&quot;gutter-left&quot;&gt;...&lt;/div&gt;
 &lt;div class=&quot;gutter-right&quot;&gt;...&lt;/div&gt;
 &lt;div class=&quot;gutter-top&quot;&gt;...&lt;/div&gt;</code></pre>			<h3 class="section-block-title">No Gutter</h3>
@@ -4904,7 +4905,7 @@
 	</p>
 	<nav class="nav nav-inline">
 		<ul>
-			<li>v3.1.0</li>
+			<li>v3.1.1</li>
 			<li><a href="https://twitter.com/bigfishtvturret">Twitter</a></li>
 			<li><a href="https://github.com/bigfishtv/turret">GitHub</a></li>
 			<li><a href="index.html#examples">Examples</a></li>

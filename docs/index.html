@@ -21,7 +21,7 @@
 </head>
 <body>
 <aside id="sidebar" class="sidebar">
-	<h3 class="sidebar-title"><a href="../index.html">Turret</a><code>v3.1.4</code></h3>
+	<h3 class="sidebar-title"><a href="../index.html">Turret</a><code>v3.1.5</code></h3>
 	<nav class="navigation">
 	<ul>
 		<li>
@@ -115,6 +115,7 @@
 				<li><a href="index.html#visiblity">Visiblity</a></li>
 				<li><a href="index.html#display">Display</a></li>
 				<li><a href="index.html#positioning">Positioning</a></li>
+				<li><a href="index.html#flex">Flex</a></li>
 				<li><a href="index.html#float">Float</a></li>
 				<li><a href="index.html#max-width">Max Width</a></li>
 				<li><a href="index.html#margin">Margin</a></li>
@@ -358,6 +359,7 @@
 								<li><code>visiblity.less</code></li>
 								<li><code>display.less</code></li>
 								<li><code>positioning.less</code></li>
+								<li><code>flex.less</code></li>
 								<li><code>float.less</code></li>
 								<li><code>max-width.less</code></li>
 								<li><code>margin.less</code></li>
@@ -516,6 +518,7 @@
 @body-font-weight: @regular-font-weight; 
 @body-color: @dark;
 @body-line-height: @line-height-medium;
+@body-letter-spacing: 0.02rem;
 @body-background: @white;</code></pre>		</div>
 	</section>
 
@@ -644,7 +647,7 @@
 
 // Link Hover
 @link-hover-color: @dark;
-@link-hover-decoration: none;</code></pre>			<pre class="language-markup"><code class="language-markup">&lt;a href=&quot;&quot;&gt;...&lt;/a&gt;</code></pre>		</div>
+@link-hover-decoration: underline;</code></pre>			<pre class="language-markup"><code class="language-markup">&lt;a href=&quot;&quot;&gt;...&lt;/a&gt;</code></pre>		</div>
 	</section>
 
 	<!-- Image -->
@@ -2045,7 +2048,7 @@
 		<div class="container">
 			<h2 class="section-title">Control<code>forms/control.less</code></h2>
 			<pre class="language-less"><code class="language-less">// Control
-@control-margin: @label-margin;
+@control-margin: @input-margin;
 @control-padding: 0px 0px 0px 1.5em;
 @control-color: @input-color;
 
@@ -2062,10 +2065,11 @@
 
 // Control Label
 @control-label-margin: 0px 0px 0px 10px;
-@control-label-font-family: @label-font-family;
+@control-label-font-family: @input-font-family;
+@control-label-font-weight: @input-font-weight;
 @control-label-font-size: @label-font-size;
-@control-label-color: @label-color;
-@control-label-line-height: 1.5;
+@control-label-color: @input-color;
+@control-label-line-height: @input-line-height;
 
 // Control Inline
 @control-inline-margin-right: 20px;
@@ -3284,6 +3288,34 @@
 		<tr>
 			<td><code>position-center</code></td>
 			<td>Positions element centered vertically and horizontally of it's container</td>
+		</tr>
+	</tbody>
+</table>		</div>
+	</section>
+
+	<!-- Flex -->
+	<section id="flex" class="section">
+		<div class="container">
+			<h2 class="section-title">Flex<code>utilities/flex.less</code></h2>
+			<table class="table table-bordered table-block table-responsive">
+	<thead>
+		<tr>
+			<th>Class</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>flex</code></td>
+			<td>Adds <code>display: flex;</code> and <code>align-items: center;</code> styles</td>
+		</tr>
+		<tr>
+			<td><code>flex-left</code></td>
+			<td>Flex aligns element left</td>
+		</tr>
+		<tr>
+			<td><code>flex-right</code></td>
+			<td>Flex aligns element right</td>
 		</tr>
 	</tbody>
 </table>		</div>
@@ -4901,7 +4933,7 @@
 	</p>
 	<nav class="nav nav-inline">
 		<ul>
-			<li>v3.1.4</li>
+			<li>v3.1.5</li>
 			<li><a href="https://twitter.com/bigfishtvturret">Twitter</a></li>
 			<li><a href="https://github.com/bigfishtv/turret">GitHub</a></li>
 			<li><a href="index.html#examples">Examples</a></li>

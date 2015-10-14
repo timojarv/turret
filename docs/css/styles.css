@@ -401,6 +401,7 @@ body {
   font-weight: 400;
   color: #434a54;
   line-height: 1.35;
+  letter-spacing: 0.02rem;
   background: #ffffff;
 }
 /*
@@ -449,10 +450,10 @@ a {
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
 }
-a:hover,
-a:focus {
+a:not(.button):hover,
+a:not(.button):focus {
   color: #434a54;
-  text-decoration: none;
+  text-decoration: underline;
 }
 /*
  * Definitions
@@ -5817,9 +5818,10 @@ textarea.info {
   display: block;
   margin: 0px 0px 0px 10px;
   font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
   font-size: 1.3rem;
   color: #434a54;
-  line-height: 1.5;
+  line-height: 1.35;
   pointer-events: none;
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
@@ -6904,6 +6906,21 @@ td {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+/*
+ * Flex
+ */
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex-left {
+  display: flex;
+  flex: 1;
+}
+.flex-right {
+  display: flex;
+  flex: 0 0 auto;
 }
 /*
  * Float

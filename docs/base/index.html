@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+  	
+  		Base - Turret - A Responsive Front-end Framework for Accessible and Semantic Websites
+  	
+  </title>
+  <meta name="description" content="Turret is a responsive front-end framework for accessible and semantic website development.Turret defines base styles for all HTML5 native web elements and includes a simple and intuitive grid system for rapid responsive website development">
+
+  <link rel="shortcut icon" href="/turret/assets/icons/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/turret/assets/icons/favicon.ico" type="image/x-icon" />
+
+  <link rel="stylesheet" href="/turret/assets/css/turret.css">
+  <link rel="stylesheet" href="/turret/assets/css/docs.css">
+</head>
+
+  <body>
+
+    <aside class="docs-sidebar">
+
+  <form id="search-container" class="docs-search">
+  <input id="search-input" class="docs-search-input" type="search" placeholder="Search Documentation">
+  <ul id="search-results" class="docs-search-results"></ul>
+</form>
+
+
+  <nav class="docs-navigation">
+    <ul>
+      <li class="">
+        <a href="/turret/">Turret</a></a>
+      </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/getting-started/">Getting Started</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#download">Download</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#structure">Structure</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#usage">Usage</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#documentation">Documentation</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#examples">Examples</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="active">
+          <a href="/turret/docs/base/">Base</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#global">Global</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#root">Root</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#body">Body</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#colors">Colors</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#font">Font</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#link">Link</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#image">Image</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#breakpoints">Breakpoints</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#media-queries">Media Queries</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#print">Print</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/typography/">Typography</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#headings">Headings</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#strong">Strong</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#emphasis">Emphasis</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#paragraph">Paragraph</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#lead">Lead</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#hr">hr</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#blockquote">Blockquote</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#pullout">Pullout</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#list">List</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#definition-list">Definition List</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#code">Code</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#pre">Pre</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#kbd">Kbd</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#mark">Mark</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/grid/">Grid</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#container">Container</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#row">Row</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#column">Column</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#offset">Offset</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#push">Push</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#pull">Pull</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/form/">Form</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#form-examples">Form Examples</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#label">Label</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#fieldset">Fieldset</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#form-message">Form Message</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#input">Input</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#input-indicators">Input Indicators</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#input-sizes">Input Sizes</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#input-group">Input Group</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#input-group-sizes">Input Group Sizes</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#control">Control</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#select">Select</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#select-sizes">Select Sizes</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/elements/">Elements</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#button">Button</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#button-styles">Button Styles</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#button-indicators">Button Indicators</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#button-sizes">Button Sizes</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#button-group">Button Group</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#button-icon">Button Icon</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#figure">Figure</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#media">Media</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#nav">Nav</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#table">Table</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/utilities/">Utilities</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#utility-classes">Utility Classes</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#visibility">Visibility</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#display">Display</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#positioning">Positioning</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#flex">Flex</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#float">Float</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#max-width">Max Width</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#margin">Margin</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#padding">Padding</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#font-family">Font Family</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#font-size">Font Size</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#text">Text</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#text-color">Text Color</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#background">Background</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/mixins/">Mixins</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#general">General</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#input">Input</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#select">Select</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#button">Button</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#font">Font</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#border-radius">Border Radius</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#background">Background</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#placeholder">Placeholder</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#arrows">Arrows</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#transitions">Transitions</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#transforms">Transforms</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#animations">Animations</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#filters">Filters</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#flexbox">Flexbox</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/support/">Support</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#browsers">Browsers</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#css">CSS</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/accessibility/">Accessibility</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#screen-reader">Screen Reader</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#aria-roles">ARIA Roles</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/notes/">Notes</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#contributors">Contributors</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#licence">Licence</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#licence-notes">Licence Notes</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+    </ul>
+</nav>
+
+</aside>
+
+
+<main class="docs-main">
+
+  <header class="docs-header">
+    <h1 class="docs-header-title">Turret</h1>
+    <button id="toggle" class="docs-header-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </header>
+
+  <section class="docs-page-header">
+    <div class="container">
+      <h1>Base</h1>
+      <p class="lead">An overview of Turret and basic styling behaviours including color palettes, text colors, breakpoints and media queries. Includes base styles for body, images, typography, basic generic font styles, and responsive text scaling behaviours.</p>
+    </div>
+  </section>
+
+  <section class="docs-content">
+    <div class="container">
+      <h2 id="global">Global</h2>
+
+<h3 id="border-radius">Border Radius</h3>
+
+<p>Default border-radius definitions for buttons, inputs etc.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Border Radius
+</span><span class="k">@border-radius</span><span class="nd">:</span> <span class="nt">2px</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<h3 id="z-index">Z-Index</h3>
+
+<p>Z-index utility definitions for general use.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Z-Index
+</span><span class="k">@z-index-high</span><span class="nd">:</span> <span class="nt">999</span><span class="p">;</span>
+<span class="k">@z-index-medium</span><span class="nd">:</span> <span class="nt">99</span><span class="p">;</span>
+<span class="k">@z-index-low</span><span class="nd">:</span> <span class="nt">9</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<h3 id="animation">Animation</h3>
+
+<p>Default animation speeds.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Animation
+</span><span class="k">@animation-fast</span><span class="nd">:</span> <span class="nt">0</span><span class="nc">.5s</span><span class="p">;</span>
+<span class="k">@animation-medium</span><span class="nd">:</span> <span class="nt">1s</span><span class="p">;</span>
+<span class="k">@animation-slow</span><span class="nd">:</span> <span class="nt">2s</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<h3 id="transition">Transition</h3>
+
+<p>Default transition speeds.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Transition
+</span><span class="k">@transition-fast</span><span class="nd">:</span> <span class="nt">0</span><span class="nc">.2s</span><span class="p">;</span>
+<span class="k">@transition-medium</span><span class="nd">:</span> <span class="nt">0</span><span class="nc">.3s</span><span class="p">;</span>
+<span class="k">@transition-slow</span><span class="nd">:</span> <span class="nt">0</span><span class="nc">.5s</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<h3 id="height">Height</h3>
+
+<p>Height sizes for buttons, inputs, input-groups, selects etc.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Height
+</span><span class="k">@height-xlarge</span><span class="nd">:</span> <span class="nt">6</span><span class="nc">.5rem</span><span class="p">;</span>
+<span class="k">@height-large</span><span class="nd">:</span> <span class="nt">5</span><span class="nc">.0rem</span><span class="p">;</span>
+<span class="k">@height-medium</span><span class="nd">:</span> <span class="nt">4</span><span class="nc">.0rem</span><span class="p">;</span>
+<span class="k">@height-small</span><span class="nd">:</span> <span class="nt">3</span><span class="nc">.0rem</span><span class="p">;</span>
+<span class="k">@height-xsmall</span><span class="nd">:</span> <span class="nt">2</span><span class="nc">.0rem</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<h3 id="margin">Margin</h3>
+
+<p>Margin sizes (xlarge, large, medium, small, xsmall) for use globally, including utility classes.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Margin
+</span><span class="k">@margin-xlarge</span><span class="nd">:</span> <span class="nt">10</span><span class="nc">.0rem</span><span class="p">;</span>
+<span class="k">@margin-large</span><span class="nd">:</span> <span class="nt">6</span><span class="nc">.5rem</span><span class="p">;</span>
+<span class="k">@margin-medium</span><span class="nd">:</span> <span class="nt">5</span><span class="nc">.0rem</span><span class="p">;</span>
+<span class="k">@margin-small</span><span class="nd">:</span> <span class="nt">3</span><span class="nc">.5rem</span><span class="p">;</span>
+<span class="k">@margin-xsmall</span><span class="nd">:</span> <span class="nt">2</span><span class="nc">.0rem</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<h3 id="padding">Padding</h3>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Padding
+</span><span class="k">@padding-xlarge</span><span class="nd">:</span> <span class="nt">10</span><span class="nc">.0rem</span><span class="p">;</span>
+<span class="k">@padding-large</span><span class="nd">:</span> <span class="nt">6</span><span class="nc">.5rem</span><span class="p">;</span>
+<span class="k">@padding-medium</span><span class="nd">:</span> <span class="nt">5</span><span class="nc">.0rem</span><span class="p">;</span>
+<span class="k">@padding-small</span><span class="nd">:</span> <span class="nt">3</span><span class="nc">.5rem</span><span class="p">;</span>
+<span class="k">@padding-xsmall</span><span class="nd">:</span> <span class="nt">2</span><span class="nc">.0rem</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<h3 id="max-width">Max Width</h3>
+
+<p>Max Width sizes (xlarge, large, medium, small, xsmall) for use globally, including utility classes.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Max Width
+</span><span class="k">@max-width-xlarge</span><span class="nd">:</span> <span class="nt">1280px</span><span class="p">;</span>
+<span class="k">@max-width-large</span><span class="nd">:</span> <span class="nt">1024px</span><span class="p">;</span>
+<span class="k">@max-width-medium</span><span class="nd">:</span> <span class="nt">800px</span><span class="p">;</span>
+<span class="k">@max-width-small</span><span class="nd">:</span> <span class="nt">600px</span><span class="p">;</span>
+<span class="k">@max-width-xsmall</span><span class="nd">:</span> <span class="nt">450px</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<h2 id="root">Root</h2>
+
+<p>Sets @root-size on the <code class="highlighter-rouge">:root</code> element with responsive breakpoints.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Root Size
+</span><span class="k">@root-size</span><span class="nd">:</span> <span class="nt">10px</span><span class="p">;</span>
+<span class="k">@root-size-xlarge</span><span class="nd">:</span> <span class="o">@</span><span class="nt">root-size</span><span class="p">;</span>
+<span class="k">@root-size-large</span><span class="nd">:</span> <span class="o">@</span><span class="nt">root-size</span><span class="p">;</span>
+<span class="k">@root-size-medium</span><span class="nd">:</span> <span class="o">@</span><span class="nt">root-size</span><span class="p">;</span>
+<span class="k">@root-size-small</span><span class="nd">:</span> <span class="o">@</span><span class="nt">root-size</span> <span class="nt">-</span> <span class="nt">1</span><span class="p">;</span>
+<span class="k">@root-size-xsmall</span><span class="nd">:</span> <span class="o">@</span><span class="nt">root-size</span> <span class="nt">-</span> <span class="nt">1</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<h2 id="body">Body</h2>
+
+<p>Some top level definitions for general styles on the <code class="highlighter-rouge">&lt;body&gt;</code> tag.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Body
+</span><span class="k">@body-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">regular-font-family</span><span class="p">;</span>
+<span class="k">@body-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">regular-font-weight</span><span class="p">;</span> 
+<span class="k">@body-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">dark</span><span class="p">;</span>
+<span class="k">@body-line-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">line-height-medium</span><span class="p">;</span>
+<span class="k">@body-letter-spacing</span><span class="nd">:</span> <span class="nt">0</span><span class="nc">.03rem</span><span class="p">;</span>
+<span class="k">@body-background</span><span class="nd">:</span> <span class="o">@</span><span class="nt">white</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<h2 id="colors">Colors</h2>
+
+<h3 id="shades">Shades</h3>
+
+<div class="docs-swatches">
+  <div class="docs-swatch background-white"><small>White</small></div>
+  <div class="docs-swatch background-light-grey"><small>Light Grey</small></div>
+  <div class="docs-swatch background-grey"><small>Grey</small></div>
+  <div class="docs-swatch background-dark-grey"><small>Dark Grey</small></div>
+  <div class="docs-swatch background-black"><small>Black</small></div>
+</div>
+
+<h3 id="indicators">Indicators</h3>
+
+<div class="docs-swatches">
+  <div class="docs-swatch background-info"><small>Info</small></div>
+  <div class="docs-swatch background-error"><small>Error</small></div>
+  <div class="docs-swatch background-warning"><small>Warning</small></div>
+  <div class="docs-swatch background-success"><small>Success</small></div>
+</div>
+
+<h3 id="palette">Palette</h3>
+
+<div class="docs-swatches">
+  <div class="docs-swatch background-light"><small>Light</small></div>
+  <div class="docs-swatch background-primary"><small>Primary</small></div>
+  <div class="docs-swatch background-secondary"><small>Secondary</small></div>
+  <div class="docs-swatch background-tertiary"><small>Tertiary</small></div>
+  <div class="docs-swatch background-dark"><small>Dark</small></div>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">//Shades
+</span><span class="k">@white</span><span class="nd">:</span> <span class="nn">#FFFFFF</span><span class="p">;</span>
+<span class="k">@black</span><span class="nd">:</span> <span class="nn">#000000</span><span class="p">;</span>
+<span class="k">@light-grey</span><span class="nd">:</span> <span class="nn">#DEDEE4</span><span class="p">;</span>
+<span class="k">@grey</span><span class="nd">:</span> <span class="nn">#656D78</span><span class="p">;</span>
+<span class="k">@dark-grey</span><span class="nd">:</span> <span class="nn">#434A54</span><span class="p">;</span>
+
+<span class="c1">//Indicators
+</span><span class="k">@info</span><span class="nd">:</span> <span class="nn">#149CFD</span><span class="p">;</span>
+<span class="k">@error</span><span class="nd">:</span> <span class="nn">#E01A2E</span><span class="p">;</span>
+<span class="k">@warn</span><span class="n">ing</span><span class="o">:</span> <span class="mh">#FFC200</span><span class="p">;</span>
+<span class="k">@success</span><span class="nd">:</span> <span class="nn">#05BE55</span><span class="p">;</span>
+
+<span class="c1">//Palette
+</span><span class="k">@light</span><span class="nd">:</span> <span class="nn">#FAFAFD</span><span class="p">;</span>
+<span class="k">@dark</span><span class="nd">:</span> <span class="o">@</span><span class="nt">dark-grey</span><span class="p">;</span>
+<span class="k">@primary</span><span class="nd">:</span> <span class="nn">#05BED5</span><span class="p">;</span>
+<span class="k">@secondary</span><span class="nd">:</span> <span class="nn">#8D48AB</span><span class="p">;</span>
+<span class="k">@tertiary</span><span class="nd">:</span> <span class="nn">#B2347E</span><span class="p">;</span>
+
+<span class="c1">//Utility
+</span><span class="k">@inverse</span><span class="nd">:</span> <span class="o">@</span><span class="nt">dark</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<h2 id="font">Font</h2>
+
+<p>Some top level definitions for the base font-size styles on the <code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code> tag, with breakpoints.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Fonts
+</span><span class="k">@font-path</span><span class="nd">:</span> <span class="s1">'../fonts'</span><span class="p">;</span>
+<span class="k">@sans-serif-font-family</span><span class="nd">:</span> <span class="s2">"Helvetica Neue"</span><span class="o">,</span> <span class="nt">Helvetica</span><span class="o">,</span> <span class="nt">Arial</span><span class="o">,</span> <span class="nt">sans-serif</span><span class="p">;</span>
+<span class="k">@serif-font-family</span><span class="nd">:</span> <span class="nt">Georgia</span><span class="o">,</span> <span class="s2">"Times New Roman"</span><span class="o">,</span> <span class="nt">Times</span><span class="o">,</span> <span class="nt">serif</span><span class="p">;</span>
+<span class="k">@monospace-font-family</span><span class="nd">:</span> <span class="nt">Monaco</span><span class="o">,</span> <span class="nt">Menlo</span><span class="o">,</span> <span class="nt">Consolas</span><span class="o">,</span> <span class="s2">"Courier New"</span><span class="o">,</span> <span class="nt">monospace</span><span class="p">;</span>
+
+<span class="c1">// Generic Font Families
+</span><span class="k">@thin-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">sans-serif-font-family</span><span class="p">;</span>
+<span class="k">@regular-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">sans-serif-font-family</span><span class="p">;</span>
+<span class="k">@medium-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">sans-serif-font-family</span><span class="p">;</span>
+<span class="k">@semibold-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">sans-serif-font-family</span><span class="p">;</span>
+<span class="k">@bold-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">sans-serif-font-family</span><span class="p">;</span>
+
+<span class="c1">// Generic Font Weights
+</span><span class="k">@thin-font-weight</span><span class="nd">:</span> <span class="nt">300</span><span class="p">;</span>
+<span class="k">@regular-font-weight</span><span class="nd">:</span> <span class="nt">400</span><span class="p">;</span>
+<span class="k">@medium-font-weight</span><span class="nd">:</span> <span class="nt">500</span><span class="p">;</span>
+<span class="k">@semibold-font-weight</span><span class="nd">:</span> <span class="nt">600</span><span class="p">;</span>
+<span class="k">@bold-font-weight</span><span class="nd">:</span> <span class="nt">700</span><span class="p">;</span>
+
+<span class="c1">// Font Sizes
+</span><span class="k">@font-size-xlarge</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.8</span><span class="p">;</span>
+<span class="k">@font-size-large</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.6</span><span class="p">;</span>
+<span class="k">@font-size-medium</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.4</span><span class="p">;</span>
+<span class="k">@font-size-small</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.2</span><span class="p">;</span>
+<span class="k">@font-size-xsmall</span><span class="nd">:</span> <span class="nt">1</span><span class="p">;</span>
+
+<span class="c1">// Line height
+</span><span class="k">@line-height-xlarge</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.8</span><span class="p">;</span>
+<span class="k">@line-height-large</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.65</span><span class="p">;</span>
+<span class="k">@line-height-medium</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.5</span><span class="p">;</span>
+<span class="k">@line-height-small</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.35</span><span class="p">;</span>
+<span class="k">@line-height-xsmall</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.2</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<h3 id="font-families">Font Families</h3>
+
+<p class="sans-serif-font">Sans Serif Font</p>
+<p class="serif-font">Serif Font</p>
+<p class="monospace-font">Monospace Font</p>
+<p class="thin-font">Thin Font</p>
+<p class="regular-font">Regular Font</p>
+<p class="medium-font">Medium Font</p>
+<p class="semibold-font">Semibold Font</p>
+<p class="bold-font">Bold Font</p>
+
+<h3 id="font-sizes">Font Sizes</h3>
+
+<p class="font-size-xlarge">Font Size Extra Large</p>
+<p class="font-size-large">Font Size Large</p>
+<p class="font-size-medium">Font Size Medium</p>
+<p class="font-size-small">Font Size Small</p>
+<p class="font-size-xsmall">Font Size Extra Small</p>
+
+<h2 id="link">Link</h2>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Link
+</span><span class="k">@link-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">primary</span><span class="p">;</span>
+<span class="k">@link-text-decoration</span><span class="nd">:</span> <span class="nt">none</span><span class="p">;</span>
+
+<span class="c1">// Link Hover
+</span><span class="k">@link-hover-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">dark</span><span class="p">;</span>
+<span class="k">@link-hover-decoration</span><span class="nd">:</span> <span class="nt">underline</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<p><a href="index.html">Link</a></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="image">Image</h2>
+
+<h3 id="responsive-image">Responsive Image</h3>
+
+<p>Images in Turret can be made responsive-friendly via the addition of the <code class="highlighter-rouge">.responsive</code> class. This applies <code class="highlighter-rouge">max-width: 100%; and height: auto;</code> to the image so that it scales nicely to the parent element.</p>
+
+<p><img src="/turret/assets/images/photo.svg" class="responsive" /></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"responsive"</span><span class="nt">&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="image-styles">Image Styles</h3>
+
+<p><img src="/turret/assets/images/image.svg" class="rounded" /></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">@image-rounded-border-radius</span><span class="nd">:</span> <span class="nt">8px</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"responsive"</span><span class="nt">&gt;</span>
+</code></pre>
+</div>
+
+<p><img src="/turret/assets/images/image.svg" class="circle" /></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"circle"</span><span class="nt">&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="breakpoints">Breakpoints</h2>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Screen Sizes
+</span><span class="k">@screen-xsmall</span><span class="nd">:</span> <span class="nt">480px</span><span class="p">;</span>
+<span class="k">@screen-xsmall-max</span><span class="nd">:</span> <span class="o">(@</span><span class="nt">screen-small-min</span> <span class="nt">-</span> <span class="nt">1</span><span class="o">)</span><span class="p">;</span>
+<span class="k">@screen-small</span><span class="nd">:</span> <span class="nt">768px</span><span class="p">;</span>
+<span class="k">@screen-small-min</span><span class="nd">:</span> <span class="o">@</span><span class="nt">screen-small</span><span class="p">;</span>
+<span class="k">@screen-small-max</span><span class="nd">:</span> <span class="o">(@</span><span class="nt">screen-medium-min</span> <span class="nt">-</span> <span class="nt">1</span><span class="o">)</span><span class="p">;</span>
+<span class="k">@screen-medium</span><span class="nd">:</span> <span class="nt">1024px</span><span class="p">;</span>
+<span class="k">@screen-medium-min</span><span class="nd">:</span> <span class="o">@</span><span class="nt">screen-medium</span><span class="p">;</span>
+<span class="k">@screen-medium-max</span><span class="nd">:</span> <span class="o">(@</span><span class="nt">screen-large-min</span> <span class="nt">-</span> <span class="nt">1</span><span class="o">)</span><span class="p">;</span>
+<span class="k">@screen-large</span><span class="nd">:</span> <span class="nt">1280px</span><span class="p">;</span>
+<span class="k">@screen-large-min</span><span class="nd">:</span> <span class="o">@</span><span class="nt">screen-large</span><span class="p">;</span>
+<span class="k">@screen-large-max</span><span class="nd">:</span> <span class="o">(@</span><span class="nt">screen-xlarge-min</span> <span class="nt">-</span> <span class="nt">1</span><span class="o">)</span><span class="p">;</span>
+<span class="k">@screen-xlarge</span><span class="nd">:</span> <span class="nt">1680px</span><span class="p">;</span>
+<span class="k">@screen-xlarge-min</span><span class="nd">:</span> <span class="o">@</span><span class="nt">screen-xlarge</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<div class="table-responsive">
+  <table>
+    <thead>
+      <tr>
+        <th width="25%">Breakpoint</th>
+        <th width="25%">Device</th>
+        <th width="25%">Min Width</th>
+        <th width="25%">Max Width</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>xsmall</td>
+        <td>Phone</td>
+        <td class="is-null"></td>
+        <td>767px</td>
+      </tr>
+      <tr>
+        <td>small</td>
+        <td>Tablet</td>
+        <td>768px</td>
+        <td>1023px</td>
+      </tr>
+      <tr>
+        <td>medium</td>
+        <td>Laptop</td>
+        <td>1024px</td>
+        <td>1279px</td>
+      </tr>
+      <tr>
+        <td>large</td>
+        <td>Desktop</td>
+        <td>1280px</td>
+        <td>1679px</td>
+      </tr>
+      <tr>
+        <td>xlarge</td>
+        <td>Large Screen</td>
+        <td>1680px</td>
+        <td class="is-null"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="media-queries">Media Queries</h2>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Orientation
+</span><span class="k">@portrait</span><span class="nd">:</span> <span class="o">~</span><span class="s2">"(orientation: portrait)"</span><span class="p">;</span>
+<span class="k">@landscape</span><span class="nd">:</span> <span class="o">~</span><span class="s2">"(orientation: landscape)"</span><span class="p">;</span>
+
+<span class="c1">// Breakpoints
+</span><span class="k">@xsmall</span><span class="nd">:</span> <span class="o">~</span><span class="s2">"(max-width: @{screen-xsmall-max})"</span><span class="p">;</span>
+<span class="k">@small</span><span class="nd">:</span> <span class="o">~</span><span class="s2">"(min-width: @{screen-small-min}) and (max-width: @{screen-small-max})"</span><span class="p">;</span>
+<span class="k">@small-up</span><span class="nd">:</span> <span class="o">~</span><span class="s2">"(min-width: @{screen-small-min})"</span><span class="p">;</span>
+<span class="k">@small-down</span><span class="nd">:</span> <span class="o">~</span><span class="s2">"(max-width: @{screen-small-max})"</span><span class="p">;</span>
+<span class="k">@medium</span><span class="nd">:</span> <span class="o">~</span><span class="s2">"(min-width: @{screen-medium-min}) and (max-width: @{screen-medium-max})"</span><span class="p">;</span>
+<span class="k">@medium-up</span><span class="nd">:</span> <span class="o">~</span><span class="s2">"(min-width: @{screen-medium-min})"</span><span class="p">;</span>
+<span class="k">@medium-down</span><span class="nd">:</span> <span class="o">~</span><span class="s2">"(max-width: @{screen-medium-max})"</span><span class="p">;</span>
+<span class="k">@large</span><span class="nd">:</span> <span class="o">~</span><span class="s2">"(min-width: @{screen-large-min}) and (max-width: @{screen-large-max})"</span><span class="p">;</span>
+<span class="k">@large-up</span><span class="nd">:</span> <span class="o">~</span><span class="s2">"(min-width: @{screen-large-min})"</span><span class="p">;</span>
+<span class="k">@large-down</span><span class="nd">:</span> <span class="o">~</span><span class="s2">"(max-width: @{screen-large-max})"</span><span class="p">;</span>
+<span class="k">@xlarge</span><span class="nd">:</span> <span class="o">~</span><span class="s2">"(min-width: @{screen-xlarge})"</span><span class="p">;</span>
+
+<span class="c1">// Retina
+</span><span class="k">@retina</span><span class="nd">:</span> <span class="o">~</span><span class="s2">"only screen and (-webkit-min-device-pixel-ratio: 1.5)"</span><span class="o">,</span>
+<span class="o">~</span><span class="s2">"only screen and (min--moz-device-pixel-ratio: 1.5)"</span><span class="o">,</span>
+<span class="o">~</span><span class="s2">"only screen and (-o-min-device-pixel-ratio: 3/2)"</span><span class="o">,</span>
+<span class="o">~</span><span class="s2">"only screen and (min-device-pixel-ratio: 1.5)"</span><span class="p">;</span>
+
+<span class="c1">// IE Media Queries
+</span><span class="k">@ie6-7</span><span class="nd">:</span> <span class="nt">screen</span><span class="err">\</span><span class="nt">9</span><span class="p">;</span>
+<span class="k">@ie8</span><span class="nd">:</span> <span class="err">\</span><span class="nt">0screen</span><span class="p">;</span>
+<span class="k">@oldIE</span><span class="nd">:</span> <span class="o">~</span><span class="s2">"@{ie8}\,@{ie6-7}"</span><span class="p">;</span>
+<span class="k">@ie9-10</span><span class="nd">:</span> <span class="o">~</span><span class="s2">"screen and (min-width:0\0)"</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<h2 id="print">Print</h2>
+
+<p>By default Turret’s print styles are formatted for <code class="highlighter-rouge">A4</code> page size with a margin of <code class="highlighter-rouge">1.5cm 2cm</code>. Print styles include making text <code class="highlighter-rouge">@black</code>, and removing backgrounds from elements by default. Links are displayed next to anchors using <code class="highlighter-rouge">:after</code> pseudo content.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Print Page
+</span><span class="k">@print-page-size</span><span class="nd">:</span> <span class="nt">A4</span><span class="p">;</span>
+<span class="k">@print-page-margin</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.5cm</span> <span class="nt">2cm</span><span class="p">;</span>
+</code></pre>
+</div>
+
+    </div>
+  </section>
+  
+  <footer class="docs-footer">
+  <div class="container">
+    <p>
+    	Designed and built at <a href="http://bigfish.tv">bigfish.tv</a> by <a href="https://twitter.com/scottdejonge">@scottdejonge</a>.
+    	<br>
+    	Code licensed under <a href="https://github.com/bigfishtv/turret/blob/master/LICENSE">MIT</a>, documentation under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
+    </p>
+
+	<p>
+		v3.2.0 &middot;
+		<a href="/turret/blog">Blog</a> &middot; 
+		<a href="https://twitter.com/turretcss">Twitter</a> &middot; 
+		<a href="https://github.com/bigfishtv/turret">GitHub</a> &middot; 
+		<a href="https://bigfishtv.github.io/turret/2.0.12/">v2.0.12 Docs</a> &middot; 
+		<a href="https://github.com/bigfishtv/turret/issues">Issues</a> &middot; 
+		<a href="https://github.com/bigfishtv/turret/releases">Releases</a>
+	</p>
+  </div>
+</footer>
+
+</main>
+
+<div class="clearfix"></div>
+
+<script type="text/javascript" src="/turret/assets/js/main.js"></script>
+
+<script type="text/javascript" src="/turret/assets/js/vendor/jekyll-search.min.js"></script>
+<script>
+  SimpleJekyllSearch.init({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('search-results'),
+    searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+    noResultsText: '<div class="docs-search-no-results">Sorry, there are no results for that search.</div>',
+    json: '/search.json'
+  })
+</script>
+
+  </body>
+</html>

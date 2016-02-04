@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+  	
+  		Typography - Turret - A Responsive Front-end Framework for Accessible and Semantic Websites
+  	
+  </title>
+  <meta name="description" content="Turret is a responsive front-end framework for accessible and semantic website development.Turret defines base styles for all HTML5 native web elements and includes a simple and intuitive grid system for rapid responsive website development">
+
+  <link rel="shortcut icon" href="/turret/assets/icons/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/turret/assets/icons/favicon.ico" type="image/x-icon" />
+
+  <link rel="stylesheet" href="/turret/assets/css/turret.css">
+  <link rel="stylesheet" href="/turret/assets/css/docs.css">
+</head>
+
+  <body>
+
+    <aside class="docs-sidebar">
+
+  <form id="search-container" class="docs-search">
+  <input id="search-input" class="docs-search-input" type="search" placeholder="Search Documentation">
+  <ul id="search-results" class="docs-search-results"></ul>
+</form>
+
+
+  <nav class="docs-navigation">
+    <ul>
+      <li class="">
+        <a href="/turret/">Turret</a></a>
+      </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/getting-started/">Getting Started</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#download">Download</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#structure">Structure</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#usage">Usage</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#documentation">Documentation</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#examples">Examples</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/base/">Base</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#global">Global</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#root">Root</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#body">Body</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#colors">Colors</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#font">Font</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#link">Link</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#image">Image</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#breakpoints">Breakpoints</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#media-queries">Media Queries</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#print">Print</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="active">
+          <a href="/turret/docs/typography/">Typography</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#headings">Headings</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#strong">Strong</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#emphasis">Emphasis</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#paragraph">Paragraph</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#lead">Lead</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#hr">hr</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#blockquote">Blockquote</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#pullout">Pullout</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#list">List</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#definition-list">Definition List</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#code">Code</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#pre">Pre</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#kbd">Kbd</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#mark">Mark</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/grid/">Grid</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#container">Container</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#row">Row</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#column">Column</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#offset">Offset</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#push">Push</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#pull">Pull</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/form/">Form</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#form-examples">Form Examples</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#label">Label</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#fieldset">Fieldset</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#form-message">Form Message</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#input">Input</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#input-indicators">Input Indicators</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#input-sizes">Input Sizes</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#input-group">Input Group</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#input-group-sizes">Input Group Sizes</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#control">Control</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#select">Select</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#select-sizes">Select Sizes</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/elements/">Elements</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#button">Button</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#button-styles">Button Styles</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#button-indicators">Button Indicators</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#button-sizes">Button Sizes</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#button-group">Button Group</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#button-icon">Button Icon</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#figure">Figure</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#media">Media</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#nav">Nav</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#table">Table</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/utilities/">Utilities</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#utility-classes">Utility Classes</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#visibility">Visibility</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#display">Display</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#positioning">Positioning</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#flex">Flex</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#float">Float</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#max-width">Max Width</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#margin">Margin</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#padding">Padding</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#font-family">Font Family</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#font-size">Font Size</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#text">Text</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#text-color">Text Color</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#background">Background</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/mixins/">Mixins</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#general">General</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#input">Input</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#select">Select</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#button">Button</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#font">Font</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#border-radius">Border Radius</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#background">Background</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#placeholder">Placeholder</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#arrows">Arrows</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#transitions">Transitions</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#transforms">Transforms</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#animations">Animations</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#filters">Filters</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#flexbox">Flexbox</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/support/">Support</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#browsers">Browsers</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#css">CSS</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/accessibility/">Accessibility</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#screen-reader">Screen Reader</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#aria-roles">ARIA Roles</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/notes/">Notes</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#contributors">Contributors</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#licence">Licence</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#licence-notes">Licence Notes</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+    </ul>
+</nav>
+
+</aside>
+
+
+<main class="docs-main">
+
+  <header class="docs-header">
+    <h1 class="docs-header-title">Turret</h1>
+    <button id="toggle" class="docs-header-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </header>
+
+  <section class="docs-page-header">
+    <div class="container">
+      <h1>Typography</h1>
+      <p class="lead">A guide to the use of Turret style definitions with typographic tags including headings, paragraphs, blockquotes, strong, emphasis, list and code HTML5 elements.</p>
+    </div>
+  </section>
+
+  <section class="docs-content">
+    <div class="container">
+      <h2 id="headings">Headings</h2>
+
+<h1>Heading 1 <small>Heading 1 small</small></h1>
+<h2>Heading 2 <small>Heading 2 small</small></h2>
+<h3>Heading 3 <small>Heading 3 small</small></h3>
+<h4>Heading 4 <small>Heading 4 small</small></h4>
+<h5>Heading 5 <small>Heading 5 small</small></h5>
+<h6>Heading 6 <small>Heading 6 small</small></h6>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Headings
+</span><span class="k">@headings-margin</span><span class="nd">:</span> <span class="nt">0</span> <span class="nt">0</span> <span class="nt">1em</span> <span class="nt">0</span><span class="p">;</span>
+<span class="k">@headings-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">medium-font-family</span><span class="p">;</span>
+<span class="k">@headings-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">medium-font-weight</span><span class="p">;</span>
+<span class="k">@headings-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">body-color</span><span class="p">;</span>
+<span class="k">@headings-line-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">line-height-small</span><span class="p">;</span>
+
+<span class="c1">// Headings Small
+</span><span class="k">@headings-small-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">medium-font-family</span><span class="p">;</span>
+<span class="k">@headings-small-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">medium-font-weight</span><span class="p">;</span>
+<span class="k">@headings-small-size</span><span class="nd">:</span> <span class="nt">0</span><span class="nc">.6em</span><span class="p">;</span>
+<span class="k">@headings-small-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">grey</span><span class="p">;</span>
+
+<span class="c1">// Heading Font Sizes
+</span><span class="k">@h1-font-size</span><span class="nd">:</span> <span class="nt">3</span><span class="nc">.2</span><span class="p">;</span>
+<span class="k">@h2-font-size</span><span class="nd">:</span> <span class="nt">2</span><span class="nc">.4</span><span class="p">;</span>
+<span class="k">@h3-font-size</span><span class="nd">:</span> <span class="nt">2</span><span class="p">;</span>
+<span class="k">@h4-font-size</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.8</span><span class="p">;</span>
+<span class="k">@h5-font-size</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.6</span><span class="p">;</span>
+<span class="k">@h6-font-size</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.4</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;h1&gt;</span>Heading 1 <span class="nt">&lt;small&gt;</span>Heading 1 small<span class="nt">&lt;/small&gt;&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>Heading 2 <span class="nt">&lt;small&gt;</span>Heading 2 small<span class="nt">&lt;/small&gt;&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>Heading 3 <span class="nt">&lt;small&gt;</span>Heading 3 small<span class="nt">&lt;/small&gt;&lt;/h3&gt;</span>
+<span class="nt">&lt;h4&gt;</span>Heading 4 <span class="nt">&lt;small&gt;</span>Heading 4 small<span class="nt">&lt;/small&gt;&lt;/h4&gt;</span>
+<span class="nt">&lt;h5&gt;</span>Heading 5 <span class="nt">&lt;small&gt;</span>Heading 5 small<span class="nt">&lt;/small&gt;&lt;/h5&gt;</span>
+<span class="nt">&lt;h6&gt;</span>Heading 6 <span class="nt">&lt;small&gt;</span>Heading 6 small<span class="nt">&lt;/small&gt;&lt;/h6&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="strong">Strong</h2>
+
+<p><strong>strong</strong></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Strong
+</span><span class="k">@strong-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">bold-font-family</span><span class="p">;</span>
+<span class="k">@strong-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">bold-font-weight</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;strong&gt;</span>...<span class="nt">&lt;/strong&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="emphasis">Emphasis</h2>
+
+<p><em>emphasis</em></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Emphasis
+</span><span class="k">@em-font-style</span><span class="nd">:</span> <span class="nt">italic</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;em&gt;</span>...<span class="nt">&lt;/em&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="paragraph">Paragraph</h2>
+
+<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Paragraph
+</span><span class="k">@paragraph-margin</span><span class="nd">:</span> <span class="nt">2rem</span> <span class="nt">0</span><span class="p">;</span>
+<span class="k">@paragraph-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">regular-font-family</span><span class="p">;</span>
+<span class="k">@paragraph-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">regular-font-weight</span><span class="p">;</span>
+<span class="k">@paragraph-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">font-size-medium</span><span class="p">;</span>
+<span class="k">@paragraph-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">body-color</span><span class="p">;</span>
+<span class="k">@paragraph-line-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">line-height-medium</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="lead">Lead</h2>
+
+<p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean lacinia bibendum nulla sed consectetur.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Lead
+</span><span class="k">@lead-margin</span><span class="nd">:</span> <span class="nt">0</span> <span class="nt">0</span> <span class="nt">2rem</span> <span class="nt">0</span><span class="p">;</span>
+<span class="k">@lead-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">thin-font-family</span><span class="p">;</span>
+<span class="k">@lead-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">thin-font-weight</span><span class="p">;</span>
+<span class="k">@lead-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">font-size-large</span><span class="p">;</span>
+<span class="k">@lead-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">body-color</span><span class="p">;</span>
+<span class="k">@lead-line-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">line-height-medium</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"lead"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="horizontal-rule">Horizontal Rule</h2>
+
+<hr />
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Horizontal Rule
+</span><span class="k">@hr-margin</span><span class="nd">:</span> <span class="nt">3rem</span> <span class="nt">auto</span><span class="p">;</span>
+<span class="k">@hr-height</span><span class="nd">:</span> <span class="nt">1px</span><span class="p">;</span>
+<span class="k">@hr-background</span><span class="nd">:</span> <span class="o">@</span><span class="nt">light-grey</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;hr&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="blockquote">Blockquote</h2>
+
+<blockquote>
+  <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean lacinia bibendum nulla sed consectetur.</p>
+  <cite>Name</cite>
+</blockquote>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Blockquote
+</span><span class="k">@blockquote-margin</span><span class="nd">:</span> <span class="nt">3rem</span> <span class="nt">0</span><span class="p">;</span>
+<span class="k">@blockquote-padding</span><span class="nd">:</span> <span class="nt">0</span> <span class="nt">2rem</span><span class="p">;</span>
+
+<span class="c1">// Blockquote Quote
+</span><span class="k">@blockquote-quote-margin</span><span class="nd">:</span> <span class="nt">0</span><span class="p">;</span>
+<span class="k">@blockquote-quote-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">lead-font-family</span><span class="p">;</span>
+<span class="k">@blockquote-quote-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">lead-font-weight</span><span class="p">;</span>
+<span class="k">@blockquote-quote-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">lead-font-size</span><span class="p">;</span>
+<span class="k">@blockquote-quote-font-style</span><span class="nd">:</span> <span class="nt">normal</span><span class="p">;</span>
+<span class="k">@blockquote-quote-line-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">line-height-medium</span><span class="p">;</span>
+<span class="k">@blockquote-quote-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">body-color</span><span class="p">;</span>
+
+<span class="c1">// Blockquote Cite
+</span><span class="k">@blockquote-cite-margin</span><span class="nd">:</span> <span class="nt">1rem</span> <span class="nt">0</span><span class="p">;</span>
+<span class="k">@blockquote-cite-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">regular-font-family</span><span class="p">;</span>
+<span class="k">@blockquote-cite-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">regular-font-family</span><span class="p">;</span>
+<span class="k">@blockquote-cite-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">font-size-medium</span><span class="p">;</span>
+<span class="k">@blockquote-cite-font-style</span><span class="nd">:</span> <span class="nt">normal</span><span class="p">;</span>
+<span class="k">@blockquote-cite-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">blockquote-quote-color</span><span class="p">;</span>
+<span class="k">@blockquote-cite-text-align</span><span class="nd">:</span> <span class="nt">left</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;blockquote&gt;</span>
+  <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;cite&gt;</span>...<span class="nt">&lt;/cite&gt;</span>
+<span class="nt">&lt;/blockquote&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="pullout">Pullout</h2>
+
+<p class="pullout">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Pullout
+</span><span class="k">@pullout-margin</span><span class="nd">:</span> <span class="o">@</span><span class="nt">blockquote-margin</span><span class="p">;</span>
+<span class="k">@pullout-padding</span><span class="nd">:</span> <span class="o">@</span><span class="nt">blockquote-padding</span><span class="p">;</span>
+<span class="k">@pullout-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">blockquote-quote-font-family</span><span class="p">;</span>
+<span class="k">@pullout-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">blockquote-quote-font-weight</span><span class="p">;</span>
+<span class="k">@pullout-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">blockquote-quote-font-size</span><span class="p">;</span>
+<span class="k">@pullout-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">blockquote-quote-color</span><span class="p">;</span>
+<span class="k">@pullout-border</span><span class="nd">:</span> <span class="nt">solid</span> <span class="o">@</span><span class="nt">primary</span><span class="p">;</span>
+<span class="k">@pullout-border-width</span><span class="nd">:</span> <span class="nt">0</span> <span class="nt">0</span> <span class="nt">0</span> <span class="nt">0</span><span class="nc">.4rem</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"pullout"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="list">List</h2>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// List
+</span><span class="k">@list-margin</span><span class="nd">:</span> <span class="nt">2rem</span> <span class="nt">0</span><span class="p">;</span>
+<span class="k">@list-padding</span><span class="nd">:</span> <span class="nt">0</span><span class="p">;</span>
+
+<span class="c1">// Lists Item
+</span><span class="k">@list-item-margin</span><span class="nd">:</span> <span class="nt">1rem</span> <span class="nt">0</span> <span class="nt">1rem</span> <span class="nt">2rem</span><span class="p">;</span>
+<span class="k">@list-item-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">paragraph-font-family</span><span class="p">;</span>
+<span class="k">@list-item-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">paragraph-font-weight</span><span class="p">;</span>
+<span class="k">@list-item-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">paragraph-font-size</span><span class="p">;</span>
+<span class="k">@list-item-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">paragraph-color</span><span class="p">;</span>
+<span class="k">@list-item-line-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">paragraph-line-height</span><span class="p">;</span>
+
+<span class="c1">// Child List
+</span><span class="k">@child-list-margin</span><span class="nd">:</span> <span class="nt">1rem</span> <span class="nt">0</span><span class="p">;</span>
+<span class="k">@child-list-padding</span><span class="nd">:</span> <span class="nt">0</span><span class="p">;</span>
+<span class="k">@child-list-item-margin</span><span class="nd">:</span> <span class="o">@</span><span class="nt">list-item-margin</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<h3 id="unordered-list">Unordered List</h3>
+
+<ul>
+  <li>Vehicula Dapibus Tellus Fermentum</li>
+  <li>Vehicula Dapibus Tellus Fermentum</li>
+  <li>Vehicula Dapibus Tellus Fermentum
+    <ul>
+      <li>Vehicula Dapibus Tellus Fermentum</li>
+      <li>Vehicula Dapibus Tellus Fermentum</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Unordered List
+</span><span class="k">@unordered-list-icon</span><span class="nd">:</span> <span class="nt">disc</span><span class="p">;</span>
+<span class="k">@unordered-child-list-icon</span><span class="nd">:</span> <span class="nt">disc</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="ordered-list">Ordered List</h3>
+
+<ol>
+  <li>Vehicula Dapibus Tellus Fermentum</li>
+  <li>Vehicula Dapibus Tellus Fermentum</li>
+  <li>Vehicula Dapibus Tellus Fermentum
+    <ol>
+      <li>Vehicula Dapibus Tellus Fermentum</li>
+      <li>Vehicula Dapibus Tellus Fermentum</li>
+    </ol>
+  </li>
+</ol>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;ol&gt;</span>
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>
+    <span class="nt">&lt;ol&gt;</span>
+      <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ol&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="definition-list">Definition List</h2>
+
+<dl>
+  <dt>Fringilla Ipsum Tellus</dt>
+  <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
+  <dt>Fringilla Ipsum Tellus</dt>
+  <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
+  <dt>Fringilla Ipsum Tellus</dt>
+  <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
+</dl>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Definition List
+</span><span class="k">@definition-list-margin</span><span class="nd">:</span> <span class="o">@</span><span class="nt">list-margin</span><span class="p">;</span>
+<span class="k">@definition-list-padding</span><span class="nd">:</span> <span class="nt">0</span><span class="p">;</span>
+
+<span class="c1">// Definition Term
+</span><span class="k">@definition-term-margin</span><span class="nd">:</span> <span class="nt">1rem</span> <span class="nt">0</span><span class="p">;</span>
+<span class="k">@definition-term-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">semibold-font-family</span><span class="p">;</span>
+<span class="k">@definition-term-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">semibold-font-weight</span><span class="p">;</span>
+<span class="k">@definition-term-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">font-size-medium</span><span class="p">;</span>
+<span class="k">@definition-term-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">paragraph-color</span><span class="p">;</span>
+
+<span class="c1">// Definition Description
+</span><span class="k">@definition-description-margin</span><span class="nd">:</span> <span class="nt">0</span> <span class="nt">0</span> <span class="nt">2rem</span> <span class="nt">0</span><span class="p">;</span>
+<span class="k">@definition-description-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">regular-font-family</span><span class="p">;</span>
+<span class="k">@definition-description-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">regular-font-weight</span><span class="p">;</span>
+<span class="k">@definition-description-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">font-size-medium</span><span class="p">;</span>
+<span class="k">@definition-description-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">paragraph-color</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;dl&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>...<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>...<span class="nt">&lt;/dd&gt;</span>
+<span class="nt">&lt;/dl&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="code">Code</h2>
+
+<p><code>&lt;p&gt;code&lt;/p&gt;</code></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Code
+</span><span class="k">@code-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">monospace-font-family</span><span class="p">;</span>
+<span class="k">@code-font-weight</span><span class="nd">:</span> <span class="nt">normal</span><span class="p">;</span>
+<span class="k">@code-font-size</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.2</span><span class="p">;</span>
+<span class="k">@code-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">tertiary</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;code&gt;</span>...<span class="nt">&lt;/code&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="pre">Pre</h2>
+
+<pre><code>&lt;p&gt;pre&lt;/p&gt;</code></pre>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Pre
+</span><span class="k">@pre-margin</span><span class="nd">:</span> <span class="nt">2rem</span> <span class="nt">0</span><span class="p">;</span>
+<span class="k">@pre-padding</span><span class="nd">:</span> <span class="nt">1rem</span><span class="p">;</span>
+<span class="k">@pre-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">body-color</span><span class="p">;</span>
+<span class="k">@pre-tab-size</span><span class="nd">:</span> <span class="nt">4</span><span class="p">;</span>
+<span class="k">@pre-hyphens</span><span class="nd">:</span> <span class="nt">none</span><span class="p">;</span>
+<span class="k">@pre-line-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">line-height-medium</span><span class="p">;</span>
+<span class="k">@pre-background</span><span class="nd">:</span> <span class="nt">lighten</span><span class="o">(@</span><span class="nt">light</span><span class="o">,</span> <span class="nt">1</span><span class="nv">%</span><span class="o">)</span><span class="p">;</span>
+<span class="k">@pre-border</span><span class="nd">:</span> <span class="nt">1px</span> <span class="nt">solid</span> <span class="o">@</span><span class="nt">light-grey</span><span class="p">;</span>
+
+<span class="c1">// Pre Code
+</span><span class="k">@pre-code-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">code-color</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;pre&gt;&lt;code&gt;</span>...<span class="nt">&lt;/code&gt;&lt;/pre&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="kbd">Kbd</h2>
+
+<p>Save file: <kbd>cmd</kbd> + <kbd>S</kbd></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Kbd
+</span><span class="k">@kbd-margin</span><span class="nd">:</span> <span class="nt">0</span> <span class="nt">0</span><span class="nc">.5rem</span><span class="p">;</span>
+<span class="k">@kbd-padding</span><span class="nd">:</span> <span class="nt">0</span><span class="nc">.4rem</span><span class="p">;</span>
+<span class="k">@kbd-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">code-font-family</span><span class="p">;</span>
+<span class="k">@kbd-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">code-font-weight</span><span class="p">;</span>
+<span class="k">@kbd-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">code-font-size</span><span class="p">;</span>
+<span class="k">@kbd-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">code-color</span><span class="p">;</span>
+<span class="k">@kbd-background</span><span class="nd">:</span> <span class="o">@</span><span class="nt">pre-background</span><span class="p">;</span>
+<span class="k">@kbd-border</span><span class="nd">:</span> <span class="o">@</span><span class="nt">pre-border</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;kbd&gt;</span>...<span class="nt">&lt;/kbd&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="mark">Mark</h2>
+
+<p><mark>mark</mark></p>
+<p><mark class="error">error</mark> <mark class="warning">warning</mark> <mark class="success">success</mark> <mark class="info">info</mark></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Mark
+</span><span class="k">@mark-margin</span><span class="nd">:</span> <span class="nt">0</span><span class="p">;</span>
+<span class="k">@mark-padding</span><span class="nd">:</span> <span class="nt">0</span><span class="nc">.3rem</span><span class="p">;</span>
+<span class="k">@mark-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">paragraph-font-family</span><span class="p">;</span>
+<span class="k">@mark-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">paragraph-font-weight</span><span class="p">;</span>
+<span class="k">@mark-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">paragraph-font-size</span><span class="p">;</span>
+<span class="k">@mark-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">paragraph-color</span><span class="p">;</span>
+<span class="k">@mark-background</span><span class="nd">:</span> <span class="nt">yellow</span><span class="p">;</span>
+<span class="k">@mark-border</span><span class="nd">:</span> <span class="nt">none</span><span class="p">;</span>
+<span class="k">@mark-border-radius</span><span class="nd">:</span> <span class="o">@</span><span class="nt">border-radius</span><span class="p">;</span>
+
+<span class="c1">// Mark Error
+</span><span class="k">@mark-error-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">white</span><span class="p">;</span>
+<span class="k">@mark-error-background</span><span class="nd">:</span> <span class="o">@</span><span class="nt">error</span><span class="p">;</span>
+<span class="k">@mark-error-border</span><span class="nd">:</span> <span class="nt">none</span><span class="p">;</span>
+
+<span class="c1">// Mark Warning
+</span><span class="k">@mark-warning-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">white</span><span class="p">;</span>
+<span class="k">@mark-warning-background</span><span class="nd">:</span> <span class="o">@</span><span class="nt">warning</span><span class="p">;</span>
+<span class="k">@mark-warning-border</span><span class="nd">:</span> <span class="nt">none</span><span class="p">;</span>
+
+<span class="c1">// Mark Success
+</span><span class="k">@mark-success-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">white</span><span class="p">;</span>
+<span class="k">@mark-success-background</span><span class="nd">:</span> <span class="o">@</span><span class="nt">success</span><span class="p">;</span>
+<span class="k">@mark-success-border</span><span class="nd">:</span> <span class="nt">none</span><span class="p">;</span>
+
+<span class="c1">// Mark Info
+</span><span class="k">@mark-info-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">white</span><span class="p">;</span>
+<span class="k">@mark-info-background</span><span class="nd">:</span> <span class="o">@</span><span class="nt">info</span><span class="p">;</span>
+<span class="k">@mark-info-border</span><span class="nd">:</span> <span class="nt">none</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;mark&gt;</span>...<span class="nt">&lt;/mark&gt;</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;mark</span> <span class="na">class=</span><span class="s">"error"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/mark&gt;</span>
+<span class="nt">&lt;mark</span> <span class="na">class=</span><span class="s">"warning"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/mark&gt;</span>
+<span class="nt">&lt;mark</span> <span class="na">class=</span><span class="s">"success"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/mark&gt;</span>
+<span class="nt">&lt;mark</span> <span class="na">class=</span><span class="s">"info"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/mark&gt;</span>
+</code></pre>
+</div>
+
+    </div>
+  </section>
+  
+  <footer class="docs-footer">
+  <div class="container">
+    <p>
+    	Designed and built at <a href="http://bigfish.tv">bigfish.tv</a> by <a href="https://twitter.com/scottdejonge">@scottdejonge</a>.
+    	<br>
+    	Code licensed under <a href="https://github.com/bigfishtv/turret/blob/master/LICENSE">MIT</a>, documentation under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
+    </p>
+
+	<p>
+		v3.2.0 &middot;
+		<a href="/turret/blog">Blog</a> &middot; 
+		<a href="https://twitter.com/turretcss">Twitter</a> &middot; 
+		<a href="https://github.com/bigfishtv/turret">GitHub</a> &middot; 
+		<a href="https://bigfishtv.github.io/turret/2.0.12/">v2.0.12 Docs</a> &middot; 
+		<a href="https://github.com/bigfishtv/turret/issues">Issues</a> &middot; 
+		<a href="https://github.com/bigfishtv/turret/releases">Releases</a>
+	</p>
+  </div>
+</footer>
+
+</main>
+
+<div class="clearfix"></div>
+
+<script type="text/javascript" src="/turret/assets/js/main.js"></script>
+
+<script type="text/javascript" src="/turret/assets/js/vendor/jekyll-search.min.js"></script>
+<script>
+  SimpleJekyllSearch.init({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('search-results'),
+    searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+    noResultsText: '<div class="docs-search-no-results">Sorry, there are no results for that search.</div>',
+    json: '/search.json'
+  })
+</script>
+
+  </body>
+</html>

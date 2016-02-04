@@ -1,0 +1,2005 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+  	
+  		Form - Turret - A Responsive Front-end Framework for Accessible and Semantic Websites
+  	
+  </title>
+  <meta name="description" content="Turret is a responsive front-end framework for accessible and semantic website development.Turret defines base styles for all HTML5 native web elements and includes a simple and intuitive grid system for rapid responsive website development">
+
+  <link rel="shortcut icon" href="/turret/assets/icons/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/turret/assets/icons/favicon.ico" type="image/x-icon" />
+
+  <link rel="stylesheet" href="/turret/assets/css/turret.css">
+  <link rel="stylesheet" href="/turret/assets/css/docs.css">
+</head>
+
+  <body>
+
+    <aside class="docs-sidebar">
+
+  <form id="search-container" class="docs-search">
+  <input id="search-input" class="docs-search-input" type="search" placeholder="Search Documentation">
+  <ul id="search-results" class="docs-search-results"></ul>
+</form>
+
+
+  <nav class="docs-navigation">
+    <ul>
+      <li class="">
+        <a href="/turret/">Turret</a></a>
+      </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/getting-started/">Getting Started</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#download">Download</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#structure">Structure</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#usage">Usage</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#documentation">Documentation</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#examples">Examples</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/base/">Base</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#global">Global</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#root">Root</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#body">Body</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#colors">Colors</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#font">Font</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#link">Link</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#image">Image</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#breakpoints">Breakpoints</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#media-queries">Media Queries</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#print">Print</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/typography/">Typography</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#headings">Headings</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#strong">Strong</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#emphasis">Emphasis</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#paragraph">Paragraph</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#lead">Lead</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#hr">hr</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#blockquote">Blockquote</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#pullout">Pullout</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#list">List</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#definition-list">Definition List</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#code">Code</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#pre">Pre</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#kbd">Kbd</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#mark">Mark</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/grid/">Grid</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#container">Container</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#row">Row</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#column">Column</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#offset">Offset</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#push">Push</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#pull">Pull</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="active">
+          <a href="/turret/docs/form/">Form</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#form-examples">Form Examples</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#label">Label</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#fieldset">Fieldset</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#form-message">Form Message</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#input">Input</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#input-indicators">Input Indicators</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#input-sizes">Input Sizes</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#input-group">Input Group</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#input-group-sizes">Input Group Sizes</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#control">Control</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#select">Select</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#select-sizes">Select Sizes</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/elements/">Elements</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#button">Button</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#button-styles">Button Styles</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#button-indicators">Button Indicators</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#button-sizes">Button Sizes</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#button-group">Button Group</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#button-icon">Button Icon</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#figure">Figure</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#media">Media</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#nav">Nav</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#table">Table</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/utilities/">Utilities</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#utility-classes">Utility Classes</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#visibility">Visibility</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#display">Display</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#positioning">Positioning</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#flex">Flex</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#float">Float</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#max-width">Max Width</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#margin">Margin</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#padding">Padding</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#font-family">Font Family</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#font-size">Font Size</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#text">Text</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#text-color">Text Color</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#background">Background</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/mixins/">Mixins</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#general">General</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#input">Input</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#select">Select</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#button">Button</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#font">Font</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#border-radius">Border Radius</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#background">Background</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#placeholder">Placeholder</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#arrows">Arrows</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#transitions">Transitions</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#transforms">Transforms</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#animations">Animations</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#filters">Filters</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#flexbox">Flexbox</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/support/">Support</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#browsers">Browsers</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#css">CSS</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/accessibility/">Accessibility</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#screen-reader">Screen Reader</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#aria-roles">ARIA Roles</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/notes/">Notes</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#contributors">Contributors</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#licence">Licence</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#licence-notes">Licence Notes</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+    </ul>
+</nav>
+
+</aside>
+
+
+<main class="docs-main">
+
+  <header class="docs-header">
+    <h1 class="docs-header-title">Turret</h1>
+    <button id="toggle" class="docs-header-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </header>
+
+  <section class="docs-page-header">
+    <div class="container">
+      <h1>Form</h1>
+      <p class="lead">A guide to Turret's default styling of form elements including examples of input types and sizes, input-groups, radio and checkbox controls, and selects.</p>
+    </div>
+  </section>
+
+  <section class="docs-content">
+    <div class="container">
+      <h2 id="form-examples">Form Examples</h2>
+
+<h3 id="simple-form">Simple Form</h3>
+
+<form role="form">
+  <label for="form-simple-email">Email</label>
+  <input type="email" id="form-simple-email" placeholder="Enter Email" />
+  <label for="form-simple-password">Password</label>
+  <input type="password" id="form-simple-password" placeholder="Enter Password" />
+  <label class="control checkbox">
+    <input type="checkbox" name="checkbox" checked="true" />
+    <span class="control-indicator"></span>
+    <span class="control-label">I agree to checking this checkbox</span>
+  </label>
+  <button type="submit" class="button">Submit</button>
+</form>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"form-simple-email"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">id=</span><span class="s">"form-simple-email"</span> <span class="na">placeholder=</span><span class="s">"Enter Email"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"form-simple-password"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">id=</span><span class="s">"form-simple-password"</span> <span class="na">placeholder=</span><span class="s">"Enter Password"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control checkbox"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"checkbox"</span> <span class="na">checked=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"control-indicator"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"control-label"</span><span class="nt">&gt;</span>I agree to checking this checkbox<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="multi-column-form">Multi-Column Form</h3>
+
+<form role="form">
+  <div class="row">
+    <div class="column-1-2">
+      <label for="form-mulit-column-first-name">First Name</label>
+      <input type="text" id="form-mulit-column-first-name" placeholder="Enter First Name" />
+    </div>
+    <div class="column-1-2">
+      <label for="form-mulit-column-last-name">Last Name</label>
+      <input type="text" id="form-mulit-column-last-name" placeholder="Enter Last Name" />
+    </div>
+    <div class="column-1-2">
+      <label for="form-mulit-column-email">Email</label>
+      <input type="email" id="form-mulit-column-email" placeholder="Enter Email" />
+    </div>
+    <div class="column-1-2">
+      <label for="form-mulit-column-password">Password</label>
+      <input type="password" id="form-mulit-column-password" placeholder="Enter Password" />
+    </div>
+    <div class="column-1">
+      <button type="submit" class="button">Submit</button>
+    </div>
+  </div>
+</form>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column-1-2"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"form-mulit-column-first-name"</span><span class="nt">&gt;</span>First Name<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"form-mulit-column-first-name"</span> <span class="na">placeholder=</span><span class="s">"Enter First Name"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column-1-2"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"form-mulit-column-last-name"</span><span class="nt">&gt;</span>Last Name<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"form-mulit-column-last-name"</span> <span class="na">placeholder=</span><span class="s">"Enter Last Name"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column-1-2"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"form-mulit-column-email"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">id=</span><span class="s">"form-mulit-column-email"</span> <span class="na">placeholder=</span><span class="s">"Enter Email"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column-1-2"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"form-mulit-column-password"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">id=</span><span class="s">"form-mulit-column-password"</span> <span class="na">placeholder=</span><span class="s">"Enter Password"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column-1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="label">Label</h2>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Label
+</span><span class="k">@label-margin</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.6rem</span> <span class="nt">0px</span><span class="p">;</span>
+<span class="k">@label-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">medium-font-family</span><span class="p">;</span>
+<span class="k">@label-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">medium-font-weight</span><span class="p">;</span>
+<span class="k">@label-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">font-size-small</span><span class="p">;</span>
+<span class="k">@label-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">dark</span><span class="p">;</span>
+<span class="k">@label-line-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">line-height-medium</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<form role="form">
+  <label for="input">Label</label>
+</form>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/label&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="fieldset">Fieldset</h2>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Fieldset
+</span><span class="k">@fieldset-margin</span><span class="nd">:</span> <span class="nt">0</span><span class="p">;</span>
+<span class="k">@fieldset-padding</span><span class="nd">:</span> <span class="nt">2rem</span><span class="p">;</span>
+<span class="k">@fieldset-border</span><span class="nd">:</span> <span class="nt">1px</span> <span class="nt">solid</span> <span class="o">@</span><span class="nt">light-grey</span><span class="p">;</span>
+
+<span class="c1">// Feildset Legend
+</span><span class="k">@fieldset-legend-padding</span><span class="nd">:</span> <span class="nt">1rem</span><span class="p">;</span>
+<span class="k">@fieldset-legend-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">font-size-medium</span><span class="p">;</span>
+<span class="k">@fieldset-legend-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">grey</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<form role="form">
+  <fieldset>
+    <legend>Login</legend>
+    <label for="fieldset-email">Email</label>
+    <input type="email" id="fieldset-email" placeholder="Enter Email" />
+    <label for="fieldset-password">Password</label>
+    <input type="password" id="fieldset-password" placeholder="Enter Password" />
+    <button type="submit" class="button">Submit</button>
+  </fieldset>
+</form>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;fieldset&gt;</span>
+  <span class="nt">&lt;legend&gt;</span>Login<span class="nt">&lt;/legend&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"fieldset-email"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">id=</span><span class="s">"fieldset-email"</span> <span class="na">placeholder=</span><span class="s">"Enter Email"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"fieldset-password"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">id=</span><span class="s">"fieldset-password"</span> <span class="na">placeholder=</span><span class="s">"Enter Password"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/fieldset&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="form-message">Form Message</h2>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Form Message
+</span><span class="k">@form-message-margin</span><span class="nd">:</span> <span class="o">@</span><span class="nt">label-margin</span><span class="p">;</span>
+<span class="k">@form-message-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">paragraph-font-family</span><span class="p">;</span>
+<span class="k">@form-message-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">paragraph-font-weight</span><span class="p">;</span>
+<span class="k">@form-message-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">font-size-small</span><span class="p">;</span>
+<span class="k">@form-message-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">body-color</span><span class="p">;</span>
+<span class="k">@form-message-line-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">paragraph-line-height</span><span class="p">;</span>
+
+<span class="c1">// Form Message Indicators
+</span><span class="k">@form-message-error-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">error</span><span class="p">;</span>
+<span class="k">@form-message-warning-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">warning</span><span class="p">;</span>
+<span class="k">@form-message-success-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">success</span><span class="p">;</span>
+<span class="k">@form-message-info-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">info</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<form role="form">
+  <label for="form-message-title">Title</label>
+  <input type="text" id="form-message-title" placeholder="Title" />
+  <p class="form-message">Form message</p>
+  <label for="form-message-first-name">First Name</label>
+  <input type="text" id="form-message-first-name" placeholder="Enter First Name" />
+  <p class="form-message success">Form message success</p>
+  <label for="form-message-last-name">Last Name</label>
+  <input type="text" id="form-message-last-name" placeholder="Enter Last Name" />
+  <p class="form-message error">Form message error</p>
+  <label for="form-message-email">Email</label>
+  <input type="email" id="form-message-email" placeholder="Enter Email" />
+  <p class="form-message warning">Form message warning</p>
+  <label for="form-message-password">Password</label>
+  <input type="password" id="form-message-password" placeholder="Enter Password" />
+  <p class="form-message info">Form message info</p>
+  <button type="submit" class="button">Submit</button>
+</form>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"form-message-title"</span><span class="nt">&gt;</span>Title<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"form-message-title"</span> <span class="na">placeholder=</span><span class="s">"Title"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"form-message"</span><span class="nt">&gt;</span>Form message<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"form-message-first-name"</span><span class="nt">&gt;</span>First Name<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"form-message-first-name"</span> <span class="na">placeholder=</span><span class="s">"Enter First Name"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"form-message success"</span><span class="nt">&gt;</span>Form message success<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"form-message-last-name"</span><span class="nt">&gt;</span>Last Name<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"form-message-last-name"</span> <span class="na">placeholder=</span><span class="s">"Enter Last Name"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"form-message error"</span><span class="nt">&gt;</span>Form message error<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"form-message-email"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">id=</span><span class="s">"form-message-email"</span> <span class="na">placeholder=</span><span class="s">"Enter Email"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"form-message warning"</span><span class="nt">&gt;</span>Form message warning<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"form-message-password"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">id=</span><span class="s">"form-message-password"</span> <span class="na">placeholder=</span><span class="s">"Enter Password"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"form-message info"</span><span class="nt">&gt;</span>Form message info<span class="nt">&lt;/p&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="input">Input</h2>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Input
+</span><span class="k">@input-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">height-medium</span><span class="p">;</span>
+<span class="k">@input-margin</span><span class="nd">:</span> <span class="o">@</span><span class="nt">label-margin</span><span class="p">;</span>
+<span class="k">@input-padding</span><span class="nd">:</span> <span class="nt">0</span> <span class="nt">1</span><span class="nc">.6rem</span><span class="p">;</span>
+<span class="k">@input-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">body-color</span><span class="p">;</span>
+<span class="k">@input-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">regular-font-family</span><span class="p">;</span>
+<span class="k">@input-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">regular-font-weight</span><span class="p">;</span>
+<span class="k">@input-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">font-size-medium</span><span class="p">;</span>
+<span class="k">@input-line-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">line-height-medium</span><span class="p">;</span>
+<span class="k">@input-background</span><span class="nd">:</span> <span class="o">@</span><span class="nt">white</span><span class="p">;</span>
+<span class="k">@input-border</span><span class="nd">:</span> <span class="nt">1px</span> <span class="nt">solid</span> <span class="o">@</span><span class="nt">light-grey</span><span class="p">;</span>
+<span class="k">@input-border-radius</span><span class="nd">:</span> <span class="o">@</span><span class="nt">border-radius</span><span class="p">;</span>
+
+<span class="c1">// Input Hover
+</span><span class="k">@input-hover-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-color</span><span class="p">;</span>
+<span class="k">@input-hover-background</span><span class="nd">:</span> <span class="nt">darken</span><span class="o">(@</span><span class="nt">input-background</span><span class="o">,</span> <span class="nt">2</span><span class="nv">%</span><span class="o">)</span><span class="p">;</span>
+<span class="k">@input-hover-border</span><span class="nd">:</span> <span class="nt">1px</span> <span class="nt">solid</span> <span class="nt">darken</span><span class="o">(@</span><span class="nt">light-grey</span><span class="o">,</span> <span class="nt">10</span><span class="nv">%</span><span class="o">)</span><span class="p">;</span>
+
+<span class="c1">// Input Focus
+</span><span class="k">@input-focus-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-color</span><span class="p">;</span>
+<span class="k">@input-focus-background</span><span class="nd">:</span> <span class="nt">darken</span><span class="o">(@</span><span class="nt">input-background</span><span class="o">,</span> <span class="nt">2</span><span class="nv">%</span><span class="o">)</span><span class="p">;</span>
+<span class="k">@input-focus-border</span><span class="nd">:</span> <span class="nt">1px</span> <span class="nt">solid</span> <span class="o">@</span><span class="nt">primary</span><span class="p">;</span>
+
+<span class="c1">// Input Placeholder
+</span><span class="k">@input-placeholder-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-font-family</span><span class="p">;</span>
+<span class="k">@input-placeholder-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-font-size</span><span class="p">;</span>
+<span class="k">@input-placeholder-color</span><span class="nd">:</span> <span class="nt">fade</span><span class="o">(@</span><span class="nt">input-color</span><span class="o">,</span> <span class="nt">50</span><span class="nv">%</span><span class="o">)</span><span class="p">;</span>
+<span class="k">@input-placeholder-line-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-line-height</span><span class="p">;</span>
+<span class="k">@input-placeholder-letter-spacing</span><span class="nd">:</span> <span class="nt">0px</span><span class="p">;</span>
+<span class="k">@input-placeholder-text-transform</span><span class="nd">:</span> <span class="nt">none</span><span class="p">;</span>
+
+<span class="c1">// Input Inverse
+</span><span class="k">@input-inverse-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">white</span><span class="p">;</span>
+<span class="k">@input-inverse-background</span><span class="nd">:</span> <span class="o">@</span><span class="nt">inverse</span><span class="p">;</span>
+<span class="k">@input-inverse-border</span><span class="nd">:</span> <span class="nt">none</span><span class="p">;</span>
+
+<span class="c1">// Input Inverse Hover
+</span><span class="k">@input-inverse-hover-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-inverse-color</span><span class="p">;</span>
+<span class="k">@input-inverse-hover-background</span><span class="nd">:</span> <span class="nt">darken</span><span class="o">(@</span><span class="nt">input-inverse-background</span><span class="o">,</span> <span class="nt">2</span><span class="nv">%</span><span class="o">)</span><span class="p">;</span>
+<span class="k">@input-inverse-hover-border</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-inverse-border</span><span class="p">;</span>
+
+<span class="c1">// Input Inverse Focus
+</span><span class="k">@input-inverse-focus-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-inverse-color</span><span class="p">;</span>
+<span class="k">@input-inverse-focus-background</span><span class="nd">:</span> <span class="nt">darken</span><span class="o">(@</span><span class="nt">input-inverse-background</span><span class="o">,</span> <span class="nt">2</span><span class="nv">%</span><span class="o">)</span><span class="p">;</span>
+<span class="k">@input-inverse-focus-border</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-inverse-border</span><span class="p">;</span>
+
+<span class="c1">// Input Disabled
+</span><span class="k">@input-disabled-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">light</span><span class="p">;</span>
+<span class="k">@input-disabled-background</span><span class="nd">:</span> <span class="o">@</span><span class="nt">light</span><span class="p">;</span>
+<span class="k">@input-disabled-border</span><span class="nd">:</span> <span class="nt">1px</span> <span class="nt">solid</span> <span class="nt">darken</span><span class="o">(@</span><span class="nt">light</span><span class="o">,</span> <span class="nt">10</span><span class="nv">%</span><span class="o">)</span><span class="p">;</span>
+
+<span class="c1">// Input Search
+</span><span class="k">@input-search-border-radius</span><span class="nd">:</span> <span class="nt">2rem</span><span class="p">;</span>
+
+<span class="c1">// Textarea
+</span><span class="k">@textarea-padding</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.6rem</span><span class="p">;</span>
+<span class="k">@textarea-line-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">line-height-medium</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<form role="form">
+
+  <label for="input-text">Text Input</label>
+  <input type="text" id="input-text" placeholder="Text" />
+
+  <label for="input-inverse">Inverse Input</label>
+  <input class="input-inverse" type="text" id="input-inverse" placeholder="Inverse" />
+
+  <label for="input-disabled">Disabled</label>
+  <input type="text" id="input-disabled" placeholder="Disabled" disabled="" />
+
+  <label for="input-email">Email Input</label>
+  <input type="email" id="input-email" placeholder="Email" />
+
+  <label for="input-search">Search Input</label>
+  <input type="search" id="input-search" placeholder="Search" />
+
+  <label for="input-tel">Telephone Input</label>
+  <input type="tel" id="input-tel" placeholder="Telephone" />
+
+  <label for="input-url">URL Input</label>
+  <input type="url" id="input-url" placeholder="http://" />
+
+  <label for="input-password">Password Input</label>
+  <input type="password" id="input-password" value="password" />
+
+  <label for="input-file">File Input</label>
+  <input type="file" id="input-file" />
+
+  <label for="input-textarea">Textarea</label>
+  <textarea id="input-textarea" cols="30" rows="5" placeholder="Textarea text"></textarea>
+
+  <label for="input-number">Number Input</label>
+  <input type="number" id="input-number" min="0" max="10" placeholder="Enter a number form 0 to 10" />
+
+  <label for="input-date">Date Input</label>
+  <input type="date" id="input-date" />
+
+  <label for="input-month">Month Input</label>
+  <input type="month" id="input-month" />
+
+  <label for="input-week">Week Input</label>
+  <input type="week" id="input-week" />
+
+  <label for="input-datetime">Datetime Input</label>
+  <input type="datetime" id="input-datetime" placeholder="Enter a datetime string" />
+
+  <label for="input-datetime-local">Datetime-local Input</label>
+  <input type="datetime-local" id="input-datetime-local" />
+
+  <input id="input-checkbox" type="checkbox" name="checkbox" value="Checkbox Input" />
+  <label for="input-checkbox">Checkbox Input</label>
+
+  <input id="input-radio" type="radio" name="radio" value="Radio Input" />
+  <label for="input-radio">Radio Input</label>
+
+</form>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-text"</span><span class="nt">&gt;</span>Text Input<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"input-text"</span> <span class="na">placeholder=</span><span class="s">"Text"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-inverse"</span><span class="nt">&gt;</span>Inverse Input<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"input-inverse"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"input-inverse"</span> <span class="na">placeholder=</span><span class="s">"Inverse"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-disabled"</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"input-disabled"</span> <span class="na">placeholder=</span><span class="s">"Disabled"</span> <span class="na">disabled=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-email"</span><span class="nt">&gt;</span>Email Input<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">id=</span><span class="s">"input-email"</span> <span class="na">placeholder=</span><span class="s">"Email"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-search"</span><span class="nt">&gt;</span>Search Input<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">id=</span><span class="s">"input-search"</span> <span class="na">placeholder=</span><span class="s">"Search"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-tel"</span><span class="nt">&gt;</span>Telephone Input<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">id=</span><span class="s">"input-tel"</span> <span class="na">placeholder=</span><span class="s">"Telephone"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-url"</span><span class="nt">&gt;</span>URL Input<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"url"</span> <span class="na">id=</span><span class="s">"input-url"</span> <span class="na">placeholder=</span><span class="s">"http://"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-password"</span><span class="nt">&gt;</span>Password Input<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">id=</span><span class="s">"input-password"</span> <span class="na">value=</span><span class="s">"password"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-file"</span><span class="nt">&gt;</span>File Input<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">id=</span><span class="s">"input-file"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-textarea"</span><span class="nt">&gt;</span>Textarea<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;textarea</span> <span class="na">id=</span><span class="s">"input-textarea"</span> <span class="na">cols=</span><span class="s">"30"</span> <span class="na">rows=</span><span class="s">"5"</span> <span class="na">placeholder=</span><span class="s">"Textarea text"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-number"</span><span class="nt">&gt;</span>Number Input<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">id=</span><span class="s">"input-number"</span> <span class="na">min=</span><span class="s">"0"</span> <span class="na">max=</span><span class="s">"10"</span> <span class="na">placeholder=</span><span class="s">"Enter a number form 0 to 10"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-date"</span><span class="nt">&gt;</span>Date Input<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"date"</span> <span class="na">id=</span><span class="s">"input-date"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-month"</span><span class="nt">&gt;</span>Month Input<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"month"</span> <span class="na">id=</span><span class="s">"input-month"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-week"</span><span class="nt">&gt;</span>Week Input<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"week"</span> <span class="na">id=</span><span class="s">"input-week"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-datetime"</span><span class="nt">&gt;</span>Datetime Input<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"datetime"</span> <span class="na">id=</span><span class="s">"input-datetime"</span> <span class="na">placeholder=</span><span class="s">"Enter a datetime string"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-datetime-local"</span><span class="nt">&gt;</span>Datetime-local Input<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"datetime-local"</span> <span class="na">id=</span><span class="s">"input-datetime-local"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"input-checkbox"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"checkbox"</span> <span class="na">value=</span><span class="s">"Checkbox Input"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-checkbox"</span><span class="nt">&gt;</span>Checkbox Input<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"input-radio"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">value=</span><span class="s">"Radio Input"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-radio"</span><span class="nt">&gt;</span>Radio Input<span class="nt">&lt;/label&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="input-indicators">Input Indicators</h2>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Indicators
+</span><span class="k">@input-error-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">error</span><span class="p">;</span>
+<span class="k">@input-warning-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">warning</span><span class="p">;</span>
+<span class="k">@input-success-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">success</span><span class="p">;</span>
+<span class="k">@input-info-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">info</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<form role="form">
+
+  <label for="error">Input Error</label>
+  <input class="error" type="text" id="error" value="Input Error" />
+
+  <label for="warning">Input Warning</label>
+  <input class="warning" type="text" id="warning" value="Input Warning" />
+
+  <label for="success">Input Success</label>
+  <input class="success" type="text" id="success" value="Input Success" />
+
+  <label for="info">Input Info</label>
+  <input class="info" type="text" id="info" value="Input Info" />
+
+</form>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"error"</span><span class="nt">&gt;</span>Input Error<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"error"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"error"</span> <span class="na">value=</span><span class="s">"Input Error"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"warning"</span><span class="nt">&gt;</span>Input Warning<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"warning"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"warning"</span> <span class="na">value=</span><span class="s">"Input Warning"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"success"</span><span class="nt">&gt;</span>Input Success<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"success"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"success"</span> <span class="na">value=</span><span class="s">"Input Success"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"info"</span><span class="nt">&gt;</span>Input Info<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"info"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"info"</span> <span class="na">value=</span><span class="s">"Input Info"</span><span class="nt">&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="input-sizes">Input Sizes</h2>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Input Extra Large
+</span><span class="k">@input-xlarge-padding</span><span class="nd">:</span> <span class="nt">0</span> <span class="nt">3</span><span class="nc">.0rem</span><span class="p">;</span>
+<span class="k">@input-xlarge-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">height-xlarge</span><span class="p">;</span>
+<span class="k">@input-xlarge-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">font-size-xlarge</span><span class="p">;</span>
+
+<span class="c1">// Input Large
+</span><span class="k">@input-large-padding</span><span class="nd">:</span> <span class="nt">0</span> <span class="nt">2</span><span class="nc">.5rem</span><span class="p">;</span>
+<span class="k">@input-large-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">height-large</span><span class="p">;</span>
+<span class="k">@input-large-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">font-size-large</span><span class="p">;</span>
+
+<span class="c1">// Input Medium
+</span><span class="k">@input-medium-padding</span><span class="nd">:</span> <span class="nt">0</span> <span class="nt">1</span><span class="nc">.6rem</span><span class="p">;</span>
+<span class="k">@input-medium-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-height</span><span class="p">;</span>
+<span class="k">@input-medium-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-font-size</span><span class="p">;</span>
+
+<span class="c1">// Input Small
+</span><span class="k">@input-small-padding</span><span class="nd">:</span> <span class="nt">0</span> <span class="nt">1</span><span class="nc">.2rem</span><span class="p">;</span>
+<span class="k">@input-small-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">height-small</span><span class="p">;</span>
+<span class="k">@input-small-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">font-size-small</span><span class="p">;</span>
+
+<span class="c1">// Input Extra Small
+</span><span class="k">@input-xsmall-padding</span><span class="nd">:</span> <span class="nt">0</span> <span class="nt">0</span><span class="nc">.8rem</span><span class="p">;</span>
+<span class="k">@input-xsmall-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">height-xsmall</span><span class="p">;</span>
+<span class="k">@input-xsmall-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">font-size-xsmall</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<form role="form">
+  
+  <input class="input-xlarge" type="text" placeholder="Input Extra Large" />
+  <input class="input-large" type="text" placeholder="Input Large" />
+  <input class="input-medium" type="text" placeholder="Input Medium" />
+  <input class="input-small" type="text" placeholder="Input Small" />
+  <input class="input-xsmall" type="text" placeholder="Input Extra Small" />
+
+</form>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"input-xlarge"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Input Extra Large"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"input-large"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Input Large"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"input-medium"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Input Medium"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"input-small"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Input Small"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"input-xsmall"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Input Extra Small"</span><span class="nt">&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="input-group">Input Group</h2>
+
+<h3 id="input-group-1">Input Group</h3>
+
+<div class="input-group">
+  <input type="text" placeholder="Enter Keyword..." />
+  <span class="input-group-button">
+    <button class="button" type="submit">Submit</button>
+  </span>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Enter Keyword..."</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-button"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button"</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="input-group-search">Input Group Search</h3>
+
+<div class="input-group input-group-search">
+  <input type="search" placeholder="Search" />
+  <span class="input-group-button">
+    <button class="button" type="submit">Search</button>
+  </span>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group input-group-search"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">placeholder=</span><span class="s">"Search"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-button"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button"</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="input-group-sizes">Input Group Sizes</h2>
+
+<form role="form">
+  
+  <div class="input-group">
+    <input class="input-xlarge" type="text" placeholder="Input Group Extra Large" />
+    <span class="input-group-button">
+      <button class="button button-xlarge" type="submit">Submit</button>
+    </span>
+  </div>
+  <div class="input-group">
+    <input class="input-large" type="text" placeholder="Input Group Large" />
+    <span class="input-group-button">
+      <button class="button button-large" type="submit">Submit</button>
+    </span>
+  </div>
+  <div class="input-group">
+    <input class="input-medium" type="text" placeholder="Input Group Medium" />
+    <span class="input-group-button">
+      <button class="button button-medium" type="submit">Submit</button>
+    </span>
+  </div>
+  <div class="input-group">
+    <input class="input-small" type="text" placeholder="Input Group Small" />
+    <span class="input-group-button">
+      <button class="button button-small" type="submit">Submit</button>
+    </span>
+  </div>
+  <div class="input-group">
+    <input class="input-xsmall" type="text" placeholder="Input Group Extra Small" />
+    <span class="input-group-button">
+      <button class="button button-xsmall" type="submit">Submit</button>
+    </span>
+  </div>
+
+</form>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"input-xlarge"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Input Group Extra Large"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-button"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-xlarge"</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"input-large"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Input Group Large"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-button"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-large"</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"input-medium"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Input Group Medium"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-button"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-medium"</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"input-small"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Input Group Small"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-button"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-small"</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"input-xsmall"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Input Group Extra Small"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-button"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-xsmall"</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="control">Control</h2>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Control
+</span><span class="k">@control-margin</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-margin</span><span class="p">;</span>
+<span class="k">@control-padding</span><span class="nd">:</span> <span class="nt">0</span> <span class="nt">0</span> <span class="nt">0</span> <span class="nt">1</span><span class="nc">.5em</span><span class="p">;</span>
+<span class="k">@control-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-color</span><span class="p">;</span>
+
+<span class="c1">// Control Indicator
+</span><span class="k">@control-indicator-size</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.6rem</span><span class="p">;</span>
+<span class="k">@control-indicator-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">primary</span><span class="p">;</span>
+<span class="k">@control-indicator-background</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-background</span><span class="p">;</span>
+<span class="k">@control-indicator-border</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-border</span><span class="p">;</span>
+
+<span class="c1">// Control Checked
+</span><span class="k">@control-indicator-checked-background</span><span class="nd">:</span> <span class="o">@</span><span class="nt">primary</span><span class="p">;</span>
+<span class="k">@control-indicator-checked-border</span><span class="nd">:</span> <span class="nt">1px</span> <span class="nt">solid</span> <span class="o">@</span><span class="nt">primary</span><span class="p">;</span>
+<span class="k">@control-label-checked-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">control-label-color</span><span class="p">;</span>
+
+<span class="c1">// Control Label
+</span><span class="k">@control-label-margin</span><span class="nd">:</span> <span class="nt">0</span> <span class="nt">0</span> <span class="nt">0</span> <span class="nt">1rem</span><span class="p">;</span>
+<span class="k">@control-label-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-font-family</span><span class="p">;</span>
+<span class="k">@control-label-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-font-weight</span><span class="p">;</span>
+<span class="k">@control-label-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">label-font-size</span><span class="p">;</span>
+<span class="k">@control-label-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-color</span><span class="p">;</span>
+<span class="k">@control-label-line-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-line-height</span><span class="p">;</span>
+
+<span class="c1">// Control Inline
+</span><span class="k">@control-inline-margin-right</span><span class="nd">:</span> <span class="nt">2rem</span><span class="p">;</span>
+
+<span class="c1">// Checkbox
+</span><span class="k">@checkbox-border-radius</span><span class="nd">:</span> <span class="nt">none</span><span class="p">;</span>
+
+<span class="c1">// Radio
+</span><span class="k">@radio-border-radius</span><span class="nd">:</span> <span class="nt">50</span><span class="nv">%</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<h3 id="checkbox">Checkbox</h3>
+
+<form role="form">
+  
+  <label class="control checkbox">
+    <input type="checkbox" name="checkbox" />
+    <span class="control-indicator"></span>
+    <span class="control-label">Checkbox</span>
+  </label>
+
+</form>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control checkbox"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"control-indicator"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"control-label"</span><span class="nt">&gt;</span>Checkbox<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="radio">Radio</h3>
+
+<form role="form">
+  
+  <label class="control radio">
+    <input type="radio" name="radio" />
+    <span class="control-indicator"></span>
+    <span class="control-label">Radio</span>
+  </label>
+
+</form>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control radio"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"control-indicator"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"control-label"</span><span class="nt">&gt;</span>Radio<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="checkbox-inline">Checkbox Inline</h3>
+
+<form role="form">
+  
+  <label class="control control-inline checkbox">
+    <input type="checkbox" name="checkbox" />
+    <span class="control-indicator"></span>
+    <span class="control-label">Checkbox</span>
+  </label>
+  <label class="control control-inline checkbox">
+    <input type="checkbox" name="checkbox" />
+    <span class="control-indicator"></span>
+    <span class="control-label">Checkbox</span>
+  </label>
+  <label class="control control-inline checkbox">
+    <input type="checkbox" name="checkbox" />
+    <span class="control-indicator"></span>
+    <span class="control-label">Checkbox</span>
+  </label>
+
+</form>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control control-inline checkbox"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"control-indicator"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"control-label"</span><span class="nt">&gt;</span>Checkbox<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control control-inline checkbox"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"control-indicator"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"control-label"</span><span class="nt">&gt;</span>Checkbox<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control control-inline checkbox"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"control-indicator"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"control-label"</span><span class="nt">&gt;</span>Checkbox<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="radio-inline">Radio Inline</h3>
+
+<form role="form">
+  
+  <label class="control control-inline radio">
+    <input type="radio" name="radio" />
+    <span class="control-indicator"></span>
+    <span class="control-label">Radio</span>
+  </label>
+  <label class="control control-inline radio">
+    <input type="radio" name="radio" />
+    <span class="control-indicator"></span>
+    <span class="control-label">Radio</span>
+  </label>
+  <label class="control control-inline radio">
+    <input type="radio" name="radio" />
+    <span class="control-indicator"></span>
+    <span class="control-label">Radio</span>
+  </label>
+
+</form>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control control-inline radio"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"control-indicator"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"control-label"</span><span class="nt">&gt;</span>Radio<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control control-inline radio"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"control-indicator"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"control-label"</span><span class="nt">&gt;</span>Radio<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control control-inline radio"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"control-indicator"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"control-label"</span><span class="nt">&gt;</span>Radio<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="select">Select</h2>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Select
+</span><span class="k">@select-margin</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-margin</span><span class="p">;</span>
+<span class="k">@select-padding</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-padding</span><span class="p">;</span>
+<span class="k">@select-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-height</span><span class="p">;</span>
+<span class="k">@select-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-font-family</span><span class="p">;</span>
+<span class="k">@select-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-font-weight</span><span class="p">;</span>
+<span class="k">@select-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-font-size</span><span class="p">;</span>
+<span class="k">@select-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-color</span><span class="p">;</span>
+<span class="k">@select-line-height</span><span class="nd">:</span> <span class="nt">auto</span><span class="p">;</span>
+<span class="k">@select-background</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-background</span><span class="p">;</span>
+<span class="k">@select-border</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-border</span><span class="p">;</span>
+<span class="k">@select-border-radius</span><span class="nd">:</span> <span class="o">@</span><span class="nt">border-radius</span><span class="p">;</span>
+
+<span class="c1">// Select Arrow
+</span><span class="k">@select-arrow-size</span><span class="nd">:</span> <span class="nt">0</span><span class="nc">.4rem</span><span class="p">;</span>
+<span class="k">@select-arrow-background</span><span class="nd">:</span> <span class="o">@</span><span class="nt">dark</span><span class="p">;</span>
+
+<span class="c1">// Select Inverse
+</span><span class="k">@select-inverse-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-inverse-color</span><span class="p">;</span>
+<span class="k">@select-inverse-border</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-inverse-border</span><span class="p">;</span>
+<span class="k">@select-inverse-background</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-inverse-background</span><span class="p">;</span>
+<span class="k">@select-inverse-arrow-background</span><span class="nd">:</span> <span class="o">@</span><span class="nt">white</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<h3 id="select-1">Select</h3>
+
+<form role="form">
+  
+  <label class="select" for="select">
+    <select id="select">
+      <option>Select Field</option>
+      <option value="1">Option 01</option>
+      <option value="2">Option 02</option>
+    </select>
+  </label>
+
+</form>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"select"</span> <span class="na">for=</span><span class="s">"select"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"select"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;option&gt;</span>Select Field<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"1"</span><span class="nt">&gt;</span>Option 01<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2"</span><span class="nt">&gt;</span>Option 02<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="select-inverse">Select Inverse</h3>
+
+<form role="form">
+  
+  <label class="select select-inverse" for="select-inverse">
+    <select id="select-inverse">
+      <option>Select Field</option>
+      <option value="1">Option 01</option>
+      <option value="2">Option 02</option>
+    </select>
+  </label>
+
+</form>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"select select-inverse"</span> <span class="na">for=</span><span class="s">"select-inverse"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"select-inverse"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;option&gt;</span>Select Field<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"1"</span><span class="nt">&gt;</span>Option 01<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2"</span><span class="nt">&gt;</span>Option 02<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="select-sizes">Select Sizes</h2>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Select Extra Large
+</span><span class="k">@select-xlarge-padding</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-xlarge-padding</span><span class="p">;</span>
+<span class="k">@select-xlarge-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-xlarge-height</span><span class="p">;</span>
+<span class="k">@select-xlarge-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-xlarge-font-size</span><span class="p">;</span>
+
+<span class="c1">// Select Large
+</span><span class="k">@select-large-padding</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-large-padding</span><span class="p">;</span>
+<span class="k">@select-large-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-large-height</span><span class="p">;</span>
+<span class="k">@select-large-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-large-font-size</span><span class="p">;</span>
+
+<span class="c1">// Select Medium
+</span><span class="k">@select-medium-padding</span><span class="nd">:</span> <span class="o">@</span><span class="nt">select-padding</span><span class="p">;</span>
+<span class="k">@select-medium-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">select-height</span><span class="p">;</span>
+<span class="k">@select-medium-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">select-font-size</span><span class="p">;</span>
+
+<span class="c1">// Select Small
+</span><span class="k">@select-small-padding</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-small-padding</span><span class="p">;</span>
+<span class="k">@select-small-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-small-height</span><span class="p">;</span>
+<span class="k">@select-small-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-small-font-size</span><span class="p">;</span>
+
+<span class="c1">// Select Extra Small
+</span><span class="k">@select-xsmall-padding</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-xsmall-padding</span><span class="p">;</span>
+<span class="k">@select-xsmall-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-xsmall-height</span><span class="p">;</span>
+<span class="k">@select-xsmall-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-xsmall-font-size</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<form role="form">
+  
+  <label class="select select-xlarge" for="select-xlarge">
+    <select id="select-xlarge">
+      <option>Select Extra Large</option>
+      <option value="1">Option 01</option>
+      <option value="2">Option 02</option>
+    </select>
+  </label>
+  <label class="select select-large" for="select-large">
+    <select id="select-large">
+      <option>Select Large</option>
+      <option value="1">Option 01</option>
+      <option value="2">Option 02</option>
+    </select>
+  </label>
+  <label class="select select-medium" for="select-medium">
+    <select id="select-medium">
+      <option>Select Medium</option>
+      <option value="1">Option 01</option>
+      <option value="2">Option 02</option>
+    </select>
+  </label>
+  <label class="select select-small" for="select-small">
+    <select id="select-small">
+      <option>Select Small</option>
+      <option value="1">Option 01</option>
+      <option value="2">Option 02</option>
+    </select>
+  </label>
+  <label class="select select-xsmall" for="select-xsmall">
+    <select id="select-xsmall">
+      <option>Select Extra Small</option>
+      <option value="1">Option 01</option>
+      <option value="2">Option 02</option>
+    </select>
+  </label>
+
+</form>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"select select-xlarge"</span> <span class="na">for=</span><span class="s">"select-xlarge"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"select-xlarge"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;option&gt;</span>Select Extra Large<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"1"</span><span class="nt">&gt;</span>Option 01<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2"</span><span class="nt">&gt;</span>Option 02<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"select select-large"</span> <span class="na">for=</span><span class="s">"select-large"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"select-large"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;option&gt;</span>Select Large<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"1"</span><span class="nt">&gt;</span>Option 01<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2"</span><span class="nt">&gt;</span>Option 02<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"select select-medium"</span> <span class="na">for=</span><span class="s">"select-medium"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"select-medium"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;option&gt;</span>Select Medium<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"1"</span><span class="nt">&gt;</span>Option 01<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2"</span><span class="nt">&gt;</span>Option 02<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"select select-small"</span> <span class="na">for=</span><span class="s">"select-small"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"select-small"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;option&gt;</span>Select Small<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"1"</span><span class="nt">&gt;</span>Option 01<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2"</span><span class="nt">&gt;</span>Option 02<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"select select-xsmall"</span> <span class="na">for=</span><span class="s">"select-xsmall"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"select-xsmall"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;option&gt;</span>Select Extra Small<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"1"</span><span class="nt">&gt;</span>Option 01<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2"</span><span class="nt">&gt;</span>Option 02<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/label&gt;</span>
+</code></pre>
+</div>
+
+    </div>
+  </section>
+  
+  <footer class="docs-footer">
+  <div class="container">
+    <p>
+    	Designed and built at <a href="http://bigfish.tv">bigfish.tv</a> by <a href="https://twitter.com/scottdejonge">@scottdejonge</a>.
+    	<br>
+    	Code licensed under <a href="https://github.com/bigfishtv/turret/blob/master/LICENSE">MIT</a>, documentation under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
+    </p>
+
+	<p>
+		v3.2.0 &middot;
+		<a href="/turret/blog">Blog</a> &middot; 
+		<a href="https://twitter.com/turretcss">Twitter</a> &middot; 
+		<a href="https://github.com/bigfishtv/turret">GitHub</a> &middot; 
+		<a href="https://bigfishtv.github.io/turret/2.0.12/">v2.0.12 Docs</a> &middot; 
+		<a href="https://github.com/bigfishtv/turret/issues">Issues</a> &middot; 
+		<a href="https://github.com/bigfishtv/turret/releases">Releases</a>
+	</p>
+  </div>
+</footer>
+
+</main>
+
+<div class="clearfix"></div>
+
+<script type="text/javascript" src="/turret/assets/js/main.js"></script>
+
+<script type="text/javascript" src="/turret/assets/js/vendor/jekyll-search.min.js"></script>
+<script>
+  SimpleJekyllSearch.init({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('search-results'),
+    searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+    noResultsText: '<div class="docs-search-no-results">Sorry, there are no results for that search.</div>',
+    json: '/search.json'
+  })
+</script>
+
+  </body>
+</html>

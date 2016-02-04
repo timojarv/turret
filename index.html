@@ -1,116 +1,109 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Turret - A Responsive Front-end Framework for Accessible and Semantic Websites</title>
-	<meta name="description" content="Turret is a responsive front-end framework for accessible and semantic website development. Turret defines base styles for all HTML5 native web elements and includes a simple and intuitive grid system for rapid responsive website development.">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<link rel="shortcut icon" href="docs/ico/favicon.ico" type="image/x-icon" />
-	<link rel="icon" href="docs/ico/favicon.ico" type="image/x-icon" />
-	<script src="docs/vendor/prism.js"></script>
-	<link rel="stylesheet" type="text/css" href="docs/css/styles.css" />
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		ga('create', 'UA-59106857-1', 'auto');
-		ga('send', 'pageview');
-	</script>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+  	
+  		Turret - A Responsive Front-end Framework for Accessible and Semantic Websites
+  	
+  </title>
+  <meta name="description" content="Turret is a responsive front-end framework for accessible and semantic website development.Turret defines base styles for all HTML5 native web elements and includes a simple and intuitive grid system for rapid responsive website development">
+
+  <link rel="shortcut icon" href="/turret/assets/icons/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/turret/assets/icons/favicon.ico" type="image/x-icon" />
+
+  <link rel="stylesheet" href="/turret/assets/css/turret.css">
+  <link rel="stylesheet" href="/turret/assets/css/docs.css">
 </head>
-<body>
-<header class="home-header gradient">
-	<div class="container">
-		<svg class="home-header-icon" xmlns="http://www.w3.org/2000/svg" width="44" height="64" viewBox="0 0 44 64">
-			<path fill="#FFFFFF" d="M36.7 52l-3.1-28.1 8.4-6v-17.9h-8v7h-6v-7h-12v7h-6v-7h-8v17.9l8.4 6-3.1 28.1h-7.3v12h44v-12z"/>
-		</svg>
-		<h1 class="home-header-title">Turret</h1>
-		<p class="home-header-lead lead">Turret is a styles and browser behaviour normalisation framework for rapid development of responsive and accessible websites.</p>
-		<a class="button button-large home-button" href="docs/index.html">Documentation</a>
-		<a class="button button-large home-button" href="https://github.com/bigfishtv/turret">GitHub</a>
-		<p class="text-white"><strong>v3.1.5</strong></p>
-	</div>
+
+  <body>
+
+    <header class="landing-hero landing-hero-primary">
+  <div class="container">
+    <svg class="landing-hero-icon" xmlns="http://www.w3.org/2000/svg" width="44" height="64" viewBox="0 0 44 64">
+      <path fill="#FFFFFF" d="M36.7 52l-3.1-28.1 8.4-6v-17.9h-8v7h-6v-7h-12v7h-6v-7h-8v17.9l8.4 6-3.1 28.1h-7.3v12h44v-12z"/>
+    </svg>
+    <h1>Turret</h1>
+    <p><strong>v3.2.0</strong></p>
+    <a class="button button-large landing-button landing-button-primary" href="/turret/docs/getting-started/">Documentation</a>
+    <a class="button button-large landing-button landing-button-primary" href="https://github.com/bigfishtv/turret">GitHub</a>
+  </div>
 </header>
 
-<section class="home-blocks">
-	<div class="container">
-		<div class="row">
-			<div class="column-1-2 column-push-1-2">
-				<div class="media media-4-3">
-					<img src="docs/img/responsive.svg">
-				</div>
-			</div>
-			<div class="column-1-2 column-pull-1-2">
-				<h2>Responsive<br><small>Mobile First Design</small></h2>
-				<p>Turret has been developed for mobile first responsive web design with an intuitive grid system and responsive utilities for rapid development using logical and legible markup.</p>
-				<a class="button button-secondary" href="docs/index.html#grid">Check out the grid</a>
-			</div>
-		</div>
-		<hr class="divider">
-		<div class="row">
-			<div class="column-1-2 column-push-1-2">
-				<div class="media media-4-3">
-					<img src="docs/img/design.svg">
-				</div>
-			</div>
-			<div class="column-1-2 column-pull-1-2">
-				<h2>Developed for Design<br><small>Customisable Colors and Type</small></h2>
-				<p>Turret is focused on a customisable base of typography, font definitions, color and indicators palettes for simple and stylish web user interfaces.</p>
-				<a class="button button-inverse" href="docs/index.html#typography">See typographic styles</a>
-			</div>
-		</div>
-		<hr class="divider">
-		<div class="row">
-			<div class="column-1-2 column-push-1-2">
-				<div class="media media-4-3">
-					<img src="docs/img/styles.svg">
-				</div>
-			</div>
-			<div class="column-1-2 column-pull-1-2">
-				<h2>Simply Styles<br><small>No Javascript just Less and CSS</small></h2>
-				<p>Turret is a Less framework for styling native web elements. That's about it, no javascript, no custom markup, just semantic HTML5 elements.</p>
-				<a class="button button-primary" href="docs/index.html#elements">Play with styled elements</a>
-			</div>
-		</div>
-		<hr class="divider">
-		<div class="row">
-			<div class="column-1-2 column-push-1-2">
-				<div class="media media-4-3">
-					<img src="docs/img/semantic.svg">
-				</div>
-			</div>
-			<div class="column-1-2 column-pull-1-2">
-				<h2>Stylishly Semantic<br><small>Accessible HTML5 Markup</small></h2>
-				<p>Write markup that is modular, maintainable, and semantic. Turret turns semantic HTML5 markup into styled and responsive elements without the headache.</p>
-				<a class="button button-tertiary" href="docs/index.html#examples">View examples</a>
-			</div>
-		</div>
-	</div>
+<section class="landing-section">
+  <div class="container text-center">
+    <h2>What is Turret?</h2>
+    <p class="lead">Turret is a styles and browser behaviour normalisation framework for rapid development of responsive and accessible websites.</p>
+    <a class="button button-large button-primary" href="/turret/docs/getting-started/">Get started</a>
+  </div>
 </section>
 
-<section class="home-section">
-	<div class="container">
-		<p class="lead">Want to make responsive & accessible websites?</p>
-		<a class="button button-large home-button home-button-secondary" href="docs/index.html">Get started</a>
-	</div>
+<section class="landing-section">
+  <div class="container">
+    <div class="cards">
+      <article class="card">
+        <figure class="media media-4-3">
+          <img src="assets/images/responsive.svg" alt="">
+        </figure>
+        <div class="card-content">  
+          <h3>Responsive</h3>
+          <p>Developed for mobile first responsive web design with an intuitive grid system and responsive utilities.</p>
+        </div>
+      </article>
+      <article class="card">
+        <figure class="media media-4-3">
+          <img src="assets/images/design.svg" alt="">
+        </figure>
+        <div class="card-content">  
+          <h3>Developed for Design</h3>
+          <p>Focused on a customisable base of typography, font definitions, color and indicators palettes for simple and stylish web user interfaces.</p>
+      </div>
+      </article>
+      <article class="card">
+        <figure class="media media-4-3">
+          <img src="assets/images/styles.svg" alt="">
+        </figure>
+        <div class="card-content">  
+          <h3>Simply Styles</h3>
+          <p>Style native web elements. That's it, no javascript, no custom markup, just semantic HTML5 elements.</p>
+      </div>
+      </article>
+      <article class="card">
+        <figure class="media media-4-3">
+          <img src="assets/images/semantic.svg" alt="">
+        </figure>
+        <div class="card-content">  
+          <h3>Stylishly Semantic</h3>
+          <p>Semantic HTML5 markup that is modular, maintainable, and responsive without the headache.</p>
+      </div>
+      </article>
+    </div>
+  </div>
 </section>
 
-<footer class="footer">
+<footer class="docs-footer">
+  <div class="container">
+    <p>
+    	Designed and built at <a href="http://bigfish.tv">bigfish.tv</a> by <a href="https://twitter.com/scottdejonge">@scottdejonge</a>.
+    	<br>
+    	Code licensed under <a href="https://github.com/bigfishtv/turret/blob/master/LICENSE">MIT</a>, documentation under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
+    </p>
+
 	<p>
-		Designed and built at <a href="http://bigfish.tv/" target="_blank">bigfish.tv</a> by <a href="https://twitter.com/scottdejonge" target="_blank">@scottdejonge</a>.<br>
-		Code licensed under <a rel="license" href="https://github.com/bigfishtv/turret/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.
+		v3.2.0 &middot;
+		<a href="/turret/blog">Blog</a> &middot; 
+		<a href="https://twitter.com/turretcss">Twitter</a> &middot; 
+		<a href="https://github.com/bigfishtv/turret">GitHub</a> &middot; 
+		<a href="https://bigfishtv.github.io/turret/2.0.12/">v2.0.12 Docs</a> &middot; 
+		<a href="https://github.com/bigfishtv/turret/issues">Issues</a> &middot; 
+		<a href="https://github.com/bigfishtv/turret/releases">Releases</a>
 	</p>
-	<nav class="nav nav-inline">
-		<ul>
-			<li>v3.1.5</li>
-			<li><a href="https://twitter.com/bigfishtvturret">Twitter</a></li>
-			<li><a href="https://github.com/bigfishtv/turret">GitHub</a></li>
-			<li><a href="docs/index.html#examples">Examples</a></li>
-			<li><a href="https://bigfishtv.github.io/turret/2.0.12/">v2.0.12 Docs</a></li>
-			<li><a href="https://github.com/bigfishtv/turret/issues">Issues</a></li>
-			<li><a href="https://github.com/bigfishtv/turret/releases">Releases</a></li>
-		</ul>
-	</nav>
-</footer></body>
+  </div>
+</footer>
+
+  </body>
 </html>

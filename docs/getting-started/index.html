@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+  	
+  		Getting Started - Turret - A Responsive Front-end Framework for Accessible and Semantic Websites
+  	
+  </title>
+  <meta name="description" content="Turret is a responsive front-end framework for accessible and semantic website development.Turret defines base styles for all HTML5 native web elements and includes a simple and intuitive grid system for rapid responsive website development">
+
+  <link rel="shortcut icon" href="/turret/assets/icons/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/turret/assets/icons/favicon.ico" type="image/x-icon" />
+
+  <link rel="stylesheet" href="/turret/assets/css/turret.css">
+  <link rel="stylesheet" href="/turret/assets/css/docs.css">
+</head>
+
+  <body>
+
+    <aside class="docs-sidebar">
+
+  <form id="search-container" class="docs-search">
+  <input id="search-input" class="docs-search-input" type="search" placeholder="Search Documentation">
+  <ul id="search-results" class="docs-search-results"></ul>
+</form>
+
+
+  <nav class="docs-navigation">
+    <ul>
+      <li class="">
+        <a href="/turret/">Turret</a></a>
+      </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="active">
+          <a href="/turret/docs/getting-started/">Getting Started</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#download">Download</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#structure">Structure</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#usage">Usage</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#documentation">Documentation</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#examples">Examples</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/base/">Base</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#global">Global</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#root">Root</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#body">Body</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#colors">Colors</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#font">Font</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#link">Link</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#image">Image</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#breakpoints">Breakpoints</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#media-queries">Media Queries</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#print">Print</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/typography/">Typography</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#headings">Headings</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#strong">Strong</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#emphasis">Emphasis</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#paragraph">Paragraph</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#lead">Lead</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#hr">hr</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#blockquote">Blockquote</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#pullout">Pullout</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#list">List</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#definition-list">Definition List</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#code">Code</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#pre">Pre</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#kbd">Kbd</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#mark">Mark</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/grid/">Grid</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#container">Container</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#row">Row</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#column">Column</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#offset">Offset</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#push">Push</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#pull">Pull</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/form/">Form</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#form-examples">Form Examples</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#label">Label</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#fieldset">Fieldset</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#form-message">Form Message</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#input">Input</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#input-indicators">Input Indicators</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#input-sizes">Input Sizes</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#input-group">Input Group</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#input-group-sizes">Input Group Sizes</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#control">Control</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#select">Select</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#select-sizes">Select Sizes</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/elements/">Elements</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#button">Button</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#button-styles">Button Styles</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#button-indicators">Button Indicators</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#button-sizes">Button Sizes</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#button-group">Button Group</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#button-icon">Button Icon</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#figure">Figure</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#media">Media</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#nav">Nav</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#table">Table</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/utilities/">Utilities</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#utility-classes">Utility Classes</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#visibility">Visibility</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#display">Display</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#positioning">Positioning</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#flex">Flex</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#float">Float</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#max-width">Max Width</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#margin">Margin</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#padding">Padding</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#font-family">Font Family</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#font-size">Font Size</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#text">Text</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#text-color">Text Color</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#background">Background</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/mixins/">Mixins</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#general">General</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#input">Input</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#select">Select</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#button">Button</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#font">Font</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#border-radius">Border Radius</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#background">Background</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#placeholder">Placeholder</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#arrows">Arrows</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#transitions">Transitions</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#transforms">Transforms</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#animations">Animations</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#filters">Filters</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#flexbox">Flexbox</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/support/">Support</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#browsers">Browsers</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#css">CSS</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/accessibility/">Accessibility</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#screen-reader">Screen Reader</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#aria-roles">ARIA Roles</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
+          <a href="/turret/docs/notes/">Notes</a>
+          <ul>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#contributors">Contributors</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#licence">Licence</a>
+              </li>
+            
+              
+              
+
+              
+
+              <li class="">
+                <a href="#licence-notes">Licence Notes</a>
+              </li>
+            
+          </ul>
+        </li>
+
+      
+    </ul>
+</nav>
+
+</aside>
+
+
+<main class="docs-main">
+
+  <header class="docs-header">
+    <h1 class="docs-header-title">Turret</h1>
+    <button id="toggle" class="docs-header-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </header>
+
+  <section class="docs-page-header">
+    <div class="container">
+      <h1>Getting Started</h1>
+      <p class="lead">A introduction to how to get started, download and use Turret including usage and examples.</p>
+    </div>
+  </section>
+
+  <section class="docs-content">
+    <div class="container">
+      <h2 id="download">Download</h2>
+
+<p>There are four quick start ways to download Turret available:</p>
+
+<h3 id="download-the-latest-release">Download the latest release</h3>
+
+<p><a class="button" href="https://github.com/bigfishtv/turret/archive/master.zip">Download from GitHub</a></p>
+
+<h3 id="clone-the-repo-from-github">Clone the repo from GitHub</h3>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git clone https://github.com/bigfishtv/turret.git
+</code></pre>
+</div>
+
+<h3 id="install-with-npm">Install with npm</h3>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>npm install bigfishtv-turret
+</code></pre>
+</div>
+
+<h3 id="install-with-bower">Install with Bower</h3>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>bower install turret
+</code></pre>
+</div>
+
+<h2 id="structure">Structure</h2>
+
+<h3 id="selectors">Selectors</h3>
+
+<p>Where styles are applied on HTML elements with classes, the structuring of classes is element, modifier, style. For example the .button class can extended to button button-block button-primary</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;element</span> <span class="na">class=</span><span class="s">"[element] [element-modifier] [element-style]"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/element&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="viewport">Viewport</h3>
+
+<p>To ensure proper rendering and touch zooming, add the viewport meta tag to your <code class="highlighter-rouge">&lt;head&gt;</code>.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"</span><span class="nt">&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="html5-doctype">HTML5 Doctype</h3>
+
+<p>Turret makes use of HTML5 elements and CSS properties that require the use of the HTML5 doctype.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="normalize">Normalize</h3>
+
+<p>For improved cross-browser rendering, Turret uses Normalize.css, a project by Nicolas Gallagher and Jonathan Neal.</p>
+
+<h3 id="template">Template</h3>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"X-UA-Compatible"</span> <span class="na">content=</span><span class="s">"IE=edge,chrome=1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Template<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">href=</span><span class="s">"css/turret.css"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="usage">Usage</h2>
+
+<p>Turret is a collection of self-contained less files that include definitions and styles required for each element. These can be included and removed as required to minimise generated CSS styles.</p>
+
+<h3 id="css">CSS</h3>
+
+<p>To use Turret as CSS in your project include turret.min.css in your document <code class="highlighter-rouge">&lt;head&gt;</code></p>
+
+<h3 id="less">Less</h3>
+
+<p>To use Turret with Less in your project you will need to either:</p>
+
+<ol>
+  <li>Import <code class="highlighter-rouge">turret.less</code> to include styles for all elements.</li>
+  <li>Import <code class="highlighter-rouge">.less</code> files for each element as required.</li>
+</ol>
+
+<h3 id="theming">Theming</h3>
+
+<p>To theme Turret you can override default style defintions either within your own project styles or included as <code class="highlighter-rouge">theme.less</code> to <code class="highlighter-rouge">@import</code> in your styles.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Turret
+</span><span class="k">@import</span> <span class="s1">'/turret/turret.less'</span><span class="p">;</span>
+
+<span class="c1">// Override Primary Color
+</span><span class="k">@primary</span><span class="nd">:</span> <span class="nn">#FF0000</span><span class="p">;</span>
+
+<span class="c1">// Override Button Color
+</span><span class="k">@button-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">grey</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<h3 id="repo-file-structure">Repo File Structure</h3>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>turret/
+  └ dist/
+    ├ turret.css
+    └ turret.min.css
+  └ docs/
+  └ examples/
+    ├ grid.html
+    ├ template.html
+    └ theme.html
+  └ turret/
+</code></pre>
+</div>
+
+<h3 id="turret-file-structure">Turret File Structure</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>
+turret/
+  turret.less
+  └ lib/
+    └ normalize.less
+  └ base/
+    ├ global.less
+    ├ body.less
+    ├ colors.less
+    ├ font.less
+    ├ link.less
+    ├ image.less
+    ├ breakpoints.less
+    ├ media-queries.less
+    └ print.less
+  └ typography/
+    ├ headings.less
+    ├ strong.less
+    ├ emphasis.less
+    ├ paragraph.less
+    ├ lead.less
+    ├ hr.less
+    ├ blockquote.less
+    ├ pullout.less
+    ├ list.less
+    ├ definition-list.less
+    ├ code.less
+    ├ pre.less
+    ├ kbd.less
+    └ mark.less
+  └ grid/
+    ├ container.less
+    ├ row.less
+    ├ column.less
+    ├ offset.less
+    ├ push.less
+    └ pull.less
+  └ form/
+    ├ label.less
+    ├ fieldset.less
+    ├ form-message.less
+    ├ input.less
+    ├ input-indicators.less
+    ├ input-sizes.less
+    ├ input-group.less
+    ├ input-group-sizes.less
+    ├ control.less
+    ├ select.less
+    └ select-sizes.less
+  └ elements/
+    ├ button.less
+    ├ button-styles.less
+    ├ button-indicators.less
+    ├ button-sizes.less
+    ├ button-group.less
+    ├ button-icon.less
+    ├ figure.less
+    ├ media.less
+    ├ nav.less
+    └ table.less
+  └ utilities/
+    ├ utility-classes.less
+    ├ visiblity.less
+    ├ display.less
+    ├ positioning.less
+    ├ flex.less
+    ├ float.less
+    ├ max-width.less
+    ├ margin.less
+    ├ padding.less
+    ├ font-family.less
+    ├ font-size.less
+    ├ text.less
+    ├ text-color.less
+    └ background.less
+  └ mixins/
+    ├ mixins.less
+    ├ input.less
+    ├ select.less
+    ├ button.less
+    ├ font.less
+    ├ border-radius.less
+    ├ background.less
+    ├ placeholder.less
+    ├ arrows.less
+    ├ transitions.less
+    ├ transforms.less
+    ├ animations.less
+    ├ filters.less
+    └ flexbox.less
+  └ accessibility/
+    └ screen-readr.less
+</code></pre>
+</div>
+
+<h2 id="documentation">Documentation</h2>
+
+<p>Turret uses npm for it’s build system with watch and build scripts for documentation and for deployment:</p>
+
+<h3 id="watch-turret">Watch Turret</h3>
+
+<p>Watch Less files in turret concatenate and compile</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>npm run watch:turret
+</code></pre>
+</div>
+
+<h3 id="watch-docs">Watch Docs</h3>
+
+<p>Watch Less files in docs/styles concatenate and compile</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>npm run watch:docs
+</code></pre>
+</div>
+
+<h3 id="build">Build</h3>
+
+<p>Build Less files concatenate and compile</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>npm run build
+</code></pre>
+</div>
+
+<h3 id="dist-css">Dist CSS</h3>
+
+<p>Build Less files in turret concatenate and compile into dist</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>npm run dist:css
+</code></pre>
+</div>
+
+<h3 id="dist-min">Dist Min</h3>
+
+<p>Build Less files in turret concatenate, compile, and minimise into dist</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>npm run dist:min
+</code></pre>
+</div>
+
+<h3 id="dist">Dist</h3>
+
+<p>Run Dist CSS and Dist Min</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>npm run dist
+</code></pre>
+</div>
+
+<h2 id="examples">Examples</h2>
+
+<div class="row">
+  <div class="column-1-4 column-small-1-2">
+    <a class="example" href="examples/template.html" target="_blank">
+      <img src="/turret/assets/images/template.svg" class="responsive" />
+      <p>Template</p>
+    </a>
+  </div>
+  <div class="column-1-4 column-small-1-2">
+    <a class="example" href="examples/grid.html" target="_blank">
+      <img src="/turret/assets/images/grid.svg" class="responsive" />
+      <p>Grid</p>
+    </a>
+  </div>
+  <div class="column-1-4 column-small-1-2">
+    <a class="example" href="examples/theme.html" target="_blank">
+      <img src="/turret/assets/images/theme.svg" class="responsive" />
+      <p>Theme</p>
+    </a>
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+  <footer class="docs-footer">
+  <div class="container">
+    <p>
+    	Designed and built at <a href="http://bigfish.tv">bigfish.tv</a> by <a href="https://twitter.com/scottdejonge">@scottdejonge</a>.
+    	<br>
+    	Code licensed under <a href="https://github.com/bigfishtv/turret/blob/master/LICENSE">MIT</a>, documentation under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
+    </p>
+
+	<p>
+		v3.2.0 &middot;
+		<a href="/turret/blog">Blog</a> &middot; 
+		<a href="https://twitter.com/turretcss">Twitter</a> &middot; 
+		<a href="https://github.com/bigfishtv/turret">GitHub</a> &middot; 
+		<a href="https://bigfishtv.github.io/turret/2.0.12/">v2.0.12 Docs</a> &middot; 
+		<a href="https://github.com/bigfishtv/turret/issues">Issues</a> &middot; 
+		<a href="https://github.com/bigfishtv/turret/releases">Releases</a>
+	</p>
+  </div>
+</footer>
+
+</main>
+
+<div class="clearfix"></div>
+
+<script type="text/javascript" src="/turret/assets/js/main.js"></script>
+
+<script type="text/javascript" src="/turret/assets/js/vendor/jekyll-search.min.js"></script>
+<script>
+  SimpleJekyllSearch.init({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('search-results'),
+    searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+    noResultsText: '<div class="docs-search-no-results">Sorry, there are no results for that search.</div>',
+    json: '/search.json'
+  })
+</script>
+
+  </body>
+</html>

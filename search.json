@@ -2,77 +2,77 @@
     
         {
             "title" : "Accessibility",
-            "url"   : "/turret/docs/accessibility/"
+            "url"   : "/docs/accessibility/"
         } ,
     
         {
             "title" : "Base",
-            "url"   : "/turret/docs/base/"
+            "url"   : "/docs/base/"
         } ,
     
         {
             "title" : "Elements",
-            "url"   : "/turret/docs/elements/"
+            "url"   : "/docs/elements/"
         } ,
     
         {
             "title" : "Form",
-            "url"   : "/turret/docs/form/"
+            "url"   : "/docs/form/"
         } ,
     
         {
             "title" : "Getting Started",
-            "url"   : "/turret/docs/getting-started/"
+            "url"   : "/docs/getting-started/"
         } ,
     
         {
             "title" : "Grid",
-            "url"   : "/turret/docs/grid/"
+            "url"   : "/docs/grid/"
         } ,
     
         {
             "title" : "Releases",
-            "url"   : "/turret/blog/releases/"
+            "url"   : "/blog/releases/"
         } ,
     
         {
             "title" : "Blog",
-            "url"   : "/turret/blog/"
+            "url"   : "/blog/"
         } ,
     
         {
             "title" : "",
-            "url"   : "/turret/"
+            "url"   : "/"
         } ,
     
         {
             "title" : "Mixins",
-            "url"   : "/turret/docs/mixins/"
+            "url"   : "/docs/mixins/"
         } ,
     
         {
             "title" : "Notes",
-            "url"   : "/turret/docs/notes/"
+            "url"   : "/docs/notes/"
         } ,
     
         {
             "title" : "",
-            "url"   : "/turret/search.json"
+            "url"   : "/search.json"
         } ,
     
         {
             "title" : "Support",
-            "url"   : "/turret/docs/support/"
+            "url"   : "/docs/support/"
         } ,
     
         {
             "title" : "Typography",
-            "url"   : "/turret/docs/typography/"
+            "url"   : "/docs/typography/"
         } ,
     
         {
             "title" : "Utilities",
-            "url"   : "/turret/docs/utilities/"
+            "url"   : "/docs/utilities/"
         } 
     
 ]

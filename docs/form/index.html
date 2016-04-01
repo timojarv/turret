@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
   <meta charset="utf-8">
@@ -56,6 +56,21 @@
         
 
         <li class="">
+          <a href="/docs/theme/">Theme</a>
+          <ul>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
           <a href="/docs/getting-started/">Getting Started</a>
           <ul>
             
@@ -84,24 +99,6 @@
 
               <li class="">
                 <a href="#usage">Usage</a>
-              </li>
-            
-              
-              
-
-              
-
-              <li class="">
-                <a href="#documentation">Documentation</a>
-              </li>
-            
-              
-              
-
-              
-
-              <li class="">
-                <a href="#examples">Examples</a>
               </li>
             
           </ul>
@@ -1154,9 +1151,9 @@
 <h2 id="label">Label</h2>
 
 <div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Label
-</span><span class="k">@label-margin</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.6rem</span> <span class="nt">0px</span><span class="p">;</span>
-<span class="k">@label-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">medium-font-family</span><span class="p">;</span>
-<span class="k">@label-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">medium-font-weight</span><span class="p">;</span>
+</span><span class="k">@label-margin</span><span class="nd">:</span> <span class="nt">1rem</span> <span class="nt">0</span><span class="p">;</span>
+<span class="k">@label-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">regular-font-family</span><span class="p">;</span>
+<span class="k">@label-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">regular-font-weight</span><span class="p">;</span>
 <span class="k">@label-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">font-size-small</span><span class="p">;</span>
 <span class="k">@label-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">dark</span><span class="p">;</span>
 <span class="k">@label-line-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">line-height-medium</span><span class="p">;</span>
@@ -1285,7 +1282,7 @@
 <span class="c1">// Input Focus
 </span><span class="k">@input-focus-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-color</span><span class="p">;</span>
 <span class="k">@input-focus-background</span><span class="nd">:</span> <span class="nt">darken</span><span class="o">(@</span><span class="nt">input-background</span><span class="o">,</span> <span class="nt">2</span><span class="nv">%</span><span class="o">)</span><span class="p">;</span>
-<span class="k">@input-focus-border</span><span class="nd">:</span> <span class="nt">1px</span> <span class="nt">solid</span> <span class="o">@</span><span class="nt">primary</span><span class="p">;</span>
+<span class="k">@input-focus-border</span><span class="nd">:</span> <span class="nt">1px</span> <span class="nt">solid</span> <span class="o">@</span><span class="nt">info</span><span class="p">;</span>
 
 <span class="c1">// Input Placeholder
 </span><span class="k">@input-placeholder-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-font-family</span><span class="p">;</span>
@@ -1302,13 +1299,13 @@
 
 <span class="c1">// Input Inverse Hover
 </span><span class="k">@input-inverse-hover-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-inverse-color</span><span class="p">;</span>
-<span class="k">@input-inverse-hover-background</span><span class="nd">:</span> <span class="nt">darken</span><span class="o">(@</span><span class="nt">input-inverse-background</span><span class="o">,</span> <span class="nt">2</span><span class="nv">%</span><span class="o">)</span><span class="p">;</span>
+<span class="k">@input-inverse-hover-background</span><span class="nd">:</span> <span class="nt">darken</span><span class="o">(@</span><span class="nt">input-inverse-background</span><span class="o">,</span> <span class="nt">2</span><span class="nc">.5</span><span class="nv">%</span><span class="o">)</span><span class="p">;</span>
 <span class="k">@input-inverse-hover-border</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-inverse-border</span><span class="p">;</span>
 
 <span class="c1">// Input Inverse Focus
 </span><span class="k">@input-inverse-focus-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-inverse-color</span><span class="p">;</span>
-<span class="k">@input-inverse-focus-background</span><span class="nd">:</span> <span class="nt">darken</span><span class="o">(@</span><span class="nt">input-inverse-background</span><span class="o">,</span> <span class="nt">2</span><span class="nv">%</span><span class="o">)</span><span class="p">;</span>
-<span class="k">@input-inverse-focus-border</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-inverse-border</span><span class="p">;</span>
+<span class="k">@input-inverse-focus-background</span><span class="nd">:</span> <span class="nt">darken</span><span class="o">(@</span><span class="nt">input-inverse-background</span><span class="o">,</span> <span class="nt">5</span><span class="nv">%</span><span class="o">)</span><span class="p">;</span>
+<span class="k">@input-inverse-focus-border</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-focus-border</span><span class="p">;</span>
 
 <span class="c1">// Input Disabled
 </span><span class="k">@input-disabled-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">light</span><span class="p">;</span>
@@ -1640,6 +1637,13 @@
 <span class="k">@control-padding</span><span class="nd">:</span> <span class="nt">0</span> <span class="nt">0</span> <span class="nt">0</span> <span class="nt">1</span><span class="nc">.5em</span><span class="p">;</span>
 <span class="k">@control-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-color</span><span class="p">;</span>
 
+<span class="c1">// Control Hover
+</span><span class="k">@control-hover-indicator-background</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-hover-background</span><span class="p">;</span>
+<span class="k">@control-hover-indicator-border</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-hover-border</span><span class="p">;</span>
+
+<span class="c1">// Control Focus
+</span><span class="k">@control-focus-indicator-box-shadow</span><span class="nd">:</span> <span class="nt">0</span> <span class="nt">0</span> <span class="nt">0</span> <span class="nt">1px</span> <span class="o">@</span><span class="nt">white</span><span class="o">,</span> <span class="nt">0</span> <span class="nt">0</span> <span class="nt">0</span> <span class="nt">2px</span> <span class="o">@</span><span class="nt">info</span><span class="p">;</span>
+
 <span class="c1">// Control Indicator
 </span><span class="k">@control-indicator-size</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.6rem</span><span class="p">;</span>
 <span class="k">@control-indicator-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">primary</span><span class="p">;</span>
@@ -1809,11 +1813,31 @@
 </span><span class="k">@select-arrow-size</span><span class="nd">:</span> <span class="nt">0</span><span class="nc">.4rem</span><span class="p">;</span>
 <span class="k">@select-arrow-background</span><span class="nd">:</span> <span class="o">@</span><span class="nt">dark</span><span class="p">;</span>
 
+<span class="c1">// Select Hover
+</span><span class="k">@select-hover-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-hover-color</span><span class="p">;</span>
+<span class="k">@select-hover-background</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-hover-background</span><span class="p">;</span>
+<span class="k">@select-hover-border</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-hover-border</span><span class="p">;</span>
+
+<span class="c1">// Select Focus
+</span><span class="k">@select-focus-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-focus-color</span><span class="p">;</span>
+<span class="k">@select-focus-background</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-focus-background</span><span class="p">;</span>
+<span class="k">@select-focus-border</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-focus-border</span><span class="p">;</span>
+
 <span class="c1">// Select Inverse
 </span><span class="k">@select-inverse-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-inverse-color</span><span class="p">;</span>
 <span class="k">@select-inverse-border</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-inverse-border</span><span class="p">;</span>
 <span class="k">@select-inverse-background</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-inverse-background</span><span class="p">;</span>
 <span class="k">@select-inverse-arrow-background</span><span class="nd">:</span> <span class="o">@</span><span class="nt">white</span><span class="p">;</span>
+
+<span class="c1">// Select Inverse Hover
+</span><span class="k">@select-inverse-hover-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-inverse-hover-color</span><span class="p">;</span>
+<span class="k">@select-inverse-hover-background</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-inverse-hover-background</span><span class="p">;</span>
+<span class="k">@select-inverse-hover-border</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-inverse-hover-border</span><span class="p">;</span>
+
+<span class="c1">// Select Inverse Focus
+</span><span class="k">@select-inverse-focus-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-inverse-focus-color</span><span class="p">;</span>
+<span class="k">@select-inverse-focus-background</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-inverse-focus-background</span><span class="p">;</span>
+<span class="k">@select-inverse-focus-border</span><span class="nd">:</span> <span class="o">@</span><span class="nt">input-inverse-focus-border</span><span class="p">;</span>
 </code></pre>
 </div>
 
@@ -1984,7 +2008,7 @@
     </p>
 
 	<p>
-		v3.2.0 &middot;
+		v3.3.0 &middot;
 		<a href="/blog">Blog</a> &middot; 
 		<a href="https://twitter.com/turretcss">Twitter</a> &middot; 
 		<a href="https://github.com/bigfishtv/turret">GitHub</a> &middot; 
@@ -1999,8 +2023,7 @@
 
 <div class="clearfix"></div>
 
-<script type="text/javascript" src="/assets/js/main.js"></script>
-
+<script type="text/javascript" src="/assets/js/docs.js"></script>
 <script type="text/javascript" src="/assets/js/vendor/jekyll-search.min.js"></script>
 <script>
   SimpleJekyllSearch.init({

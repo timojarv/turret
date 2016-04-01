@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
   <meta charset="utf-8">
@@ -56,6 +56,21 @@
         
 
         <li class="">
+          <a href="/docs/theme/">Theme</a>
+          <ul>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
           <a href="/docs/getting-started/">Getting Started</a>
           <ul>
             
@@ -84,24 +99,6 @@
 
               <li class="">
                 <a href="#usage">Usage</a>
-              </li>
-            
-              
-              
-
-              
-
-              <li class="">
-                <a href="#documentation">Documentation</a>
-              </li>
-            
-              
-              
-
-              
-
-              <li class="">
-                <a href="#examples">Examples</a>
               </li>
             
           </ul>
@@ -1076,13 +1073,14 @@
 </div>
 
 <div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Button
-</span><span class="k">@button-padding</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.2rem</span> <span class="nt">1</span><span class="nc">.6rem</span><span class="p">;</span>
+</span><span class="k">@button-padding</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.3rem</span> <span class="nt">2</span><span class="nc">.2rem</span><span class="p">;</span>
 <span class="k">@button-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">height-medium</span><span class="p">;</span>
-<span class="k">@button-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">semibold-font-family</span><span class="p">;</span>
-<span class="k">@button-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">semibold-font-weight</span><span class="p">;</span>
+<span class="k">@button-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">medium-font-family</span><span class="p">;</span>
+<span class="k">@button-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">medium-font-weight</span><span class="p">;</span>
 <span class="k">@button-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">font-size-medium</span><span class="p">;</span>
 <span class="k">@button-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">dark-grey</span><span class="p">;</span>
 <span class="k">@button-line-height</span><span class="nd">:</span> <span class="nt">1</span><span class="p">;</span>
+<span class="k">@button-letter-spacing</span><span class="nd">:</span> <span class="nt">0</span><span class="nc">.05rem</span><span class="p">;</span>
 <span class="k">@button-text-align</span><span class="nd">:</span> <span class="nt">center</span><span class="p">;</span>
 <span class="k">@button-text-transform</span><span class="nd">:</span> <span class="nt">none</span><span class="p">;</span>
 <span class="k">@button-background</span><span class="nd">:</span> <span class="o">@</span><span class="nt">white</span><span class="p">;</span>
@@ -1290,12 +1288,12 @@
 </div>
 
 <div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Button Extra Large
-</span><span class="k">@button-xlarge-padding</span><span class="nd">:</span> <span class="nt">2</span><span class="nc">.0rem</span> <span class="nt">3</span><span class="nc">.0rem</span><span class="p">;</span>
+</span><span class="k">@button-xlarge-padding</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.8rem</span> <span class="nt">3</span><span class="nc">.2rem</span><span class="p">;</span>
 <span class="k">@button-xlarge-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">height-xlarge</span><span class="p">;</span>
 <span class="k">@button-xlarge-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">font-size-xlarge</span><span class="p">;</span>
 
 <span class="c1">// Button Large
-</span><span class="k">@button-large-padding</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.5rem</span> <span class="nt">2</span><span class="nc">.5rem</span><span class="p">;</span>
+</span><span class="k">@button-large-padding</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.4rem</span> <span class="nt">2</span><span class="nc">.8rem</span><span class="p">;</span>
 <span class="k">@button-large-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">height-large</span><span class="p">;</span>
 <span class="k">@button-large-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">font-size-large</span><span class="p">;</span>
 
@@ -1305,12 +1303,12 @@
 <span class="k">@button-medium-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">button-font-size</span><span class="p">;</span>
 
 <span class="c1">// Button Small
-</span><span class="k">@button-small-padding</span><span class="nd">:</span> <span class="nt">0</span><span class="nc">.8rem</span> <span class="nt">1</span><span class="nc">.2rem</span><span class="p">;</span>
+</span><span class="k">@button-small-padding</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.1rem</span> <span class="nt">1</span><span class="nc">.6rem</span><span class="p">;</span>
 <span class="k">@button-small-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">height-small</span><span class="p">;</span>
 <span class="k">@button-small-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">font-size-small</span><span class="p">;</span>
 
 <span class="c1">// Button Extra Small
-</span><span class="k">@button-xsmall-padding</span><span class="nd">:</span> <span class="nt">0</span><span class="nc">.4rem</span> <span class="nt">0</span><span class="nc">.8rem</span><span class="p">;</span>
+</span><span class="k">@button-xsmall-padding</span><span class="nd">:</span> <span class="nt">0</span><span class="nc">.6rem</span> <span class="nt">1</span><span class="nc">.2rem</span><span class="p">;</span>
 <span class="k">@button-xsmall-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">height-xsmall</span><span class="p">;</span>
 <span class="k">@button-xsmall-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">font-size-xsmall</span><span class="p">;</span>
 </code></pre>
@@ -1768,17 +1766,17 @@
 
 <span class="c1">// Table Caption
 </span><span class="k">@table-caption-margin</span><span class="nd">:</span> <span class="nt">1rem</span> <span class="nt">0</span><span class="p">;</span>
-<span class="k">@table-caption-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">bold-font-family</span><span class="p">;</span>
-<span class="k">@table-caption-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">bold-font-weight</span><span class="p">;</span>
+<span class="k">@table-caption-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">regular-font-family</span><span class="p">;</span>
+<span class="k">@table-caption-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">regular-font-weight</span><span class="p">;</span>
 <span class="k">@table-caption-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">font-size-medium</span><span class="p">;</span>
 <span class="k">@table-caption-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">body-color</span><span class="p">;</span>
 <span class="k">@table-caption-text-align</span><span class="nd">:</span> <span class="nt">left</span><span class="p">;</span>
 
 <span class="c1">// Table Head
 </span><span class="k">@table-head-padding</span><span class="nd">:</span> <span class="nt">1rem</span><span class="p">;</span>
-<span class="k">@table-head-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">bold-font-family</span><span class="p">;</span>
-<span class="k">@table-head-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">bold-font-weight</span><span class="p">;</span>
-<span class="k">@table-head-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">paragraph-font-size</span><span class="p">;</span>
+<span class="k">@table-head-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">medium-font-family</span><span class="p">;</span>
+<span class="k">@table-head-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">medium-font-weight</span><span class="p">;</span>
+<span class="k">@table-head-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">font-size-small</span><span class="p">;</span>
 <span class="k">@table-head-text-align</span><span class="nd">:</span> <span class="nt">left</span><span class="p">;</span>
 <span class="k">@table-head-text-transform</span><span class="nd">:</span> <span class="nt">none</span><span class="p">;</span>
 <span class="k">@table-head-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">body-color</span><span class="p">;</span>
@@ -1789,11 +1787,14 @@
 </span><span class="k">@table-cell-padding</span><span class="nd">:</span> <span class="nt">1rem</span><span class="p">;</span>
 <span class="k">@table-cell-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">regular-font-family</span><span class="p">;</span>
 <span class="k">@table-cell-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">regular-font-weight</span><span class="p">;</span>
-<span class="k">@table-cell-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">paragraph-font-size</span><span class="p">;</span>
+<span class="k">@table-cell-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">font-size-small</span><span class="p">;</span>
 <span class="k">@table-cell-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">body-color</span><span class="p">;</span>
 <span class="k">@table-cell-line-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">line-height-medium</span><span class="p">;</span>
 <span class="k">@table-cell-vertical-align</span><span class="nd">:</span> <span class="nt">middle</span><span class="p">;</span>
 <span class="k">@table-cell-border</span><span class="nd">:</span> <span class="o">@</span><span class="nt">table-border</span><span class="p">;</span>
+
+<span class="c1">// Table Reponsive
+</span><span class="k">@table-responsive-breakpoint</span><span class="nd">:</span> <span class="o">@</span><span class="nt">xsmall</span><span class="p">;</span>
 </code></pre>
 </div>
 
@@ -1885,7 +1886,7 @@
     </p>
 
 	<p>
-		v3.2.0 &middot;
+		v3.3.0 &middot;
 		<a href="/blog">Blog</a> &middot; 
 		<a href="https://twitter.com/turretcss">Twitter</a> &middot; 
 		<a href="https://github.com/bigfishtv/turret">GitHub</a> &middot; 
@@ -1900,8 +1901,7 @@
 
 <div class="clearfix"></div>
 
-<script type="text/javascript" src="/assets/js/main.js"></script>
-
+<script type="text/javascript" src="/assets/js/docs.js"></script>
 <script type="text/javascript" src="/assets/js/vendor/jekyll-search.min.js"></script>
 <script>
   SimpleJekyllSearch.init({

@@ -8,10 +8,10 @@
 
   <title>
   	
-  		Turret 3.1.5 Released
+  		Turret 3.3.0 Released: The Accessibility Update
   	
   </title>
-  <meta name="description" content="Additions">
+  <meta name="description" content="Turret v3.3.0 is here 👍 and has some great improvements for accessibility with the addition of focus states for controls and selects as well as a a new look ...">
 
   <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon" />
   <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon" />
@@ -35,9 +35,9 @@
 
     <header class="blog-header">
   <div class="container max-width-large">
-    <h1>Turret 3.1.5 Released</h1>
+    <h1>Turret 3.3.0 Released: The Accessibility Update</h1>
     <p class="lead">
-      <time>14 October 2015</time>
+      <time>01 April 2016</time>
     </p>
   </div>
 </header>
@@ -59,7 +59,7 @@
   <h4 class="blog-sidebar-title">Recent Releases</h4>
   <ul>
     
-    <li class="">
+    <li class="current">
       <a href="/release/2016/04/01/turret-3.3.0-released/">Version 3.3.0</a>
     </li>
     
@@ -67,7 +67,7 @@
       <a href="/release/2016/02/04/turret-3.2.0-released/">Version 3.2.0</a>
     </li>
     
-    <li class="current">
+    <li class="">
       <a href="/release/2015/10/14/turret-3.1.5-released/">Version 3.1.5</a>
     </li>
     
@@ -101,18 +101,37 @@
 </aside>
       </div>
       <div class="column-3-4 post-content">
-        <h2 id="additions">Additions</h2>
+        <p>Turret v3.3.0 is here 👍 and has some great improvements for accessibility with the addition of focus states for controls and selects as well as a a new look with WCAG 2.0 AA colors! 🎉</p>
+
+<h2 id="updates">Updates</h2>
 
 <ul>
-  <li>Added <code class="highlighter-rouge">@body-letter-spacing</code> variable definition to <code class="highlighter-rouge">base/body.less</code></li>
-  <li>Added flex utility classes: <code class="highlighter-rouge">flex</code>, <code class="highlighter-rouge">flex-left</code>, and <code class="highlighter-rouge">flex-right</code></li>
+  <li>Added <code class="highlighter-rouge">@list-item-padding</code> vairble defintion for List Items for nicer spacing</li>
+  <li>Added <code class="highlighter-rouge">:focus</code> and <code class="highlighter-rouge">:hover</code> styles to both selects and controls for better focus indication</li>
+  <li>Updated default input focus color to <code class="highlighter-rouge">@info</code></li>
+  <li>Added <code class="highlighter-rouge">typography.less</code> to remove margins from the top and bottom of typographic elements that are the first and last children of a parent element</li>
+  <li>Updated default styles for label, button, and mark elements</li>
+  <li>Updated default font size stack to 2.0rem, 1.8rem, 1.6rem, 1.4rem, and 1.2rem</li>
+  <li>Updated default margin and padding global variables to 8.0rem, 5.0rem, 3.5rem, 2.0rem, and 1.5rem</li>
+  <li>Updated default height global variables for buttons and inputs to 6.0rem, 5.0rem, 4.4rem, 3.6rem, 2.4rem</li>
+  <li>Added <code class="highlighter-rouge">@button-letter-spacing</code> varible definition for buttons</li>
+  <li>Added pa11y dependancy for accessibility testing</li>
+  <li>Updated default table font formatting</li>
 </ul>
 
 <h2 id="fixes">Fixes</h2>
 
 <ul>
-  <li>Fixed link hover styles to not apply to anchors with a <code class="highlighter-rouge">button</code> class, default links to be underlined on hover/focus state</li>
-  <li>Fixed missing <code class="highlighter-rouge">@control-font-weight</code> variable definition for controls, default control settings updated</li>
+  <li>Form message font family property fix</li>
+  <li>Fixed <code class="highlighter-rouge">pointer-event: none;</code> bug on control labels</li>
+  <li>Added <code class="highlighter-rouge">-webkit-apperance: none;</code> on <code class="highlighter-rouge">input[type="search"]</code> to remove iOS input shadows</li>
+</ul>
+
+<h2 id="documentation">Documentation</h2>
+
+<ul>
+  <li>Added Theme to the documentation with a kitchen sink of all styled elements</li>
+  <li>Updated syntax highlighting theme</li>
 </ul>
 
       </div>

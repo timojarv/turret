@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
   <meta charset="utf-8">
@@ -55,6 +55,21 @@
 
         
 
+        <li class="">
+          <a href="/docs/theme/">Theme</a>
+          <ul>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
         <li class="active">
           <a href="/docs/getting-started/">Getting Started</a>
           <ul>
@@ -84,24 +99,6 @@
 
               <li class="">
                 <a href="#usage">Usage</a>
-              </li>
-            
-              
-              
-
-              
-
-              <li class="">
-                <a href="#documentation">Documentation</a>
-              </li>
-            
-              
-              
-
-              
-
-              <li class="">
-                <a href="#examples">Examples</a>
               </li>
             
           </ul>
@@ -1205,6 +1202,7 @@ turret/
     ├ media-queries.less
     └ print.less
   └ typography/
+    ├ typography.less
     ├ headings.less
     ├ strong.less
     ├ emphasis.less
@@ -1284,81 +1282,6 @@ turret/
 </code></pre>
 </div>
 
-<h2 id="documentation">Documentation</h2>
-
-<p>Turret uses npm for it’s build system with watch and build scripts for documentation and for deployment:</p>
-
-<h3 id="watch-turret">Watch Turret</h3>
-
-<p>Watch Less files in turret concatenate and compile</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>npm run watch:turret
-</code></pre>
-</div>
-
-<h3 id="watch-docs">Watch Docs</h3>
-
-<p>Watch Less files in docs/styles concatenate and compile</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>npm run watch:docs
-</code></pre>
-</div>
-
-<h3 id="build">Build</h3>
-
-<p>Build Less files concatenate and compile</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>npm run build
-</code></pre>
-</div>
-
-<h3 id="dist-css">Dist CSS</h3>
-
-<p>Build Less files in turret concatenate and compile into dist</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>npm run dist:css
-</code></pre>
-</div>
-
-<h3 id="dist-min">Dist Min</h3>
-
-<p>Build Less files in turret concatenate, compile, and minimise into dist</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>npm run dist:min
-</code></pre>
-</div>
-
-<h3 id="dist">Dist</h3>
-
-<p>Run Dist CSS and Dist Min</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>npm run dist
-</code></pre>
-</div>
-
-<h2 id="examples">Examples</h2>
-
-<div class="row">
-  <div class="column-1-4 column-small-1-2">
-    <a class="example" href="examples/template.html" target="_blank">
-      <img src="/assets/images/template.svg" class="responsive" />
-      <p>Template</p>
-    </a>
-  </div>
-  <div class="column-1-4 column-small-1-2">
-    <a class="example" href="examples/grid.html" target="_blank">
-      <img src="/assets/images/grid.svg" class="responsive" />
-      <p>Grid</p>
-    </a>
-  </div>
-  <div class="column-1-4 column-small-1-2">
-    <a class="example" href="examples/theme.html" target="_blank">
-      <img src="/assets/images/theme.svg" class="responsive" />
-      <p>Theme</p>
-    </a>
-  </div>
-</div>
-
     </div>
   </section>
   
@@ -1371,7 +1294,7 @@ turret/
     </p>
 
 	<p>
-		v3.2.0 &middot;
+		v3.3.0 &middot;
 		<a href="/blog">Blog</a> &middot; 
 		<a href="https://twitter.com/turretcss">Twitter</a> &middot; 
 		<a href="https://github.com/bigfishtv/turret">GitHub</a> &middot; 
@@ -1386,8 +1309,7 @@ turret/
 
 <div class="clearfix"></div>
 
-<script type="text/javascript" src="/assets/js/main.js"></script>
-
+<script type="text/javascript" src="/assets/js/docs.js"></script>
 <script type="text/javascript" src="/assets/js/vendor/jekyll-search.min.js"></script>
 <script>
   SimpleJekyllSearch.init({

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
   <meta charset="utf-8">
@@ -56,6 +56,21 @@
         
 
         <li class="">
+          <a href="/docs/theme/">Theme</a>
+          <ul>
+            
+          </ul>
+        </li>
+
+      
+
+        
+        
+        
+
+        
+
+        <li class="">
           <a href="/docs/getting-started/">Getting Started</a>
           <ul>
             
@@ -84,24 +99,6 @@
 
               <li class="">
                 <a href="#usage">Usage</a>
-              </li>
-            
-              
-              
-
-              
-
-              <li class="">
-                <a href="#documentation">Documentation</a>
-              </li>
-            
-              
-              
-
-              
-
-              <li class="">
-                <a href="#examples">Examples</a>
               </li>
             
           </ul>
@@ -1080,7 +1077,7 @@
 </span><span class="k">@headings-margin</span><span class="nd">:</span> <span class="nt">0</span> <span class="nt">0</span> <span class="nt">1em</span> <span class="nt">0</span><span class="p">;</span>
 <span class="k">@headings-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">medium-font-family</span><span class="p">;</span>
 <span class="k">@headings-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">medium-font-weight</span><span class="p">;</span>
-<span class="k">@headings-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">body-color</span><span class="p">;</span>
+<span class="k">@headings-color</span><span class="nd">:</span> <span class="o">@</span><span class="nt">dark-grey</span><span class="p">;</span>
 <span class="k">@headings-line-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">line-height-small</span><span class="p">;</span>
 
 <span class="c1">// Headings Small
@@ -1092,7 +1089,7 @@
 <span class="c1">// Heading Font Sizes
 </span><span class="k">@h1-font-size</span><span class="nd">:</span> <span class="nt">3</span><span class="nc">.2</span><span class="p">;</span>
 <span class="k">@h2-font-size</span><span class="nd">:</span> <span class="nt">2</span><span class="nc">.4</span><span class="p">;</span>
-<span class="k">@h3-font-size</span><span class="nd">:</span> <span class="nt">2</span><span class="p">;</span>
+<span class="k">@h3-font-size</span><span class="nd">:</span> <span class="nt">2</span><span class="nc">.0</span><span class="p">;</span>
 <span class="k">@h4-font-size</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.8</span><span class="p">;</span>
 <span class="k">@h5-font-size</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.6</span><span class="p">;</span>
 <span class="k">@h6-font-size</span><span class="nd">:</span> <span class="nt">1</span><span class="nc">.4</span><span class="p">;</span>
@@ -1252,6 +1249,7 @@
 
 <span class="c1">// Lists Item
 </span><span class="k">@list-item-margin</span><span class="nd">:</span> <span class="nt">1rem</span> <span class="nt">0</span> <span class="nt">1rem</span> <span class="nt">2rem</span><span class="p">;</span>
+<span class="k">@list-item-padding</span><span class="nd">:</span> <span class="nt">0</span> <span class="nt">0</span> <span class="nt">0</span> <span class="nt">0</span><span class="nc">.5rem</span><span class="p">;</span>
 <span class="k">@list-item-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">paragraph-font-family</span><span class="p">;</span>
 <span class="k">@list-item-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">paragraph-font-weight</span><span class="p">;</span>
 <span class="k">@list-item-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">paragraph-font-size</span><span class="p">;</span>
@@ -1384,7 +1382,7 @@
 <span class="k">@pre-tab-size</span><span class="nd">:</span> <span class="nt">4</span><span class="p">;</span>
 <span class="k">@pre-hyphens</span><span class="nd">:</span> <span class="nt">none</span><span class="p">;</span>
 <span class="k">@pre-line-height</span><span class="nd">:</span> <span class="o">@</span><span class="nt">line-height-medium</span><span class="p">;</span>
-<span class="k">@pre-background</span><span class="nd">:</span> <span class="nt">lighten</span><span class="o">(@</span><span class="nt">light</span><span class="o">,</span> <span class="nt">1</span><span class="nv">%</span><span class="o">)</span><span class="p">;</span>
+<span class="k">@pre-background</span><span class="nd">:</span> <span class="o">@</span><span class="nt">light</span><span class="p">;</span>
 <span class="k">@pre-border</span><span class="nd">:</span> <span class="nt">1px</span> <span class="nt">solid</span> <span class="o">@</span><span class="nt">light-grey</span><span class="p">;</span>
 
 <span class="c1">// Pre Code
@@ -1423,7 +1421,7 @@
 
 <div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// Mark
 </span><span class="k">@mark-margin</span><span class="nd">:</span> <span class="nt">0</span><span class="p">;</span>
-<span class="k">@mark-padding</span><span class="nd">:</span> <span class="nt">0</span><span class="nc">.3rem</span><span class="p">;</span>
+<span class="k">@mark-padding</span><span class="nd">:</span> <span class="nt">0</span><span class="nc">.3rem</span> <span class="nt">0</span><span class="nc">.6rem</span><span class="p">;</span>
 <span class="k">@mark-font-family</span><span class="nd">:</span> <span class="o">@</span><span class="nt">paragraph-font-family</span><span class="p">;</span>
 <span class="k">@mark-font-weight</span><span class="nd">:</span> <span class="o">@</span><span class="nt">paragraph-font-weight</span><span class="p">;</span>
 <span class="k">@mark-font-size</span><span class="nd">:</span> <span class="o">@</span><span class="nt">paragraph-font-size</span><span class="p">;</span>
@@ -1477,7 +1475,7 @@
     </p>
 
 	<p>
-		v3.2.0 &middot;
+		v3.3.0 &middot;
 		<a href="/blog">Blog</a> &middot; 
 		<a href="https://twitter.com/turretcss">Twitter</a> &middot; 
 		<a href="https://github.com/bigfishtv/turret">GitHub</a> &middot; 
@@ -1492,8 +1490,7 @@
 
 <div class="clearfix"></div>
 
-<script type="text/javascript" src="/assets/js/main.js"></script>
-
+<script type="text/javascript" src="/assets/js/docs.js"></script>
 <script type="text/javascript" src="/assets/js/vendor/jekyll-search.min.js"></script>
 <script>
   SimpleJekyllSearch.init({

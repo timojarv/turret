@@ -1,0 +1,28 @@
+/* Loader */
+
+
+@loader-main-color: @primary;
+@loader-secondary-color: lighten(@primary, 30%);
+
+
+
+.loader {
+    display: none;
+    width: 3.6em;
+    height: 3.6em;
+    vertical-align: middle;
+    border-radius: 100%;
+    border: 4px solid @loader-main-color;
+    border-top-color: @loader-secondary-color;
+
+    animation: spin 0.7s linear infinite;
+}
+
+.loader.active {
+    display: inline-block;
+}
+
+@keyframes spin {
+    from { transform: rotate(0); }
+    to { transform: rotate(359deg); }
+}

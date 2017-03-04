@@ -1,4 +1,7 @@
 
+.notif-bg-color(@color) {
+    background-color: fadeout(@color, 15%);
+}
 
 .notif {
     .font-size(@font-size-medium);
@@ -7,17 +10,16 @@
     font-family: @sans-serif-font-family;
     margin-bottom: 4px;
     border-radius: 0;
-    opacity: 0.85;
 }
 
 .notif--danger {
-	background-color: @warning;
+	.notif-bg-color(@warning);
 }
 
 .notif--info {
-	background-color: @info;
+	.notif-bg-color(@info);
 }
 
 .notif--success {
-	background-color: @success;
+	.notif-bg-color(@success);
 }
